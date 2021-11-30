@@ -1,0 +1,54 @@
+.bio {
+  padding: 20px;
+  display: flex;
+  width: auto;
+  height: auto;
+  width: auto;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  z-index: 1;
+}
+
+.bio__left {
+  flex: 0.5;
+  margin-left: 1rem;
+  margin-top: 20px;
+}
+
+.bio__left > img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  float: left;
+  border-radius: 100%;
+  shape-outside: circle() margin-box;
+  margin: 15px;
+}
+
+.bio__left > p {
+  font-weight: 500;
+  margin-top: 50px;
+  margin-left: 100px;
+  color: rgb(46, 46, 46);
+}
+
+.bio__right {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  align-items: center;
+  margin-top: 70px;
+  margin-right: 1rem;
+}
+
+.bio__right > h2 {
+  font-size: 4vh;
+  color: rgb(99, 99, 99);
+  text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.bio__expirence {
+  font-size: 20vh;
+  font-weight: 600;
+  color: rgb(31, 31, 31);
+}

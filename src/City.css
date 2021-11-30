@@ -1,0 +1,17 @@
+.city__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  border-radius: 75px;
+  overflow: hidden;
+  max-width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.city__container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
