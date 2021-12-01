@@ -1,6 +1,7 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import "./Projects.css";
+import linkedinCloneThumbnail from "./images/linkedin-clone-screenshot.png"
 
 function Projects() {
   return (
@@ -11,7 +12,7 @@ function Projects() {
           title="LinkedIn Clone"
           body="React app that uses Redux to manage user state, and a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only as of now"
           codeUrl=" "
-          imageSrc=" "
+          imageSrc={linkedinCloneThumbnail}
           tools={["React", "Redux", "Firebase", "Material UI"]}
         />
         <PortfolioItem

@@ -10,7 +10,7 @@
 }
 
 .bio__left {
-  flex: 0.5;
+  flex: 0.6;
   margin-left: 1rem;
   margin-top: 20px;
 }
@@ -22,10 +22,11 @@
   float: left;
   border-radius: 100%;
   shape-outside: circle() margin-box;
-  margin: 15px;
+  margin: 18px;
 }
 
 .bio__left > p {
+  font-size: 1.2em;
   font-weight: 500;
   margin-top: 50px;
   margin-left: 100px;
@@ -35,7 +36,7 @@
 .bio__right {
   display: flex;
   flex-direction: column;
-  flex: 0.5;
+  flex: 0.4;
   align-items: center;
   margin-top: 70px;
   margin-right: 1rem;

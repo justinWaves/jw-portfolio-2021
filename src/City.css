@@ -6,8 +6,9 @@
   border-radius: 75px;
   overflow: hidden;
   max-width: 100%;
-  margin-left: 5px;
-  margin-right: 5px;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  box-shadow: 2px 2px 5px rgb(175, 175, 175);
 }
 
 .city__container > img {

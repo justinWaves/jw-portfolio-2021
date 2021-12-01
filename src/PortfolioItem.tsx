@@ -16,14 +16,25 @@ const listItems = tools.map((tool: string) => <li>{tool}</li>);
 
   return (
     <div className="portfolioItem">
+      <div className="portfolio__content--left">
       <h1 className="portfolioItem__title">{title}</h1>
+      <button className="portfolioItem__button">
+  <h1 className="button__plus">+</h1>
+    
+  </button>
       <img className="porfolioItem__image" src={imageSrc} alt="" />
-      <p className="portfolioItem__body">{body}</p>
-      <button></button>
+      </div>
+
+<div className="portfolioItem__content--center">
+<p className="portfolioItem__body">{body}</p>
+</div>
+
+      <div className="portfolio__content--right">
       <ul>{listItems}</ul>
       <a className="portfolioItem__link" href={codeUrl}>
-        <GitHubIcon /> Click to view Source Code
+        <GitHubIcon sx={{ fontSize: 50 }}/> View Source Code
       </a>
+      </div>
     </div>
   );
 }
