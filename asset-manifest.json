@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jw-portfolio-2021/static/css/main.b98b851a.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.afaea160.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.afaea160.chunk.js.map",
+    "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
+    "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
+    "static/js/2.54128fd1.chunk.js": "/jw-portfolio-2021/static/js/2.54128fd1.chunk.js",
+    "static/js/2.54128fd1.chunk.js.map": "/jw-portfolio-2021/static/js/2.54128fd1.chunk.js.map",
+    "index.html": "/jw-portfolio-2021/index.html",
+    "static/css/main.b98b851a.chunk.css.map": "/jw-portfolio-2021/static/css/main.b98b851a.chunk.css.map",
+    "static/js/2.54128fd1.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.54128fd1.chunk.js.LICENSE.txt",
+    "static/media/Weisberglogo.2ba4417f.svg": "/jw-portfolio-2021/static/media/Weisberglogo.2ba4417f.svg",
+    "static/media/ggb-background.564b1875.svg": "/jw-portfolio-2021/static/media/ggb-background.564b1875.svg",
+    "static/media/ggb-clouds.62c65cbf.svg": "/jw-portfolio-2021/static/media/ggb-clouds.62c65cbf.svg",
+    "static/media/ggb-foreground.04e8315c.svg": "/jw-portfolio-2021/static/media/ggb-foreground.04e8315c.svg",
+    "static/media/jwaves even smaller.4a490538.jpg": "/jw-portfolio-2021/static/media/jwaves even smaller.4a490538.jpg",
+    "static/media/linkedin-clone-screenshot.5687f39e.png": "/jw-portfolio-2021/static/media/linkedin-clone-screenshot.5687f39e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ec7f94b.js",
+    "static/js/2.54128fd1.chunk.js",
+    "static/css/main.b98b851a.chunk.css",
+    "static/js/main.afaea160.chunk.js"
+  ]
+}
