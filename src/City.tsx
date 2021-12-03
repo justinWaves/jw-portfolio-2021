@@ -3,6 +3,7 @@ import "./City.css";
 import BridgeForeground from "./images/ggb-foreground.svg"
 import BridgeBackground from "./images/ggb-background.svg"
 import Clouds from "./images/ggb-clouds.svg"
+import SunMoon from "./images/sunandmoon.svg"
 
 
 
@@ -13,11 +14,12 @@ function City() {
  
 
 <div className="city__sky"></div>
-<div className="city__sunAndMoon"></div>
+<img src={SunMoon} alt="" className={"city__" + "sun"} />
 <div className="city__water"></div>
 
 
 {/* bridge */}
+
 <img width="100%" height="auto" src={BridgeForeground} alt="" className="city__bridge--fg" />
 <img width="100%" height="auto" src={BridgeBackground} alt="" className="city__bridge--bg" />
 

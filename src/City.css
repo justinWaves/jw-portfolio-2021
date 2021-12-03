@@ -5,7 +5,7 @@
   border-radius: 100px 100px 0px 0px;
   overflow: hidden;
   max-width: 100%;
-  height: 60vh;
+  height: 70vh;
   box-shadow: 2px 2px 5px rgb(175, 175, 175);
 }
 
@@ -14,11 +14,11 @@
   grid-row: 1 / 1;
 }
 
-/* .city__container > img {
-  width: 100%;
-  height: 50vh;
-  object-fit: fill;
-} */
+@media only screen and (min-width: 1024px) {
+  .city__container {
+    height: 90vh;
+  }
+}
 
 .city__sky {
   width: 100%;
@@ -27,10 +27,23 @@
   height: 100%;
 }
 
+.city__sun {
+  z-index: 2;
+  margin-top: 20px;
+  transition: ease-in-out 2s;
+}
+
+.city__moon {
+  z-index: 2;
+  margin-top: 20px;
+  transform: rotate(180deg);
+  transition: ease-in-out 2s;
+}
+
 .city__water {
   width: 100%;
   background-image: linear-gradient(rgb(0, 13, 134), rgb(0, 26, 255));
-  z-index: 2;
+  z-index: 3;
   height: 35%;
   position: relative;
   top: 35%;
@@ -40,18 +53,32 @@
   z-index: 5;
   margin-top: 4%;
   margin-bottom: 10%;
+  transition: ease-in-out 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .city__bridge--fg {
+    width: 150%;
+    transition: ease-in-out 0.5s;
+  }
 }
 
 .city__bridge--bg {
   z-index: 4;
   margin-top: 4%;
   margin-bottom: 10%;
+  transition: ease-in-out 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .city__bridge--bg {
+    width: 150%;
+    transition: ease-in-out 0.5s;
+  }
 }
 
 .city__clouds {
   z-index: 3;
   margin-bottom: 20%;
-  animation: slide 120s linear infinite running;
+  animation: slide 120s linear infinite alternate;
 }
 @keyframes slide {
   0% {

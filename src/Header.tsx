@@ -11,9 +11,10 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 function Header() {
   return (
     <div className="header__container">
+      <div className="header__title--contain">
       <img src={logo} className="header__logo" alt="" />
       <h1 className="header__textTop"> Front End Developer</h1>
-    
+      </div>
      <div className="header__toggle">
      <DarkModeOutlinedIcon className="header__moon" sx={{ fontSize: 40 }}/>
       <ToggleOnIcon className="header__toggleSwitch" sx={{ fontSize: 75 }}/>

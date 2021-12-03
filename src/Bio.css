@@ -1,6 +1,8 @@
 .bio {
   padding: 20px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: auto;
   height: auto;
   width: auto;
@@ -8,12 +10,23 @@
   clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   z-index: 1;
 }
+@media only screen and (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+  }
+}
 
 .bio__left {
   flex: 0.6;
   margin-left: 1rem;
   margin-top: 20px;
   z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio__left {
+    flex: 1;
+  }
 }
 
 .bio__left > img {
@@ -44,6 +57,12 @@
   align-items: center;
   margin-top: 70px;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio__right {
+    flex: 1;
+  }
 }
 
 .bio__right > h2 {
