@@ -2,29 +2,47 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 40vh;
 }
 
 .header__logo {
+  height: 50%;
   max-width: 80%;
   margin-top: 20px;
   -webkit-filter: drop-shadow(0px 3px 5px #222);
-  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
-  transition: 0.2s;
+  filter: drop-shadow(1px 0px 1px rgb(102, 102, 102));
+  transition: ease-in 0.5s;
 }
 
 .header__textTop {
+  margin-top: -5px;
+  font-weight: 300;
+  font-size: 30px;
   color: rgb(99, 99, 99);
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.header__textBottom {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: rgb(99, 99, 99);
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .header__toggle {
-  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
+}
+
+.header__toggleSwitch {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #2a2a2a;
+  filter: drop-shadow(1px 0px 1px rgb(102, 102, 102));
+}
+
+.header__moon {
+  margin-top: 10px;
+  color: rgb(212, 255, 251);
+}
+
+.header__sun {
+  margin-top: 10px;
+  color: rgb(254, 255, 212);
 }

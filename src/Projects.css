@@ -3,6 +3,8 @@
   background-color: white;
   padding-top: 50px;
   padding-bottom: 100px;
+  border-radius: 0px 0px 100px 100px;
+  box-shadow: 0px 5px 5px rgb(175, 175, 175);
 }
 
 .projects::before {
@@ -20,8 +22,9 @@
 }
 
 .projects__title {
-  font-size: 5vh;
-  color: rgb(99, 99, 99);
+  font-size: 40px;
+  font-weight: 300;
+  color: #2a2a2a;
   text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.7);
   margin-top: -150px;
   margin-left: 50px;

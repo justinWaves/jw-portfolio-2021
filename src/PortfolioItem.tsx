@@ -32,7 +32,7 @@ const listItems = tools.map((tool: string) => <li>{tool}</li>);
       <div className="portfolio__content--right">
       <ul>{listItems}</ul>
       <a className="portfolioItem__link" href={codeUrl}>
-        <GitHubIcon sx={{ fontSize: 50 }}/> View Source Code
+        <GitHubIcon sx={{ fontSize: 40 }}/> View Source Code
       </a>
       </div>
     </div>

@@ -9,14 +9,12 @@ function Bio() {
         <img src={bioPic} alt="" />
 
         <p>
-          <strong>Hello,</strong> my name is Justin Weisberg. I am a Self-taught
-          Front-end Developer, designer, and music producer from San Francisco,
-          CA. After years of freelancing, I have reached a point where I want to
-          work in a group setting, and help build large-scale products that help
+          <strong> Hello,</strong> my name is Justin Weisberg. I am a
+         Front-end Developer from San Francisco on a mission to
+       help build large-scale products that
           change the world. I'm passionate about componet-based deisgn, writing
           clean scalable code, and learning new frameworks and libraries.
-          Currently, I have been building with React, Redux, Typescript, and
-          Tailwind CSS.
+          Currently, my tools of choice are React, Redux, Typescript.
         </p>
       </div>
       <div className="bio__right">
