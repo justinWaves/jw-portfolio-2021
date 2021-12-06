@@ -20,9 +20,17 @@
   }
 }
 
-.city__sky {
+.city__sky--day {
   width: 100%;
   background-image: linear-gradient(#4073ff, #52b0ee, #d2e0e8, #ffffff);
+  z-index: 1;
+  height: 100%;
+  transition: ease-in-out 3s;
+}
+
+.city__sky--night {
+  width: 100%;
+  background-image: linear-gradient(#2f277d, #3378bd);
   z-index: 1;
   height: 100%;
 }
@@ -30,19 +38,17 @@
 .city__sun {
   z-index: 2;
   margin-top: 20px;
-  transition: ease-in-out 2s;
 }
 
 .city__moon {
   z-index: 2;
   margin-top: 20px;
   transform: rotate(180deg);
-  transition: ease-in-out 2s;
 }
 
 .city__water {
   width: 100%;
-  background-image: linear-gradient(rgb(0, 13, 134), rgb(0, 26, 255));
+  background-image: linear-gradient(#003b63, #3370a6);
   z-index: 3;
   height: 35%;
   position: relative;
@@ -87,5 +93,21 @@
   }
   100% {
     transform: translate3d(50%, 0, 0); /* The image width */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .city__clouds {
+    height: 30%;
+    width: 700%;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .city__clouds {
+    height: 30%;
+    width: 300%;
+    transition: ease-in-out 0.5s;
   }
 }
