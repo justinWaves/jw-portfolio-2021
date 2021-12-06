@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.98156b57.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.ba4ac94d.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.ba4ac94d.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.dad60feb.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.09be0dbc.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.09be0dbc.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
     "static/js/2.f3a0bf28.chunk.js": "/jw-portfolio-2021/static/js/2.f3a0bf28.chunk.js",
     "static/js/2.f3a0bf28.chunk.js.map": "/jw-portfolio-2021/static/js/2.f3a0bf28.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.98156b57.chunk.css.map": "/jw-portfolio-2021/static/css/main.98156b57.chunk.css.map",
+    "static/css/main.dad60feb.chunk.css.map": "/jw-portfolio-2021/static/css/main.dad60feb.chunk.css.map",
     "static/js/2.f3a0bf28.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.f3a0bf28.chunk.js.LICENSE.txt",
     "static/media/Weisberglogo.2ba4417f.svg": "/jw-portfolio-2021/static/media/Weisberglogo.2ba4417f.svg",
     "static/media/clouds.453b995b.svg": "/jw-portfolio-2021/static/media/clouds.453b995b.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ec7f94b.js",
     "static/js/2.f3a0bf28.chunk.js",
-    "static/css/main.98156b57.chunk.css",
-    "static/js/main.ba4ac94d.chunk.js"
+    "static/css/main.dad60feb.chunk.css",
+    "static/js/main.09be0dbc.chunk.js"
   ]
 }
