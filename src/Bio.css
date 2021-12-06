@@ -1,4 +1,4 @@
-.bio {
+/* .bio {
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@
   .bio {
     flex-direction: column;
   }
-}
+} */
 
 .bio__left {
   flex: 0.6;
@@ -46,7 +46,6 @@
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 20px;
-  color: rgb(46, 46, 46);
   z-index: 5;
 }
 
@@ -68,11 +67,9 @@
 .bio__right > h2 {
   font-size: 40px;
   font-weight: 300;
-  color: #2a2a2a;
 }
 
 .bio__expirence {
   font-size: 20vh;
   font-weight: 600;
-  color: rgb(31, 31, 31);
 }

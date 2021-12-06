@@ -6,19 +6,6 @@
   width: 100%;
 }
 
-/* .footer::after {
-  content: "";
-  display: flex;
-  position: relative;
-  top: 0px;
-  width: 100%;
-  height: 200px;
-  background-color: var(--main-bg-color);
-  transform-origin: left;
-  transform: skewY(-4deg);
-  z-index: -100;
-} */
-
 .footer__contactHeader {
   display: flex;
   z-index: 1;

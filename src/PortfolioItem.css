@@ -1,19 +1,10 @@
 .portfolioItem {
-  display: flex;
-  height: 250px;
-  width: 400px;
-  background-color: var(--main-bg-color);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 5px;
-  box-shadow: 3px 3px 10px #a3a3a3;
 }
 
 .portfolioItem__title {
   margin-top: 20px;
   margin-left: 20px;
   font-weight: 300;
-  color: #2a2a2a;
 }
 
 .portfolio__content--left {
