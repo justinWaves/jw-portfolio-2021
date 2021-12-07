@@ -36,7 +36,7 @@ function Projects() {
           title="LinkedIn Clone"
           body="React app that uses Redux to manage user state, and a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only as of now"
           codeUrl=" "
-          imageSrc={linkedinCloneThumbnail}
+          imageSrc=" "
           tools={["React", "Redux", "Firebase", "Material UI"]}
         />
         <PortfolioItem

@@ -1,16 +1,42 @@
-.portfolioItem {
-}
+/* .portfolioItem {
+} */
 
 .portfolioItem__title {
   margin-top: 20px;
   margin-left: 20px;
   font-weight: 300;
+  width: 200%;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolioItem__title {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 .portfolio__content--left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media only screen and (max-width: 960px) {
+  .portfolio__content--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex: 0.4;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__content--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .portfolio__content--right {
@@ -19,6 +45,20 @@
   justify-content: flex-end;
   align-items: center;
   padding-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio__content--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.2;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 }
 
 .portfolio__content--right > a {
@@ -33,6 +73,29 @@
   display: none;
 }
 
+@media only screen and (max-width: 960px) {
+  .portfolioItem__content--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-left: 50px;
+    flex: 0.6;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolioItem__content--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+
 .portfolioItem__button {
   position: relative;
   top: 55%;
@@ -44,6 +107,12 @@
   box-shadow: 3px 3px 5px #00000050;
   z-index: 5;
   transition: 0.4s;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolioItem__button {
+    display: none;
+  }
 }
 
 .portfolioItem__button:hover {
@@ -67,12 +136,20 @@
 }
 
 .porfolioItem__image {
-  width: 100%;
+  display: flex;
   height: 150px;
+  width: 100%;
   object-fit: contain;
-  position: relative;
-  top: -30px;
-  left: 20px;
+  border-radius: 0px 0px 0px 20px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .porfolioItem__image {
+    border-radius: 0px 0px 0px 0px;
+    height: 180px;
+    width: 100%;
+  }
 }
 
 .portfolioItem__link {

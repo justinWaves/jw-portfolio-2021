@@ -25,14 +25,26 @@ function PortfolioItem({
 
   const PortfolioItem = styled.div`
     display: flex;
+    justify-content: space-between;
     height: 250px;
     width: 400px;
     background-color: ${themeConf.backgroundColor};
     color: ${themeConf.textColor};
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
-    padding: 5px;
     box-shadow: 3px 3px 10px #00000050;
+    overflow: hidden;
+
+    @media (max-width: 960px) {
+      width: 90vw;
+      height: 250px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
   `;
 
   return (
@@ -50,6 +62,7 @@ function PortfolioItem({
       </div>
 
       <div className="portfolio__content--right">
+        <h4>Tech Used</h4>
         <ul>{listItems}</ul>
         <a className="portfolioItem__link" href={codeUrl}>
           <GitHubIcon sx={{ fontSize: 40 }} /> View Source Code
