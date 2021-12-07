@@ -22,7 +22,7 @@ export const linkColor: theme.ThemeSet = theme("mode", {
 
 export const secondaryTextColor: theme.ThemeSet = theme("mode", {
   light: "#000000",
-  dark: "#03DAC5",
+  dark: "#C8FFF4",
 });
 
 // export const buttonBackgroundColor = theme("mode", {

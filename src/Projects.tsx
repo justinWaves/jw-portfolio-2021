@@ -1,6 +1,6 @@
 import PortfolioItem from "./PortfolioItem";
 import "./Projects.css";
-import linkedinCloneThumbnail from "./images/linkedin-clone-screenshot.png";
+import linkedinCloneThumb from "./images/linkedin-clone-alpha.png";
 import * as themeConf from "./Theme";
 import styled from "styled-components";
 
@@ -36,7 +36,7 @@ function Projects() {
           title="LinkedIn Clone"
           body="React app that uses Redux to manage user state, and a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only as of now"
           codeUrl=" "
-          imageSrc=" "
+          imageSrc={linkedinCloneThumb}
           tools={["React", "Redux", "Firebase", "Material UI"]}
         />
         <PortfolioItem

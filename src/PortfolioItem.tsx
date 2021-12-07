@@ -33,7 +33,7 @@ function PortfolioItem({
     border-radius: 20px;
     margin: 10px;
     box-shadow: 3px 3px 10px #00000050;
-    overflow: hidden;
+    overflow: none;
 
     @media (max-width: 960px) {
       width: 90vw;
@@ -53,6 +53,7 @@ function PortfolioItem({
     font-weight: 200;
     color: ${themeConf.linkColor};
     white-space: nowrap;
+    z-index: 5;
   `;
 
   const PortfolioListItems = styled.div`
@@ -60,6 +61,8 @@ function PortfolioItem({
     flex-direction: column;
     align-items: center;
     margin-top 40px;
+    z-index:5;
+
   `;
 
   const ListItemTitle = styled.h4`
