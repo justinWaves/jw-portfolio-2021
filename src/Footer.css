@@ -11,7 +11,6 @@
   z-index: 1;
   font-size: 40px;
   font-weight: 200;
-  color: #2a2a2a;
   margin-top: 40px;
 }
 
@@ -19,7 +18,6 @@
   font-weight: 200;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: rgb(70, 70, 70);
 }
 
 .footer > form {
@@ -40,7 +38,7 @@
   outline-width: 0;
   padding-left: 10px;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px #a3a3a3;
+  box-shadow: 3px 3px 10px #00000050;
 }
 .footer > form > textarea {
   margin: 10px;
@@ -55,7 +53,7 @@
   padding-left: 10px;
   padding-top: 10px;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px #a3a3a3;
+  box-shadow: 3px 3px 10px #00000050;
 }
 
 .footer > form > button {
@@ -69,15 +67,20 @@
   color: white;
   font-weight: 700;
   font-size: 15px;
-  box-shadow: 3px 3px 10px #a3a3a3;
+  box-shadow: 3px 3px 10px #00000050;
 }
 
-.footer__socialContainer {
+/* .footer__socialContainer {
   display: flex;
   margin-bottom: 5px;
-}
+} */
 
-.socialIcon {
+.socialIcon-light {
   padding: 3px;
   color: #292929;
+}
+
+.socialIcon-dark {
+  padding: 3px;
+  color: #c38fff;
 }

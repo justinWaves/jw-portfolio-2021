@@ -7,11 +7,11 @@ import styled from "styled-components";
 function Projects() {
   const Projects = styled.div`
   width: 100%;
-  background-color: white;
+  background-color: ${themeConf.secondaryBackgroundColor};
   padding-top: 50px;
   padding-bottom: 100px;
   border-radius: 0px 0px 100px 100px;
-  box-shadow: 0px 5px 5px rgb(175, 175, 175);
+  box-shadow: 0px 5px 5px #00000050;
 
   &:before{
   content: "";
@@ -21,7 +21,7 @@ function Projects() {
   width: 100%;
   height: 150px;
   background-color: ${themeConf.backgroundColor};
-  box-shadow: 0px 5px 5px rgb(175, 175, 175);
+  box-shadow: 0px 5px 5px #00000050;
   transform-origin: left;
   transform: skewY(4deg);
   z-index: 0;}

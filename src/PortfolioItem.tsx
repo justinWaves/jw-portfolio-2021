@@ -32,7 +32,7 @@ function PortfolioItem({
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
-    box-shadow: 3px 3px 10px #a3a3a3;
+    box-shadow: 3px 3px 10px #00000050;
   `;
 
   return (
