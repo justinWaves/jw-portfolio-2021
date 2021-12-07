@@ -47,6 +47,26 @@ function PortfolioItem({
     }
   `;
 
+  const GitHubLink = styled.a`
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 200;
+    color: ${themeConf.linkColor};
+    white-space: nowrap;
+  `;
+
+  const PortfolioListItems = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top 40px;
+  `;
+
+  const ListItemTitle = styled.h4`
+    color: ${themeConf.secondaryTextColor};
+    margin-bottom: 5px;
+  `;
+
   return (
     <PortfolioItem>
       <div className="portfolio__content--left">
@@ -62,11 +82,13 @@ function PortfolioItem({
       </div>
 
       <div className="portfolio__content--right">
-        <h4>Tech Used</h4>
-        <ul>{listItems}</ul>
-        <a className="portfolioItem__link" href={codeUrl}>
+        <PortfolioListItems>
+          <ListItemTitle>Tech Used</ListItemTitle>
+          <ul>{listItems}</ul>
+        </PortfolioListItems>
+        <GitHubLink className="portfolioItem__link" href={codeUrl}>
           <GitHubIcon sx={{ fontSize: 40 }} /> View Source Code
-        </a>
+        </GitHubLink>
       </div>
     </PortfolioItem>
   );

@@ -16,6 +16,8 @@
   }
 }
 
+/*   ~~~~~~~~ CONTENT LEFT ~~~~~~~~  */
+
 .portfolio__content--left {
   display: flex;
   flex-direction: column;
@@ -39,12 +41,13 @@
   }
 }
 
+/*   ~~~~~~~~ CONTENT RIGHT ~~~~~~~~  */
+
 .portfolio__content--right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 30px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -53,21 +56,38 @@
   .portfolio__content--right {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     flex: 0.2;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 20px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .portfolio__content--right {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
 .portfolio__content--right > a {
-  max-width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+/* .portfolio__listItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/*   ~~~~~~~~ CONTENT CENTER ~~~~~~~~  */
 
 .portfolioItem__content--center {
   display: none;
@@ -95,6 +115,8 @@
     margin-left: 40px;
   }
 }
+
+/*   ~~~~~~~~ BUTTON ~~~~~~~~  */
 
 .portfolioItem__button {
   position: relative;
@@ -135,13 +157,14 @@
   transition: 0.4s;
 }
 
+/*   ~~~~~~~~ THUMBNAIL IMAGE~~~~~~~~  */
+
 .porfolioItem__image {
   display: flex;
   height: 150px;
   width: 100%;
   object-fit: contain;
   border-radius: 0px 0px 0px 20px;
-  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -150,10 +173,4 @@
     height: 180px;
     width: 100%;
   }
-}
-
-.portfolioItem__link {
-  margin-top: 15px;
-  font-size: 12px;
-  font-weight: 200;
 }

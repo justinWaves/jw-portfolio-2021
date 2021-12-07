@@ -15,10 +15,18 @@ function City() {
     }
   };
 
+  const toggleSunMoon = (): string => {
+    if (theme.mode === "light") {
+      return "city__sun ";
+    } else {
+      return "city__moon";
+    }
+  };
+
   return (
     <div className="city__container">
       <div className={toggleSky()}></div>
-      <img src={SunMoon} alt="" className={"city__" + "sun"} />
+      <img src={SunMoon} alt="" className={toggleSunMoon()} />
       <div className="city__water"></div>
 
       {/* bridge */}

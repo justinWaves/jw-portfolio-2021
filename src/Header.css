@@ -49,6 +49,12 @@
   font-size: 4vh;
 }
 
+.header__subText {
+  font-weight: 200;
+  font-size: 2vh;
+  margin-bottom: -10px;
+}
+
 .header__toggle {
   display: flex;
   flex-direction: row;

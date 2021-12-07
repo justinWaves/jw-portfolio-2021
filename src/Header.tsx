@@ -21,6 +21,8 @@ function Header() {
     <div className="header__container">
       <img src={logoSwitcher()} className="header__logo" alt="" />
       <h1 className="header__textTop"> Front End Developer</h1>
+      <p className="header__subText">San Francisco, CA</p>
+
       <div className="header__toggle">
         <LightModeOutlinedIcon className="header__sun" sx={{ fontSize: 40 }} />
         <Switch size="medium" onChange={() => theme.toggle()} />

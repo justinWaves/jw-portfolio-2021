@@ -5,19 +5,25 @@ import styled from "styled-components";
 
 function Bio() {
   const Bio = styled.div`
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: auto;
-  height: auto;
-  background-color: ${themeConf.backgroundColor};
-  color: ${themeConf.textColor};
-  z-index: 1;
-@media only screen and (max-width: 768px) {
-  .bio {
-    flex-direction: column;
-  }
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    background-color: ${themeConf.backgroundColor};
+    color: ${themeConf.textColor};
+    z-index: 1;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  `;
+
+  const ExpirenceHeader = styled.h2`
+    font-size: 40px;
+    font-weight: 300;
+    color: ${themeConf.secondaryTextColor};
   `;
 
   return (
@@ -34,7 +40,7 @@ function Bio() {
         </p>
       </div>
       <div className="bio__right">
-        <h2>Years of Expirence:</h2>
+        <ExpirenceHeader>Years of Expirence:</ExpirenceHeader>
         <h1 className="bio__expirence">8</h1>
       </div>
     </Bio>
