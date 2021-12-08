@@ -37,7 +37,7 @@ function Header() {
           size="medium"
           onChange={() => theme.toggle()}
           checked={toggleSwitchValue()}
-          color={"secondary"}
+          color="default"
         />
 
         <DarkModeOutlinedIcon className="header__moon" sx={{ fontSize: 40 }} />

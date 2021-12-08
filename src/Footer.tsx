@@ -14,14 +14,6 @@ function Footer() {
     margin-bottom: 5px;
   `;
 
-  // const toggleIcons = (): string => {
-  //   if (theme.mode === "light") {
-  //     return "socialIcon-light";
-  //   } else {
-  //     return "socialIcon--dark";
-  //   }
-  // };
-
   return (
     <div className="footer">
       <h1 className="footer__contactHeader">Let's get in touch!</h1>
