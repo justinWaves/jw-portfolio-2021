@@ -3,7 +3,7 @@
   margin-left: 20px;
   font-weight: 300;
   white-space: nowrap;
-  z-index: 5;
+  z-index: 4;
 }
 
 @media only screen and (max-width: 768px) {
@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 @media only screen and (max-width: 960px) {
   .portfolio__content--left {
@@ -43,8 +44,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
-  margin-bottom: 20px;
+
+  z-index: 5;
 }
 
 @media only screen and (max-width: 960px) {
@@ -73,28 +74,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  z-index: 5;
 }
 
-/* .portfolio__listItems {
+.portfolio__listItems {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+  margin-top: 69px;
+  margin-left: -25px;
+  z-index: 5;
+}
 
 /*   ~~~~~~~~ CONTENT CENTER ~~~~~~~~  */
 
 .portfolioItem__content--center {
   display: none;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 960px) {
   .portfolioItem__content--center {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    margin-left: -60px;
+    z-index: 2;
     flex: 0.3;
   }
 }
@@ -110,73 +117,24 @@
   }
 }
 
-/*   ~~~~~~~~ BUTTON ~~~~~~~~  */
-
-.portfolioItem__button {
-  position: absolute;
-  top: 0;
-  left: 2%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 3px 3px 5px #00000050;
-  z-index: 5;
-  transition: 0.4s;
-  display: none;
-}
-
-@media only screen and (max-width: 960px) {
-  .portfolioItem__button {
-    display: none;
-  }
-}
-
-.portfolioItem__button:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 5px #00000050;
-  transition: 0.4s;
-  background-color: rgb(68, 0, 255);
-}
-
-.portfolioItem__button > h1:hover {
-  transition: 0.4s;
-  color: rgb(255, 255, 255);
-  transform: rotate(180deg);
-}
-
-.button__plus {
-  font-size: 45px;
-  font-weight: 200;
-  color: rgb(68, 0, 255);
-  transition: 0.4s;
-}
-
 /*   ~~~~~~~~ THUMBNAIL IMAGE~~~~~~~~  */
 
 .porfolioItem__image {
-  object-fit: contain;
-
-  /* position: relative;
-  top: -24px; */
   border-radius: 0px 0px 0px 20px;
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 @media only screen and (max-width: 960px) {
   .porfolioItem__image {
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 20px;
     height: 179px;
     width: 285px;
-
-    /* box-shadow: 3px 3px 5px #00000050; */
   }
 }
 
 @media only screen and (max-width: 768px) {
   .porfolioItem__image {
     border-radius: 0px 0px 0px 0px;
-
-    /* box-shadow: 3px 3px 5px #00000050; */
+    margin-bottom: 20px;
   }
 }

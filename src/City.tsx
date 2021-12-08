@@ -2,7 +2,7 @@ import "./City.css";
 import BridgeForeground from "./images/ggb-foreground.svg";
 import BridgeBackground from "./images/ggb-background.svg";
 import Clouds from "./images/clouds.svg";
-import SunMoon from "./images/sunandmoon.svg";
+import SunMoon from "./images/SunMoonGlow.svg";
 import { useTheme } from "./ThemeManager";
 
 function City() {
@@ -12,6 +12,14 @@ function City() {
       return "city__sky--day";
     } else {
       return "city__sky--night";
+    }
+  };
+
+  const toggleWater = (): string => {
+    if (theme.mode === "light") {
+      return "city__water--day";
+    } else {
+      return "city__water--night";
     }
   };
 
@@ -27,7 +35,7 @@ function City() {
     <div className="city__container">
       <div className={toggleSky()}></div>
       <img src={SunMoon} alt="" className={toggleSunMoon()} />
-      <div className="city__water"></div>
+      <div className={toggleWater()}></div>
 
       {/* bridge */}
 

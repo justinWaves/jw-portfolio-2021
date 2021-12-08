@@ -34,16 +34,32 @@ function PortfolioItem({
     margin: 10px;
     box-shadow: 3px 3px 10px #00000050;
     overflow: none;
+    z-index: 1;
+
+    &:hover {
+      position: relative;
+      top: -10px;
+    }
 
     @media (max-width: 960px) {
       width: 90vw;
       height: 250px;
+
+      &:hover {
+        position: relative;
+        top: 0px;
+      }
     }
 
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
       height: auto;
+
+      &:hover {
+        position: relative;
+        top: 0px;
+      }
     }
   `;
 
@@ -56,27 +72,17 @@ function PortfolioItem({
     z-index: 5;
   `;
 
-  const PortfolioListItems = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top 40px;
-    z-index:5;
-
-  `;
-
   const ListItemTitle = styled.h4`
     color: ${themeConf.secondaryTextColor};
     margin-bottom: 5px;
+    margin-left: 10px;
   `;
 
   return (
     <PortfolioItem>
       <div className="portfolio__content--left">
         <h1 className="portfolioItem__title">{title}</h1>
-        <button className="portfolioItem__button">
-          <h1 className="button__plus">+</h1>
-        </button>
+
         <img className="porfolioItem__image" src={imageSrc} alt="" />
       </div>
 
@@ -85,11 +91,12 @@ function PortfolioItem({
       </div>
 
       <div className="portfolio__content--right">
-        <PortfolioListItems>
+        <div className="portfolio__listItems">
           <ListItemTitle>Tech Used</ListItemTitle>
           <ul>{listItems}</ul>
-        </PortfolioListItems>
-        <GitHubLink className="portfolioItem__link" href={codeUrl}>
+        </div>
+
+        <GitHubLink href={codeUrl}>
           <GitHubIcon sx={{ fontSize: 40 }} /> View Source Code
         </GitHubLink>
       </div>
