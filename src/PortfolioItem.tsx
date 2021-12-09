@@ -1,4 +1,6 @@
 import "./PortfolioItem.css";
+import { useRef, useState } from "react";
+import { useSpring, animated, config } from "@react-spring/web";
 import styled from "styled-components";
 import * as themeConf from "./Theme";
 import { useTheme } from "./ThemeManager";
@@ -13,6 +15,14 @@ interface PortfolioProps {
   tools: string[];
 }
 
+const calc = (x: number, y: number, rect: any) => [
+  -(y - rect.top - rect.height / 2) / 10,
+  (x - rect.left - rect.width / 2) / 50,
+  1.08,
+];
+const trans = (x: number, y: number, s: number) =>
+  `perspective(800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
 function PortfolioItem({
   title,
   body,
@@ -25,9 +35,10 @@ function PortfolioItem({
 
   const listItems = tools.map((tool: string) => <li>{tool}</li>);
 
-  const PortfolioItem = styled.div`
+  const PortfolioItem = styled(animated.div)`
     background-color: ${themeConf.backgroundColor};
     color: ${themeConf.textColor};
+    will-change: transform;
   `;
 
   const ListItemTitle = styled.h4`
@@ -36,26 +47,41 @@ function PortfolioItem({
     margin-left: 10px;
   `;
 
+  const configList = Object.keys(config);
+  const ref: any = useRef(null);
+  const [xys, set] = useState([0, 0, 1]);
+  const props = useSpring({ xys, config: config.molasses });
+
   return (
-    <PortfolioItem className="portfolioItem__container">
-      <div className="portfolio__content--left">
-        <h1 className="portfolioItem__title">{title}</h1>
-        <img className="porfolioItem__image" src={imageSrc} alt="" />
-      </div>
-
-      <div className="portfolioItem__content--center">
-        <p className="portfolioItem__body">{body}</p>
-      </div>
-
-      <div className="portfolio__content--right">
-        <div className="portfolio__listItems">
-          <ListItemTitle>Tech Used</ListItemTitle>
-          <ul>{listItems}</ul>
+    <div className="portfolioItem__main" ref={ref}>
+      <PortfolioItem
+        className="portfolioItem__container"
+        style={{ transform: props.xys.to(trans) }}
+        onMouseLeave={() => set([0, 0, 1])}
+        onMouseMove={(e) => {
+          const rect: any = ref.current.getBoundingClientRect();
+          set(calc(e.clientX, e.clientY, rect));
+        }}
+      >
+        <div className="portfolio__content--left">
+          <h1 className="portfolioItem__title">{title}</h1>
+          <img className="porfolioItem__image" src={imageSrc} alt="" />
         </div>
 
-        <GithubLinks codeUrl={codeUrl} linkUrl={linkUrl} />
-      </div>
-    </PortfolioItem>
+        <div className="portfolioItem__content--center">
+          <p className="portfolioItem__body">{body}</p>
+        </div>
+
+        <div className="portfolio__content--right">
+          <div className="portfolio__listItems">
+            <ListItemTitle>Tech Used</ListItemTitle>
+            <ul>{listItems}</ul>
+          </div>
+
+          <GithubLinks codeUrl={codeUrl} linkUrl={linkUrl} />
+        </div>
+      </PortfolioItem>
+    </div>
   );
 }
 

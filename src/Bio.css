@@ -85,10 +85,10 @@
   }
 }
 
-.bio__right > h2 {
+/* .bio__right > h2 {
   font-size: 40px;
   font-weight: 300;
-}
+} */
 
 .bio__expirence {
   font-size: 20vh;
