@@ -35,6 +35,14 @@ function PortfolioItem({
 
   const listItems = tools.map((tool: string) => <li>{tool}</li>);
 
+  const hideAnimationOnMobile = () => {
+    if (window.innerWidth < 961) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
   const PortfolioItem = styled(animated.div)`
     background-color: ${themeConf.backgroundColor};
     color: ${themeConf.textColor};
@@ -50,7 +58,10 @@ function PortfolioItem({
   const configList = Object.keys(config);
   const ref: any = useRef(null);
   const [xys, set] = useState([0, 0, 1]);
-  const props = useSpring({ xys, config: config.molasses });
+  const props = useSpring({
+    xys,
+    config: config.molasses,
+  });
 
   return (
     <div className="portfolioItem__main" ref={ref}>
@@ -58,10 +69,14 @@ function PortfolioItem({
         className="portfolioItem__container"
         style={{ transform: props.xys.to(trans) }}
         onMouseLeave={() => set([0, 0, 1])}
-        onMouseMove={(e) => {
-          const rect: any = ref.current.getBoundingClientRect();
-          set(calc(e.clientX, e.clientY, rect));
-        }}
+        onMouseMove={
+          hideAnimationOnMobile()
+            ? (e) => {
+                const rect: any = ref.current.getBoundingClientRect();
+                set(calc(e.clientX, e.clientY, rect));
+              }
+            : undefined
+        }
       >
         <div className="portfolio__content--left">
           <h1 className="portfolioItem__title">{title}</h1>
