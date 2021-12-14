@@ -1,7 +1,9 @@
+import { useState, useRef } from "react";
 import bioPic from "./images/jwaves even smaller.jpg";
 import "./Bio.css";
 import * as themeConf from "./Theme";
 import styled from "styled-components";
+import { animated, useSpring, config } from "react-spring";
 
 const BioContain = styled.div`
   padding: 20px;
@@ -26,6 +28,17 @@ const ExpirenceHeader = styled.h2`
 `;
 
 function Bio() {
+  const [flip, set] = useState(false);
+  const { number } = useSpring({
+    reset: true,
+    reverse: flip,
+    from: { number: 0 },
+    number: 8,
+    delay: 200,
+    config: config.molasses,
+    // onRest: () => set(!flip),
+  });
+
   return (
     <BioContain>
       <div className="bio__left">
@@ -41,8 +54,12 @@ function Bio() {
       </div>
       <div className="bio__right">
         <ExpirenceHeader>Years of Expirence:</ExpirenceHeader>
-        <h1 className="bio__expirence">8</h1>
+        <animated.h1 className="bio__expirence">
+          {number.to((n) => n.toFixed(1))}
+        </animated.h1>
       </div>
+
+      <div className="bio__tools"></div>
     </BioContain>
   );
 }
