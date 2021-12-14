@@ -60,9 +60,9 @@
   margin-bottom: -100px;
   height: 100%;
   z-index: 2;
-  -webkit-animation: spin2 2s ease-in-out;
-  -moz-animation: spin2 2s ease-in-out;
-  animation: spin2 2s ease-in-out;
+  -webkit-animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
+  -moz-animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
+  animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
   animation-fill-mode: forwards;
 }
 
@@ -70,9 +70,9 @@
   margin-bottom: -100px;
   height: 100%;
   z-index: 2;
-  -webkit-animation: spin 2s ease-in-out;
-  -moz-animation: spin 2s ease-in-out;
-  animation: spin 2s ease-in-out;
+  -webkit-animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
+  -moz-animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
+  animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
   animation-fill-mode: forwards;
   /* box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff; */
 }

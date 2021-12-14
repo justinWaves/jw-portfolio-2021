@@ -43,7 +43,6 @@ function PortfolioItem({
   const listItems = tools.map((tool: string) => <li key={tool}>{tool}</li>);
 
   const [style, trigger] = useBoop({ rotation: 40 });
-
   const [buttonWindowStyle, setButtonWindowStyle] = useState(false);
 
   const buttonTextToggle = () => {
@@ -99,7 +98,7 @@ function PortfolioItem({
             <button className="gh__button--link">View Site</button>
           </a>
           <a href={codeUrl}>
-            <button className="gh__button--link">View Codebase</button>
+            <button className="gh__button--link">View Code</button>
           </a>
         </ButtonWindowContainer>
       </PortfolioItemContain>
