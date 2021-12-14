@@ -1,5 +1,5 @@
 // hooks/use-boop.js
-import React from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useSpring } from "react-spring";
 
 function useBoop({
@@ -13,7 +13,7 @@ function useBoop({
     friction: 10,
   },
 }) {
-  const [isBooped, setIsBooped] = React.useState(false);
+  const [isBooped, setIsBooped] = useState(false);
   const style: any = useSpring({
     display: "inline-block",
     backfaceVisibility: "hidden",
@@ -26,12 +26,20 @@ function useBoop({
          scale(1)`,
     config: springConfig,
   });
-  React.useEffect(() => {
-    // All the same stuff...
+  useEffect(() => {
+    if (!isBooped) {
+      return;
+    }
+    const timeoutId = window.setTimeout(() => {
+      setIsBooped(false);
+    }, timing);
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
   }, [isBooped, timing]);
-  const trigger = () => {
+  const trigger = useCallback(() => {
     setIsBooped(true);
-  };
+  }, []);
   return [style, trigger];
 }
 export default useBoop;

@@ -47,7 +47,6 @@ function City() {
         className="city__bridge--fg"
       />
 
-      
       <img
         width="100%"
         height="auto"

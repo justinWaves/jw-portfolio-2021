@@ -7,17 +7,17 @@ import * as themeConf from "./Theme";
 import styled, { ThemeProvider } from "styled-components";
 import { useTheme } from "./ThemeManager";
 
+const AppBody = styled.div`
+  background-color: ${themeConf.backgroundColor};
+  color: ${themeConf.textColor};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+`;
+
 const App: React.FC = () => {
   const theme = useTheme();
-
-  const AppBody = styled.div`
-    background-color: ${themeConf.backgroundColor};
-    color: ${themeConf.textColor};
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-  `;
 
   return (
     <ThemeProvider theme={{ mode: theme.mode || "light" }}>

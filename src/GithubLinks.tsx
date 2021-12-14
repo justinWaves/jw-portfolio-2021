@@ -11,12 +11,12 @@ interface GitHubPropTypes {
   buttonText: string;
 }
 
-function GithubLinks({ onChildClick, style, buttonText }: GitHubPropTypes) {
-  const GitHubLink = styled.button`
-    background-color: ${themeConf.linkColor};
-    color: white;
-  `;
+const GitHubLink = styled.button`
+  background-color: ${themeConf.linkColor};
+  color: white;
+`;
 
+function GithubLinks({ onChildClick, style, buttonText }: GitHubPropTypes) {
   const expandButtonContainer = (event: MouseEvent) => {
     onChildClick(event);
   };

@@ -4,7 +4,7 @@ import logoDark from "./images/JW-logo.png";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import Switch from "@mui/material/Switch";
-import { ThemeManager, useTheme } from "./ThemeManager";
+import { useTheme } from "./ThemeManager";
 
 function Header() {
   const theme = useTheme();

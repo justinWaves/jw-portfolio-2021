@@ -3,31 +3,31 @@ import "./Bio.css";
 import * as themeConf from "./Theme";
 import styled from "styled-components";
 
+const BioContain = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  background-color: ${themeConf.backgroundColor};
+  color: ${themeConf.textColor};
+  z-index: 1;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+`;
+
+const ExpirenceHeader = styled.h2`
+  font-size: 40px;
+  font-weight: 300;
+  color: ${themeConf.secondaryTextColor};
+`;
+
 function Bio() {
-  const Bio = styled.div`
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    background-color: ${themeConf.backgroundColor};
-    color: ${themeConf.textColor};
-    z-index: 1;
-    @media only screen and (max-width: 768px) {
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-  `;
-
-  const ExpirenceHeader = styled.h2`
-    font-size: 40px;
-    font-weight: 300;
-    color: ${themeConf.secondaryTextColor};
-  `;
-
   return (
-    <Bio>
+    <BioContain>
       <div className="bio__left">
         <img src={bioPic} alt="" />
 
@@ -43,7 +43,7 @@ function Bio() {
         <ExpirenceHeader>Years of Expirence:</ExpirenceHeader>
         <h1 className="bio__expirence">8</h1>
       </div>
-    </Bio>
+    </BioContain>
   );
 }
 

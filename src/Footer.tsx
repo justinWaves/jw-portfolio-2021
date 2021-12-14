@@ -4,16 +4,13 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
-import { useTheme } from "./ThemeManager";
+
+const SocialIcons = styled.div`
+  display: flex;
+  margin-bottom: 5px;
+`;
 
 function Footer() {
-  const theme = useTheme();
-
-  const SocialIcons = styled.div`
-    display: flex;
-    margin-bottom: 5px;
-  `;
-
   return (
     <div className="footer">
       <h1 className="footer__contactHeader">Let's get in touch!</h1>

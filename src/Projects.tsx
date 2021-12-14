@@ -7,16 +7,16 @@ import jwPort2018 from "./images/2018port-alpha.png";
 import * as themeConf from "./Theme";
 import styled from "styled-components";
 
-function Projects() {
-  const Projects = styled.div`
-    background-color: ${themeConf.secondaryBackgroundColor};
-    &:before {
-      background-color: ${themeConf.backgroundColor};
-    }
-  `;
+const ProjectsContain = styled.div`
+  background-color: ${themeConf.secondaryBackgroundColor};
+  &:before {
+    background-color: ${themeConf.backgroundColor};
+  }
+`;
 
+function Projects() {
   return (
-    <Projects className="projects">
+    <ProjectsContain className="projects">
       <h1 className="projects__title">Recent Projects</h1>
       <div className="projects__contain">
         <PortfolioItem
@@ -68,7 +68,7 @@ function Projects() {
           tools={["React", "Redux", "Firebase", "Material UI"]}
         />
       </div>
-    </Projects>
+    </ProjectsContain>
   );
 }
 
