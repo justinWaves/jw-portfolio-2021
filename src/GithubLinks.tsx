@@ -1,53 +1,34 @@
-import React, { useMemo } from "react";
+import React, { MouseEvent } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./GithubLinks.css";
 import * as themeConf from "./Theme";
 import styled from "styled-components";
 import { animated } from "react-spring";
-import useBoop from "./Hooks/use-boop";
 
 interface GitHubPropTypes {
-  codeUrl: string;
-  linkUrl: string;
+  onChildClick: (event: MouseEvent) => void;
+  style: { rotation: number; scale: number };
+  buttonText: string;
 }
 
-function GithubLinks({ codeUrl, linkUrl }: GitHubPropTypes) {
+function GithubLinks({ onChildClick, style, buttonText }: GitHubPropTypes) {
   const GitHubLink = styled.button`
     background-color: ${themeConf.linkColor};
     color: white;
   `;
 
-  const [style, trigger] = useBoop({ rotation: 360, scale: 1.5 });
-
-  const showLinkButtons = (): boolean => {
-    return false;
+  const expandButtonContainer = (event: MouseEvent) => {
+    onChildClick(event);
   };
-
-  // const clickEventHandler = () => {
-  //   trigger;
-
-  // };
 
   return (
     <div className="github__container">
-      <GitHubLink onClick={trigger}>
+      <GitHubLink onClick={expandButtonContainer}>
         <animated.span style={style}>
           <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
         </animated.span>
-        View Code
+        {buttonText}
       </GitHubLink>
-
-      <div
-        className=""
-        style={{
-          display: showLinkButtons()
-            ? ("block" as "block")
-            : ("none" as "none" | "none"),
-        }}
-      >
-        <button className="gh__button--site"></button>
-        <button className="gh__button--code"></button>
-      </div>
     </div>
   );
 }

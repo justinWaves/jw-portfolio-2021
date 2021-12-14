@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: 200;
   white-space: nowrap;
@@ -9,10 +10,20 @@
   height: 80px;
   border-style: none;
   border-radius: 20px 0px 20px 0px;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
   z-index: 99;
 }
 
 .gh__icon {
   margin-bottom: 5px;
-  margin-top: 5px;
 }
+
+/* @media only screen and (max-width: 768px) {
+  .github__container > button {
+    height: 115px;
+  }
+} */
