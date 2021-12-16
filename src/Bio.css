@@ -16,6 +16,12 @@
   }
 } */
 
+.bio__topSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .bio__left {
   flex: 0.6;
   margin-left: 1rem;
@@ -93,4 +99,13 @@
 .bio__expirence {
   font-size: 20vh;
   font-weight: 600;
+}
+
+/*~~~~~~~~~~Tools Knob Section~~~~~~~~~~~*/
+
+.bio__tools {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
 }
