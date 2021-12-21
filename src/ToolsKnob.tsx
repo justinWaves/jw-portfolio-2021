@@ -21,9 +21,9 @@ function ToolsKnob() {
         "I write all my applications with this text editor. Extensions such as Emmet, Prettier, and IntelliSense keep my code beautiful, my workflow fast, and makes use of machine learning to automate monotonous processes ";
     }
     if (knobValue === 10) {
-      knobSelectHeader = "Sass";
+      knobSelectHeader = "Javascript ES6";
       knobSelectParagraph =
-        "I have used Sass in many past projects to utilize mix-ins and variables. Today I prefer to use Styled Components and Styled Themes to handle my styling. ";
+        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. I started with JS with a CodeAcademy.com course 8 years ago and evolved through the help of several books and mentors. I love making use of ES6s new features ";
     }
     if (knobValue === 20) {
       knobSelectHeader = "CSS3";
@@ -33,22 +33,22 @@ function ToolsKnob() {
     if (knobValue === 30) {
       knobSelectHeader = "HTML5";
       knobSelectParagraph =
-        "Leanred at the same time as CSS nearly 9 years ago! I completed a course on CodeAcademy.com when they site first launched";
+        "Learned at the same time as CSS nearly 9 years ago from CodeAcademy. Now that I use React and the Virtual DOM I rarely touch my HTML files";
     }
     if (knobValue === 40) {
-      knobSelectHeader = "Javascript ES6";
+      knobSelectHeader = "Sass";
       knobSelectParagraph =
-        "My Javascript chop also started from a CodeAcademy.com course and evolved through the help of several books and mentors. I love making use of ES6s new features";
+        "I have used Sass in many past projects to utilize mix-ins and variables. I have been moving away from Sass since I using Tailwind and Styled Components.";
     }
     if (knobValue === 50) {
       knobSelectHeader = "Next.JS";
       knobSelectParagraph =
-        "Next.JS is is an Pariatur labore minim aliquip aliquip culpa. Pariatur labore minim aliquip aliquip culpa.";
+        "The Next.JS library for React offers some amazing new features I very excited about such as Image optimization, and Environment variables.";
     }
     if (knobValue === 60) {
       knobSelectHeader = "Tailwind CSS";
       knobSelectParagraph =
-        "Next.JS is is an Pariatur labore minim aliquip aliquip culpa. Pariatur labore minim aliquip aliquip culpa.";
+        "I love the workflow and performance with Tailwind CSS. Keeps for a tidy file structure. Great for large team-based projects. Go-to for Mobile-First Design ";
     }
     if (knobValue === 70) {
       knobSelectHeader = "Styled Components";
@@ -63,12 +63,12 @@ function ToolsKnob() {
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "I LOVE React! I create all React apps purely using controlled functional components, however I can work on a Codebase that use Class Components if necessary.  This site was built with Create-React-App + Typescript";
+        "Since learning React I can not go back. Component-based design is so efficient and scalable. I create all React apps purely using functional components, however I can work on a Codebase that use Class Components if necessary.  This site was built with Create-React-App + Typescript";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
       knobSelectParagraph =
-        "Since learning how to implement typescript in my applications, it is a my go-to language for all new projects. This site was implemented in Typescript";
+        "Any project worked on by a large team or that handles lots of inputted data from the user should implement Typescript. I am a large fan of using Typescript with React. This site was implemented in Typescript";
     }
   };
 
@@ -93,12 +93,12 @@ function ToolsKnob() {
           Tailwind<br></br> CSS
         </h5>
         <h5 className="knob__label--6">Next.js</h5>
-        <h5 className="knob__label--7">
-          Javascript <br></br> ES6
-        </h5>
+        <h5 className="knob__label--7">Sass</h5>
         <h5 className="knob__label--8">HTML5</h5>
         <h5 className="knob__label--9">CSS3</h5>
-        <h5 className="knob__label--10">Sass</h5>
+        <h5 className="knob__label--10">
+          Javascript <br></br> ES6
+        </h5>
         <Basic
           diameter={200}
           min={0}

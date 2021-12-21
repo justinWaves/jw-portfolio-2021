@@ -7,18 +7,8 @@ import { animated, useSpring, config } from "react-spring";
 import ToolsKnob from "./ToolsKnob";
 
 const BioContain = styled.div`
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: auto;
-  height: auto;
   background-color: ${themeConf.backgroundColor};
   color: ${themeConf.textColor};
-  z-index: 1;
-  @media only screen and (max-width: 768px) {
-    flex-wrap: nowrap;
-  }
 `;
 
 const ExpirenceHeader = styled.h2`
@@ -40,7 +30,7 @@ function Bio() {
   });
 
   return (
-    <BioContain>
+    <BioContain className="bio">
       <div className="bio__topSection">
         <div className="bio__left">
           <img src={bioPic} alt="" />
@@ -49,9 +39,9 @@ function Bio() {
             <strong> Hello,</strong> my name is Justin Weisberg. I am a
             Front-end Developer from San Francisco on a mission to help build
             large-scale products that change the world. I'm passionate about
-            componet-based deisgn, writing clean scalable code, and learning new
-            frameworks and libraries. Currently, my tools of choice are React,
-            Redux, Typescript.
+            component-based design, writing clean scalable code, and learning
+            new frameworks and libraries. My current dev tools can be found on
+            the knob below.
           </p>
         </div>
         <div className="bio__right">

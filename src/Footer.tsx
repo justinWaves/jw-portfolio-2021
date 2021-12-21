@@ -4,10 +4,15 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
+import * as themeConf from "./Theme";
 
 const SocialIcons = styled.div`
   display: flex;
   margin-bottom: 5px;
+`;
+
+const FormButton = styled.button`
+  background-color: ${themeConf.linkColor};
 `;
 
 function Footer() {
@@ -26,7 +31,7 @@ function Footer() {
 
         <textarea placeholder="Message" className="form-control"></textarea>
 
-        <button
+        <FormButton
           type="submit"
           className="footer__formButton"
           onClick={(e) => {
@@ -34,7 +39,7 @@ function Footer() {
           }}
         >
           Submit
-        </button>
+        </FormButton>
       </form>
 
       <SocialIcons>
