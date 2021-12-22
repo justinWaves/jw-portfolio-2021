@@ -5,19 +5,6 @@ import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
 import SocialIcons from "./SocialIcons";
 
-// declare var form: any;
-
-// const SocialIcons = styled.div`
-//   display: flex;
-//   margin-bottom: 5px;
-
-//   & > a {
-//     padding: 2px;
-//     cursor: pointer;
-//     color: ${themeConf.textColor};
-//   }
-// `;
-
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
 `;
@@ -165,7 +152,7 @@ function Footer() {
       {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}
       <div
         className={`alert__success ${
-          ShowSuccessAlert ? "alert-shown" : "alert-hidden"
+          ShowSuccessAlert ? "alert-shown" : "alert__hidden"
         }`}
         onTransitionEnd={() => setShowSuccessAlert(false)}
       >
@@ -175,7 +162,7 @@ function Footer() {
 
       <div
         className={`alert__error ${
-          ShowErrorAlert ? "alert__shown" : "alert-hidden"
+          ShowErrorAlert ? "alert__shown" : "alert__hidden"
         }`}
         onTransitionEnd={() => setShowErrorAlert(false)}
       >
@@ -185,7 +172,7 @@ function Footer() {
 
       <div
         className={`alert__loading ${
-          ShowLoadingAlert ? "alert-shown" : "alert-hidden"
+          ShowLoadingAlert ? "alert-shown" : "alert__hidden--noanimate"
         }`}
         onTransitionEnd={() => setShowSuccessAlert(false)}
       >
