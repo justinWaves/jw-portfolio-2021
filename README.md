@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+## Hello friend! 🌊🌊🌊🌊🌊🌊
 
-In the project directory, you can run:
+This is my 2021 Porftolio Website I designed and built with React, and implimented in Typescript.
 
-### `yarn start`
+### Theme Switching 💅
+I handled the light/ dark mode using Styled-Themes / Styled-Components. I only use Styled-components for styles effected by theme switch and included them in the body of each component. The rest of the styling is handled by good-ol CSS files. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The theme swicthing Logic is tucked away in its own file/ folder called "Theme Manager" which utilizes React's Context API. I was initally going to use Redux for this but I found this method to be much cleaner. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+### React-Spring 🏄‍♂
+I used a really cool js animation libraey called react-spring to handle cetain events. I cant wait to play with this more. You can see this on the git-hub icon button onClick. cool stuff.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Email.JS 🖥
+To handle my email server as of now I used Email.js. Very easy to use and implement. Logic for my validation function and all event handling is found in the footer.tsx component... which is a Controlled Component if you were wondering.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Thank You for Reading  🎊
+I put in a great deal of time into this project to learn some new tech and I am very pleased with the result. I love feedback on my code or anything else. Love and graditude to you!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊
