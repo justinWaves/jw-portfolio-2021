@@ -14,6 +14,10 @@ interface GitHubPropTypes {
 const GitHubLink = styled.button`
   background-color: ${themeConf.linkColor};
   color: white;
+
+  &:hover {
+    color: #ffe657;
+  }
 `;
 
 function GithubLinks({ onChildClick, style, buttonText }: GitHubPropTypes) {

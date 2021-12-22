@@ -5,6 +5,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
 import * as themeConf from "./Theme";
+import emailjs from "emailjs-com";
+import { useEffect, useState } from "react";
+
+// declare var form: any;
 
 const SocialIcons = styled.div`
   display: flex;
@@ -15,29 +19,139 @@ const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
 `;
 
+interface IFormValues {
+  from_name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
 function Footer() {
+  const initialValues = { from_name: "", email: "", subject: "", message: "" };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState<any>({});
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [ShowSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [ShowErrorAlert, setShowErrorAlert] = useState(false);
+  const [ShowLoadingAlert, setShowLoadingAlert] = useState(false);
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+  };
+
+  useEffect(() => {
+    if (Object.keys(formErrors).length > 0 && isSubmit) {
+      // trigger Error flag with message
+      setShowErrorAlert(true);
+      setTimeout(() => {
+        setIsSubmit(false);
+        setShowErrorAlert(false);
+      }, 500);
+    }
+
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      // console.log(formValues);
+      // IF no errors and submitted, send email \
+      setShowLoadingAlert(true);
+      sendEmail();
+    }
+  }, [formErrors]);
+
+  const validate = (values: IFormValues) => {
+    const errors: any = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.from_name) {
+      errors.from_name = "Username is required!";
+    }
+    if (!values.email) {
+      errors.email = "Email is required!";
+    } else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email format!";
+    }
+    if (!values.subject) {
+      errors.subject = "Subject is required";
+    }
+    if (!values.message) {
+      errors.message = "You didn't write anything...";
+    }
+
+    return errors;
+  };
+
+  const sendEmail = () => {
+    emailjs
+      .send(
+        "service_3aw56lm",
+        "template_ljeaxb2",
+        formValues,
+        "user_r3oQjkOJwhicHcPm2Fnpk"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+
+          setShowLoadingAlert(false);
+          setShowSuccessAlert(true);
+          setFormValues(initialValues);
+          setTimeout(() => {
+            setShowSuccessAlert(false);
+          }, 4000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="footer">
       <h1 className="footer__contactHeader">Let's get in touch!</h1>
-      <form id="contact-form" method="POST">
-        <input placeholder="Name" type="text" className="form-control" />
-
+      <form onSubmit={handleSubmit}>
+        <p className="alert__text">{formErrors.from_name}</p>
         <input
-          placeholder="Email"
-          type="email"
-          className="form-control"
-          aria-describedby="emailHelp"
+          name="from_name"
+          placeholder="Name"
+          type="text"
+          value={formValues.from_name}
+          onChange={handleChange}
         />
 
-        <textarea placeholder="Message" className="form-control"></textarea>
+        <p className="alert__text">{formErrors.email}</p>
+        <input
+          name="email"
+          placeholder="Email"
+          type="email"
+          aria-describedby="emailHelp"
+          value={formValues.email}
+          onChange={handleChange}
+        />
 
-        <FormButton
-          type="submit"
-          className="footer__formButton"
-          onClick={(e) => {
-            e.preventDefault();
-          }}
-        >
+        <p className="alert__text">{formErrors.subject}</p>
+        <input
+          name="subject"
+          placeholder="Subject"
+          type="subject"
+          className="form__control--subject"
+          value={formValues.subject}
+          onChange={handleChange}
+        />
+
+        <p className="alert__text">{formErrors.message}</p>
+        <textarea
+          name="message"
+          placeholder="Message"
+          value={formValues.message}
+          onChange={handleChange}
+        />
+
+        <FormButton type="submit" value="Send">
           Submit
         </FormButton>
       </form>
@@ -51,6 +165,44 @@ function Footer() {
       <p className="footer__textBottom">
         Designed and built by Justin Weisberg. 2021
       </p>
+
+      <div
+        className={`alert__success ${
+          ShowSuccessAlert ? "alert-shown" : "alert-hidden"
+        }`}
+        onTransitionEnd={() => setShowSuccessAlert(false)}
+      >
+        <h1>Success! 🎉 </h1>
+        <p>Thank you for reaching out. I will get back to you ASAP</p>
+      </div>
+
+      <div
+        className={`alert__error ${
+          ShowErrorAlert ? "alert__shown" : "alert-hidden"
+        }`}
+        onTransitionEnd={() => setShowErrorAlert(false)}
+      >
+        <h1>There were some issues... 😕 </h1>
+        <p>Please fill out the form correctly</p>
+      </div>
+
+      <div
+        className={`alert__loading ${
+          ShowLoadingAlert ? "alert-shown" : "alert-hidden"
+        }`}
+        onTransitionEnd={() => setShowSuccessAlert(false)}
+      >
+        <div className="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
   );
 }

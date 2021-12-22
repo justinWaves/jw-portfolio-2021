@@ -187,7 +187,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   border-radius: 20px;
   position: absolute;
   top: 0;
@@ -212,6 +211,7 @@
 }
 
 .gh__button--link {
+  margin-left: 20%;
   border: hidden;
   border-left: 3px solid #ffffff00;
   border-bottom: 3px solid #ffffff00;
@@ -220,28 +220,35 @@
   font-size: 40px;
   white-space: nowrap;
   margin-bottom: 20px;
+  padding: 5px;
+  transition: all 250ms ease-in-out;
   animation: 1s cubic-bezier(0.88, 0.01, 0.19, 0.98) fadeInLeft;
 }
 
 @media only screen and (max-width: 768px) {
   .gh__button--link {
-    font-size: 60px;
+    margin-left: 25%;
     margin-bottom: 50px;
+    margin-top: 30px;
+    border-left: 3px solid #c8fff4;
+    border-bottom: 3px solid #c8fff4;
+    padding: 10px;
   }
 }
 
 .gh__button--link:hover {
   cursor: pointer;
-  color: rgb(221, 255, 70);
-  border-left: 3px solid #ff29ca;
-  border-bottom: 3px solid #ff29ca;
-  transition: 0.5s ease-out;
+  color: #ffe657;
+  border-left: 3px solid #c8fff4;
+  border-bottom: 3px solid #c8fff4;
+  padding: 10px;
+  transition: all 250ms ease-in-out;
 }
 
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-500px);
   }
   100% {
     opacity: 1;
