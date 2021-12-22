@@ -23,7 +23,7 @@ function ToolsKnob() {
     if (knobValue === 10) {
       knobSelectHeader = "Javascript ES6";
       knobSelectParagraph =
-        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. I started with JS with a CodeAcademy.com course 8 years ago and evolved through the help of several books and mentors. I love making use of ES6s new features ";
+        'Javascript is my favorite programming language and the heart of my entire Frontend Stack. I started with JS with a CodeAcademy.com course 8 years ago and evolved through the help of several books and mentors. I love making use of ES6s new features (you will rarely see the word "function" in my code). ';
     }
     if (knobValue === 20) {
       knobSelectHeader = "CSS3";
@@ -33,12 +33,12 @@ function ToolsKnob() {
     if (knobValue === 30) {
       knobSelectHeader = "HTML5";
       knobSelectParagraph =
-        "Learned at the same time as CSS nearly 9 years ago from CodeAcademy. Now that I use React and the Virtual DOM I rarely touch my HTML files";
+        "Learned at the same time as CSS nearly 9 years ago from CodeAcademy. Now that I use React and its wonderful Virtual DOM I rarely actually use HTML";
     }
     if (knobValue === 40) {
       knobSelectHeader = "Sass";
       knobSelectParagraph =
-        "I have used Sass in many past projects to utilize mix-ins and variables. I have been moving away from Sass since I using Tailwind and Styled Components.";
+        "I have used Sass in many past projects to utilize mix-ins and variables. I have personally been moving away from CSS files all-togethers since I using Tailwind and Styled Components, but it is in the toolbag!";
     }
     if (knobValue === 50) {
       knobSelectHeader = "Next.JS";
@@ -48,12 +48,12 @@ function ToolsKnob() {
     if (knobValue === 60) {
       knobSelectHeader = "Tailwind CSS";
       knobSelectParagraph =
-        "I love the workflow and performance with Tailwind CSS. Keeps for a tidy file structure. Great for large team-based projects. Go-to for Mobile-First Design ";
+        "I love the workflow and performance of Tailwind CSS. Keeps for a tidy file structure. Great for large team-based projects. Go-to for Mobile-First Design ";
     }
     if (knobValue === 70) {
       knobSelectHeader = "Styled Components";
       knobSelectParagraph =
-        "Next.JS is is an Pariatur labore minim aliquip aliquip culpa. Pariatur labore minim aliquip aliquip culpa.";
+        "I love the workflow of Styled Components/ Styled-themes. It is how I created the dark/light mode on this website. Whats best about this approach is it easily allows for as many themes as you want. ";
     }
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
@@ -63,12 +63,12 @@ function ToolsKnob() {
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "Since learning React I can not go back. Component-based design is so efficient and scalable. I create all React apps purely using functional components, however I can work on a Codebase that use Class Components if necessary.  This site was built with Create-React-App + Typescript";
+        "Since learning React I can not go back. Component-based design is so efficient and scalable. I create all React apps purely using functional components, however I can work on a Codebase that use Class Components if necessary.  This site was built with Create-React-App and Typescript";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
       knobSelectParagraph =
-        "Any project worked on by a large team or that handles lots of inputted data from the user should implement Typescript. I am a large fan of using Typescript with React. This site was implemented in Typescript";
+        "I have grown to really appreciate Typescript, I think it makes for much more robust, unbreakable code. I love using Typescript with React. This site was implemented in Typescript";
     }
   };
 

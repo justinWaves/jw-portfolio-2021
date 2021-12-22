@@ -94,10 +94,10 @@ function PortfolioItem({
               : "gh__linkWindow--hidden"
           }
         >
-          <a href={linkUrl} target="_blank">
+          <a href={linkUrl} target="_blank" rel="noopener noreferrer">
             <button className="gh__button--link">View Site</button>
           </a>
-          <a href={codeUrl} target="_blank">
+          <a href={codeUrl} target="_blank" rel="noopener noreferrer">
             <button className="gh__button--link">View Code</button>
           </a>
         </ButtonWindowContainer>

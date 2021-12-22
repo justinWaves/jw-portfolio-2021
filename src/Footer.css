@@ -74,15 +74,7 @@
   border: solid white 2px;
 }
 
-.socialIcon-light {
-  padding: 3px;
-  color: #292929;
-}
-
-.socialIcon-dark {
-  padding: 3px;
-  color: #c38fff;
-}
+/*  ~~~~~~ ALERT FLAGS ~~~~~~~~~   */
 
 .alert__success {
   width: 100vw;
@@ -99,8 +91,10 @@
 }
 
 .alert-hidden {
+  display: none;
   opacity: 0;
-  transition: all 250ms linear 4s;
+  transition: all 250ms linear 3s;
+  transform: translateY(100px);
 }
 
 .alert__error {

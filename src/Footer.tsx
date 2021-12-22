@@ -1,19 +1,22 @@
 import "./Footer.css";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
 import * as themeConf from "./Theme";
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
+import SocialIcons from "./SocialIcons";
 
 // declare var form: any;
 
-const SocialIcons = styled.div`
-  display: flex;
-  margin-bottom: 5px;
-`;
+// const SocialIcons = styled.div`
+//   display: flex;
+//   margin-bottom: 5px;
+
+//   & > a {
+//     padding: 2px;
+//     cursor: pointer;
+//     color: ${themeConf.textColor};
+//   }
+// `;
 
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
@@ -48,7 +51,6 @@ function Footer() {
 
   useEffect(() => {
     if (Object.keys(formErrors).length > 0 && isSubmit) {
-      // trigger Error flag with message
       setShowErrorAlert(true);
       setTimeout(() => {
         setIsSubmit(false);
@@ -57,8 +59,6 @@ function Footer() {
     }
 
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      // console.log(formValues);
-      // IF no errors and submitted, send email \
       setShowLoadingAlert(true);
       sendEmail();
     }
@@ -156,16 +156,13 @@ function Footer() {
         </FormButton>
       </form>
 
-      <SocialIcons>
-        <InstagramIcon sx={{ fontSize: 40 }} />
-        <FacebookIcon sx={{ fontSize: 40 }} />
-        <GitHubIcon sx={{ fontSize: 40 }} />
-        <LinkedInIcon sx={{ fontSize: 40 }} />
-      </SocialIcons>
+      <SocialIcons />
+
       <p className="footer__textBottom">
         Designed and built by Justin Weisberg. 2021
       </p>
 
+      {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}
       <div
         className={`alert__success ${
           ShowSuccessAlert ? "alert-shown" : "alert-hidden"
