@@ -1,7 +1,7 @@
-import React, { MouseEvent } from "react";
+import { MouseEvent } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./GithubLinks.css";
-import * as themeConf from "./Theme";
+import * as themeConf from "../Theme";
 import styled from "styled-components";
 import { animated } from "react-spring";
 

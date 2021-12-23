@@ -1,8 +1,8 @@
-import Header from "./Header";
-import City from "./City";
-import Bio from "./Bio";
-import Projects from "./Projects";
-import Footer from "./Footer";
+import Header from "./Components/Header";
+import City from "./Components/City";
+import Bio from "./Components/Bio";
+import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
 import * as themeConf from "./Theme";
 import styled, { ThemeProvider } from "styled-components";
 import { useTheme } from "./ThemeManager";

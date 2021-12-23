@@ -3,9 +3,9 @@ import "./PortfolioItem.css";
 import { useState } from "react";
 import { animated } from "@react-spring/web";
 import styled from "styled-components";
-import * as themeConf from "./Theme";
+import * as themeConf from "../Theme";
 import GithubLinks from "./GithubLinks";
-import useBoop from "./Hooks/use-boop";
+import useBoop from "../Hooks/use-boop";
 
 interface PortfolioProps {
   title: string;

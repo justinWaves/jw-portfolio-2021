@@ -1,7 +1,7 @@
 import { useState } from "react";
-import bioPic from "./images/jwaves even smaller.jpg";
+import bioPic from "../images/jwaves even smaller.jpg";
 import "./Bio.css";
-import * as themeConf from "./Theme";
+import * as themeConf from "../Theme";
 import styled from "styled-components";
 import { animated, useSpring, config } from "react-spring";
 import ToolsKnob from "./ToolsKnob";

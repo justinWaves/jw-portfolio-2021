@@ -3,7 +3,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
-import * as themeConf from "./Theme";
+import * as themeConf from "../Theme";
 
 const SocialIconsContain = styled.div`
   display: flex;

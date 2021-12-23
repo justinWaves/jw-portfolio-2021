@@ -1,9 +1,9 @@
 import "./City.css";
-import BridgeForeground from "./images/ggb-foreground.svg";
-import BridgeBackground from "./images/ggb-background.svg";
-import Clouds from "./images/clouds.svg";
-import SunMoon from "./images/SunMoonGlow.svg";
-import { useTheme } from "./ThemeManager";
+import BridgeForeground from "../images/ggb-foreground.svg";
+import BridgeBackground from "../images/ggb-background.svg";
+import Clouds from "../images/clouds.svg";
+import SunMoon from "../images/SunMoonGlow.svg";
+import { useTheme } from "../ThemeManager";
 
 function City() {
   const theme = useTheme();

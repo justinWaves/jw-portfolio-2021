@@ -1,12 +1,12 @@
 import PortfolioItem from "./PortfolioItem";
 import "./Projects.css";
-import linkedinClone from "./images/linkedin-alpha.png";
-import ticTactToe from "./images/tictactoe-alpha.png";
-import highLife from "./images/highlife-alpha.png";
-import jwPort2018 from "./images/2018port-alpha.png";
-import metaWaves from "./images/metawaves-alpha.png";
-import jwPort2021 from "./images/jwportfolioSS-alpha.png";
-import * as themeConf from "./Theme";
+import linkedinClone from "../images/linkedin-alpha.png";
+import ticTactToe from "../images/tictactoe-alpha.png";
+import highLife from "../images/highlife-alpha.png";
+import jwPort2018 from "../images/2018port-alpha.png";
+import metaWaves from "../images/metawaves-alpha.png";
+import jwPort2021 from "../images/jwportfolioSS-alpha.png";
+import * as themeConf from "../Theme";
 import styled from "styled-components";
 
 const ProjectsContain = styled.div`

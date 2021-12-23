@@ -46,13 +46,6 @@
   z-index: 5;
 }
 
-/* @media only screen and (max-width: 768px) {
-  .bio__left > img {
-    height: 200px;
-    width: 200px;
-  }
-} */
-
 .bio__left > p {
   font-size: 16px;
   font-weight: 500;
@@ -88,13 +81,8 @@
   }
 }
 
-/* .bio__right > h2 {
-  font-size: 40px;
-  font-weight: 300;
-} */
-
 .bio__expirence {
-  font-size: 20vh;
+  font-size: 900%;
   font-weight: 600;
 }
 

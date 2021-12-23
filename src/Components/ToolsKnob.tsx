@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as themeConf from "./Theme";
+import * as themeConf from "../Theme";
 import "./ToolsKnob.css";
 import { Basic } from "react-dial-knob";
 import styled from "styled-components";

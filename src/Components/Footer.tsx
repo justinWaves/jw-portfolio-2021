@@ -1,6 +1,6 @@
 import "./Footer.css";
 import styled from "styled-components";
-import * as themeConf from "./Theme";
+import * as themeConf from "../Theme";
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
 import SocialIcons from "./SocialIcons";
@@ -83,7 +83,6 @@ function Footer() {
       .then(
         (result) => {
           console.log(result.text);
-
           setShowLoadingAlert(false);
           setShowSuccessAlert(true);
           setFormValues(initialValues);
