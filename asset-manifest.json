@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.83ee5c8e.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.3d8ee44d.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.3d8ee44d.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.e57d95c5.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.992fa8fd.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.992fa8fd.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
     "static/js/2.42b4a130.chunk.js": "/jw-portfolio-2021/static/js/2.42b4a130.chunk.js",
     "static/js/2.42b4a130.chunk.js.map": "/jw-portfolio-2021/static/js/2.42b4a130.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.83ee5c8e.chunk.css.map": "/jw-portfolio-2021/static/css/main.83ee5c8e.chunk.css.map",
+    "static/css/main.e57d95c5.chunk.css.map": "/jw-portfolio-2021/static/css/main.e57d95c5.chunk.css.map",
     "static/js/2.42b4a130.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.42b4a130.chunk.js.LICENSE.txt",
     "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
-    "static/media/Weisberglogo.2ba4417f.svg": "/jw-portfolio-2021/static/media/Weisberglogo.2ba4417f.svg",
     "static/media/clouds.453b995b.svg": "/jw-portfolio-2021/static/media/clouds.453b995b.svg",
     "static/media/ggb-background.564b1875.svg": "/jw-portfolio-2021/static/media/ggb-background.564b1875.svg",
     "static/media/ggb-foreground.04e8315c.svg": "/jw-portfolio-2021/static/media/ggb-foreground.04e8315c.svg",
     "static/media/highlife-alpha.bb3e8d9e.png": "/jw-portfolio-2021/static/media/highlife-alpha.bb3e8d9e.png",
     "static/media/jwaves even smaller.4a490538.jpg": "/jw-portfolio-2021/static/media/jwaves even smaller.4a490538.jpg",
+    "static/media/jweisberg__textlogo.c37f276e.svg": "/jw-portfolio-2021/static/media/jweisberg__textlogo.c37f276e.svg",
     "static/media/jwportfolioSS-alpha.580d4e5b.png": "/jw-portfolio-2021/static/media/jwportfolioSS-alpha.580d4e5b.png",
     "static/media/linkedin-alpha.b9dd7c5c.png": "/jw-portfolio-2021/static/media/linkedin-alpha.b9dd7c5c.png",
     "static/media/metawaves-alpha.10cf4c6e.png": "/jw-portfolio-2021/static/media/metawaves-alpha.10cf4c6e.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ec7f94b.js",
     "static/js/2.42b4a130.chunk.js",
-    "static/css/main.83ee5c8e.chunk.css",
-    "static/js/main.3d8ee44d.chunk.js"
+    "static/css/main.e57d95c5.chunk.css",
+    "static/js/main.992fa8fd.chunk.js"
   ]
 }
