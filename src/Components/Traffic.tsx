@@ -17,12 +17,15 @@ const carListDay = [car_1, car_2, car_3, car_4, car_5, car_6];
 function Traffic() {
   const [carsOnTheLeft, setCarsOnTheLeft] = useState<any>([]);
   const timeout = useRef<any>();
+  const [carLeftIndex, setCarLeftIndex] = useState(0);
 
   useEffect(() => {
     const getRandomNumberToString = (min: number, max: number) => {
       const result = Math.random() * (max - min) + min;
       return result.toString();
     };
+    setCarLeftIndex(carLeftIndex + 1);
+
     const CarLeft = styled.div`
       animation-duration: ${getRandomNumberToString(3, 10)}s;
     `;
@@ -33,7 +36,7 @@ function Traffic() {
         setCarsOnTheLeft([
           ...carsOnTheLeft,
           <CarLeft
-            key={carsOnTheLeft.length}
+            key={carLeftIndex}
             className="car__left"
             onAnimationEnd={(e) => handleRemoveItem(e)}
           >
@@ -44,9 +47,9 @@ function Traffic() {
           </CarLeft>,
         ]);
       else clearTimeout(timeout.current);
-    }, getRandomNumber(500, 5000));
+    }, getRandomNumber(100, 5000));
     console.log(carsOnTheLeft);
-
+    console.log(carLeftIndex);
     const handleRemoveItem = (e: any) => {
       setCarsOnTheLeft((carsOnTheLeft: any) =>
         carsOnTheLeft.filter((key: any, i: any) => i !== 0)
@@ -56,7 +59,7 @@ function Traffic() {
     return () => {
       clearTimeout(timeout.current);
     };
-  });
+  }, [carsOnTheLeft]);
 
   return <div className="traffic__container">{carsOnTheLeft}</div>;
 }
