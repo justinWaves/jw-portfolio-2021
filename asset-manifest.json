@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.e57d95c5.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.992fa8fd.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.992fa8fd.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.dc2309b8.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.94dd3a8e.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.94dd3a8e.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
-    "static/js/2.42b4a130.chunk.js": "/jw-portfolio-2021/static/js/2.42b4a130.chunk.js",
-    "static/js/2.42b4a130.chunk.js.map": "/jw-portfolio-2021/static/js/2.42b4a130.chunk.js.map",
+    "static/js/2.1b8dffc2.chunk.js": "/jw-portfolio-2021/static/js/2.1b8dffc2.chunk.js",
+    "static/js/2.1b8dffc2.chunk.js.map": "/jw-portfolio-2021/static/js/2.1b8dffc2.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.e57d95c5.chunk.css.map": "/jw-portfolio-2021/static/css/main.e57d95c5.chunk.css.map",
-    "static/js/2.42b4a130.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.42b4a130.chunk.js.LICENSE.txt",
+    "static/css/main.dc2309b8.chunk.css.map": "/jw-portfolio-2021/static/css/main.dc2309b8.chunk.css.map",
+    "static/js/2.1b8dffc2.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.1b8dffc2.chunk.js.LICENSE.txt",
     "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
+    "static/media/bently.d6f7fad2.svg": "/jw-portfolio-2021/static/media/bently.d6f7fad2.svg",
     "static/media/clouds.453b995b.svg": "/jw-portfolio-2021/static/media/clouds.453b995b.svg",
+    "static/media/cybertruck.b011eb13.svg": "/jw-portfolio-2021/static/media/cybertruck.b011eb13.svg",
     "static/media/ggb-background.564b1875.svg": "/jw-portfolio-2021/static/media/ggb-background.564b1875.svg",
     "static/media/ggb-foreground.04e8315c.svg": "/jw-portfolio-2021/static/media/ggb-foreground.04e8315c.svg",
     "static/media/highlife-alpha.bb3e8d9e.png": "/jw-portfolio-2021/static/media/highlife-alpha.bb3e8d9e.png",
@@ -22,12 +24,16 @@
     "static/media/jwportfolioSS-alpha.580d4e5b.png": "/jw-portfolio-2021/static/media/jwportfolioSS-alpha.580d4e5b.png",
     "static/media/linkedin-alpha.b9dd7c5c.png": "/jw-portfolio-2021/static/media/linkedin-alpha.b9dd7c5c.png",
     "static/media/metawaves-alpha.10cf4c6e.png": "/jw-portfolio-2021/static/media/metawaves-alpha.10cf4c6e.png",
-    "static/media/tictactoe-alpha.51794e49.png": "/jw-portfolio-2021/static/media/tictactoe-alpha.51794e49.png"
+    "static/media/old-mustang.87854d2e.svg": "/jw-portfolio-2021/static/media/old-mustang.87854d2e.svg",
+    "static/media/pink-lambo.cf493f82.svg": "/jw-portfolio-2021/static/media/pink-lambo.cf493f82.svg",
+    "static/media/tesla-red.b3586859.svg": "/jw-portfolio-2021/static/media/tesla-red.b3586859.svg",
+    "static/media/tictactoe-alpha.51794e49.png": "/jw-portfolio-2021/static/media/tictactoe-alpha.51794e49.png",
+    "static/media/van-ambulance.ca0610c0.svg": "/jw-portfolio-2021/static/media/van-ambulance.ca0610c0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec7f94b.js",
-    "static/js/2.42b4a130.chunk.js",
-    "static/css/main.e57d95c5.chunk.css",
-    "static/js/main.992fa8fd.chunk.js"
+    "static/js/2.1b8dffc2.chunk.js",
+    "static/css/main.dc2309b8.chunk.css",
+    "static/js/main.94dd3a8e.chunk.js"
   ]
 }
