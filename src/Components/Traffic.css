@@ -39,8 +39,7 @@
   height: auto;
   animation-name: leftToRight;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  transition: ease-in-out 0.5s;
+  animation-fill-mode: both;
 }
 
 @media only screen and (max-width: 768px) {

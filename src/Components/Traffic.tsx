@@ -23,18 +23,20 @@ function Traffic() {
       const result = Math.random() * (max - min) + min;
       return result.toString();
     };
-    // let RandomSpeed = getRandomNumberToString(2, 9);
-
     const CarLeft = styled.div`
       animation-duration: ${getRandomNumberToString(3, 10)}s;
     `;
 
-    timeout.current = setTimeout(() => {
+    timeout.current = setInterval(() => {
       getRandomNumberToString(2, 9);
       if (carsOnTheLeft.length < 15)
         setCarsOnTheLeft([
           ...carsOnTheLeft,
-          <CarLeft key={carsOnTheLeft.length} className="car__left">
+          <CarLeft
+            key={carsOnTheLeft.length}
+            className="car__left"
+            onAnimationEnd={(e) => handleRemoveItem(e)}
+          >
             <img
               src={carListDay[Math.floor(Math.random() * carListDay.length)]}
               alt=""
@@ -45,17 +47,16 @@ function Traffic() {
     }, getRandomNumber(500, 5000));
     console.log(carsOnTheLeft);
 
-    // setTimeout(() => {
-    //   const name = "0";
-    //   setCarsOnTheLeft(
-    //     carsOnTheLeft.filter((item: any) => item.name !== name)
-    //   );
-    // }, 10000);
+    const handleRemoveItem = (e: any) => {
+      setCarsOnTheLeft((carsOnTheLeft: any) =>
+        carsOnTheLeft.filter((key: any, i: any) => i !== 0)
+      );
+    };
 
     return () => {
       clearTimeout(timeout.current);
     };
-  }, [carsOnTheLeft]);
+  });
 
   return <div className="traffic__container">{carsOnTheLeft}</div>;
 }
