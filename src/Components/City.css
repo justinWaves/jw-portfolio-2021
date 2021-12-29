@@ -2,10 +2,11 @@
   display: grid;
   grid-template: 1fr / 1fr;
   place-items: center;
-  border-radius: 100px 100px 0px 0px;
-  overflow: hidden;
   max-width: 100%;
   height: 70vh;
+  border-radius: 100px 100px 0px 0px;
+  overflow: hidden;
+
   box-shadow: 2px 2px 5px #00000050;
 }
 
@@ -64,6 +65,11 @@
   -moz-animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
   animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
   animation-fill-mode: forwards;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .city__moon {
@@ -74,6 +80,11 @@
   -moz-animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
   animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
   animation-fill-mode: forwards;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
   /* box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff; */
 }
 
@@ -89,6 +100,12 @@
 @media only screen and (max-width: 550px) {
   .city__water--day {
     height: 50%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .city__water--day {
+    top: 50%;
   }
 }
 
@@ -113,32 +130,6 @@
   }
 }
 
-.city__bridge--fg {
-  margin-top: 4%;
-  margin-bottom: 10%;
-  transition: ease-in-out 0.5s;
-  z-index: 6;
-}
-@media only screen and (max-width: 768px) {
-  .city__bridge--fg {
-    width: 150%;
-    transition: ease-in-out 0.5s;
-  }
-}
-
-.city__bridge--bg {
-  z-index: 5;
-  margin-top: 4%;
-  margin-bottom: 10%;
-  transition: ease-in-out 0.5s;
-}
-@media only screen and (max-width: 768px) {
-  .city__bridge--bg {
-    width: 150%;
-    transition: ease-in-out 0.5s;
-  }
-}
-
 .city__clouds {
   width: 400%;
   min-width: 100%;
@@ -155,40 +146,6 @@
     transform: translate3d(50%, 0, 0); /* The image width */
   }
 }
-
-/* @media only screen and (max-width: 1023px) {
-  .city__clouds {
-    height: 30%;
-    width: 00%;
-    transition: ease-in-out 0.5s;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .city__clouds {
-    height: 30%;
-    width: 400%;
-    transition: ease-in-out 0.5s;
-  }
-}
-
-@media only screen and (max-width: 428px) {
-  .city__clouds {
-    height: 20%;
-    width: 600%;
-    transition: ease-in-out 0.5s;
-  }
-} */
-/* 
-@media only screen and (min-width: 769px) {
-  .city__clouds {
-    height: 30%;
-    width: 300%;
-    transition: ease-in-out 0.5s;
-  }
-} */
-
-/*~~~~~~~~~~~  ANIMATION KEY FRAMES ~~~~~~~~~~~~~*/
 
 @keyframes fadeIn {
   0% {

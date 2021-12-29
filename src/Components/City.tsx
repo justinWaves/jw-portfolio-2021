@@ -1,6 +1,5 @@
 import "./City.css";
-import BridgeForeground from "../images/ggb-foreground.svg";
-import BridgeBackground from "../images/ggb-background.svg";
+import Bridge from "./Bridge";
 import Clouds from "../images/clouds.svg";
 import SunMoon from "../images/SunMoonGlow.svg";
 import { useTheme } from "../ThemeManager";
@@ -37,23 +36,7 @@ function City() {
       <img src={SunMoon} alt="" className={toggleSunMoon()} />
       <div className={toggleWater()}></div>
 
-      {/* bridge */}
-
-      <img
-        width="100%"
-        height="auto"
-        src={BridgeForeground}
-        alt=""
-        className="city__bridge--fg"
-      />
-
-      <img
-        width="100%"
-        height="auto"
-        src={BridgeBackground}
-        alt=""
-        className="city__bridge--bg"
-      />
+      <Bridge />
 
       <img
         width="200%"

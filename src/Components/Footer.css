@@ -67,6 +67,7 @@
   color: white;
   font-weight: 700;
   font-size: 15px;
+  cursor: pointer;
   box-shadow: 3px 3px 10px #00000050;
 }
 
