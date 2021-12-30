@@ -1,10 +1,9 @@
 .traffic__container {
   width: 100%;
-  /* height: 42.91%; */
-  height: auto;
   margin-top: 4%;
   margin-bottom: 10%;
-  z-index: 6;
+
+  vertical-align: sub;
 }
 
 @media only screen and (max-width: 768px) {
@@ -14,28 +13,22 @@
     width: 150%;
   }
 }
-/* 
-@media only screen and (min-width: 1023px) {
-  .traffic__container {
-    height: 90vh;
-  }
+
+.traffic__reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
-@media only screen and (max-height: 600px) {
-  .traffic__container {
-    height: 80vh;
-  }
-} */
+/*  ~~~~Vehicles~~~  */
 
 .car__left {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: sub;
   position: relative;
   left: 0;
   margin-top: 12.4%;
   margin-left: -6%;
   width: 6%;
-  height: auto;
   animation-name: leftToRight;
   animation-timing-function: linear;
   animation-fill-mode: both;
@@ -50,12 +43,133 @@
   }
 }
 
+.car__right {
+  display: inline-block;
+  vertical-align: sub;
+  position: relative;
+  left: 0;
+  margin-top: 12.4%;
+  margin-left: -6%;
+  width: 6%;
+
+  animation-name: rightToLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .car__right {
+    margin-top: 11.4%;
+    left: 18%;
+    width: 8%;
+    margin-left: -8%;
+  }
+}
+
+.bike__left {
+  display: inline-block;
+  vertical-align: sub;
+  position: relative;
+  left: 0;
+  margin-top: 11%;
+  margin-left: -2%;
+  width: 2%;
+  animation-name: leftToRight;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .bike__left {
+    margin-top: 11.4%;
+    left: 18%;
+    width: 2%;
+    margin-left: -2%;
+  }
+}
+
+.bike__right {
+  display: inline-block;
+  vertical-align: sub;
+  position: relative;
+  left: 0;
+  margin-top: 11%;
+  margin-left: -2%;
+  width: 2%;
+
+  animation-name: rightToLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .bike__right {
+    margin-top: 11.4%;
+    left: 18%;
+    width: 2%;
+    margin-left: -2%;
+  }
+}
+
+.plane__left {
+  display: inline-block;
+  position: relative;
+  left: 0;
+
+  margin-left: -10%;
+  width: 10%;
+  animation-name: leftToRight;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .plane__left {
+    top: 100px;
+    left: 18%;
+    width: 9%;
+    margin-left: 9%;
+  }
+}
+
+.plane__right {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 100px;
+  margin-left: -10%;
+  width: 10%;
+  animation-name: rightToLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .plane__right {
+    left: 18%;
+    width: 9%;
+    margin-left: 9%;
+  }
+}
+
+/*~~~~~~~Animation Keyframes~~~~~~~~~ */
+
 @keyframes leftToRight {
   from {
-    transform: translateX(-100px);
+    transform: translateX(-200px);
   }
 
   to {
-    transform: translateX(115vw);
+    transform: translateX(125vw);
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(125vw);
+  }
+
+  to {
+    transform: translateX(-200px);
   }
 }

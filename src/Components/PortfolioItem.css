@@ -211,44 +211,49 @@
 }
 
 .gh__button--link {
-  margin-left: 20%;
+  margin-left: 40px;
   border: hidden;
-  border-left: 3px solid #ffffff00;
-  border-bottom: 3px solid #ffffff00;
-  background: none;
-  color: white;
-  font-size: 40px;
+  background: white;
+  color: #6200ee;
+  width: 61%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: start;
+  font-size: 28px;
   white-space: nowrap;
-  margin-bottom: 20px;
-  padding: 5px;
-  transition: all 250ms ease-in-out;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  box-shadow: 3px 3px 10px #00000050;
   animation: 1s cubic-bezier(0.88, 0.01, 0.19, 0.98) fadeInLeft;
+}
+
+@media only screen and (max-width: 960px) {
+  .gh__button--link {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .gh__button--link {
-    margin-left: 25%;
+    margin-left: 40px;
     margin-bottom: 50px;
-    margin-top: 30px;
-    border-left: 3px solid #c8fff4;
-    border-bottom: 3px solid #c8fff4;
-    padding: 10px;
+    height: 100px;
+    width: 80%;
   }
 }
 
 .gh__button--link:hover {
   cursor: pointer;
-  color: #ffe657;
-  border-left: 3px solid #c8fff4;
-  border-bottom: 3px solid #c8fff4;
-  padding: 10px;
-  transition: all 250ms ease-in-out;
+  background: rgb(233, 233, 233);
+
+  /* border-left: 3px solid #c8fff4;
+  border-bottom: 3px solid #c8fff4; */
 }
 
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-700px);
   }
   100% {
     opacity: 1;

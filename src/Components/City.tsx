@@ -3,6 +3,7 @@ import Bridge from "./Bridge";
 import Clouds from "../images/clouds.svg";
 import SunMoon from "../images/SunMoonGlow.svg";
 import { useTheme } from "../ThemeManager";
+import AirTraffic from "./AirTraffic";
 
 function City() {
   const theme = useTheme();
@@ -34,6 +35,9 @@ function City() {
     <div className="city__container">
       <div className={toggleSky()}></div>
       <img src={SunMoon} alt="" className={toggleSunMoon()} />
+
+      <AirTraffic />
+
       <div className={toggleWater()}></div>
 
       <Bridge />

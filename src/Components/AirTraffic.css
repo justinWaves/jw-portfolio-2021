@@ -1,0 +1,60 @@
+.air__traffic--container {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30%;
+  z-index: 2;
+}
+
+.plane__left {
+  margin-left: -10%;
+  width: 10%;
+  animation-name: leftToRight;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .plane__left {
+    left: 18%;
+    width: 9%;
+    margin-left: -9%;
+  }
+}
+
+.plane__right {
+  margin-left: -10%;
+  width: 10%;
+  animation-name: rightToLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .plane__right {
+    width: 9%;
+    margin-left: -9%;
+  }
+}
+
+/*~~~~~~~Animation Keyframes~~~~~~~~~ */
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(125vw);
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(125vw);
+  }
+
+  to {
+    transform: translateX(-200px);
+  }
+}
