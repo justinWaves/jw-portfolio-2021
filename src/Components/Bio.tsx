@@ -24,7 +24,7 @@ function Bio() {
     reverse: flip,
     from: { number: 0 },
     number: 8,
-    delay: 500,
+    delay: 1000,
     config: config.molasses,
     // onStart: () => set(!flip),
   });
