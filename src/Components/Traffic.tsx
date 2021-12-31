@@ -111,7 +111,12 @@ function Traffic() {
     };
   }, [traffic]);
 
-  return <div className="traffic__container">{traffic}</div>;
+  return (
+    <div className="traffic">
+      {" "}
+      <div className="traffic__container">{traffic}</div>
+    </div>
+  );
 }
 
 export default Traffic;
