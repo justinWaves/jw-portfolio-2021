@@ -23,7 +23,7 @@ function ToolsKnob() {
     if (knobValue === 10) {
       knobSelectHeader = "Javascript ES6";
       knobSelectParagraph =
-        'Javascript is my favorite programming language and the heart of my entire Frontend Stack. I started with JS with a CodeAcademy.com course 8 years ago and evolved through the help of several books and mentors. I love making use of ES6s new features (you will rarely see the word "function" in my code). ';
+        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. A good example of my Javascript ability can be found on this site, where I created program that generates random cars, bike and planes, that animate across the screen at random speeds in an infinite loop.";
     }
     if (knobValue === 20) {
       knobSelectHeader = "CSS3";
@@ -33,12 +33,12 @@ function ToolsKnob() {
     if (knobValue === 30) {
       knobSelectHeader = "HTML5";
       knobSelectParagraph =
-        "Learned at the same time as CSS nearly 9 years ago from CodeAcademy. Now that I use React and its wonderful Virtual DOM I rarely actually use HTML";
+        "Learned at the same time as CSS nearly in 2014 years ago from CodeAcademy. Now that I mainly use React and its wonderful Virtual DOM I rarely write actual HTML";
     }
     if (knobValue === 40) {
       knobSelectHeader = "Sass";
       knobSelectParagraph =
-        "I have used Sass in many past projects to utilize mix-ins and variables. I have personally been moving away from CSS files all-togethers since I using Tailwind and Styled Components, but it is in the toolbag!";
+        "I have used Sass in many past projects to utilize mix-ins and variables. Now that I use Tailwind and Styled Components, I haven't used it in awhile but it is in the toolbag.";
     }
     if (knobValue === 50) {
       knobSelectHeader = "Next.JS";
@@ -53,12 +53,12 @@ function ToolsKnob() {
     if (knobValue === 70) {
       knobSelectHeader = "Styled Components";
       knobSelectParagraph =
-        "I love the workflow of Styled Components/ Styled-themes. It is how I created the dark/light mode on this website. Whats best about this approach is it easily allows for as many themes as you want. ";
+        "I love using Styled Components/ Styled-themes. It is how I created the dark/light mode on this website. Whats best about this approach is it easily allows for as many themes as you want. ";
     }
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
       knobSelectParagraph =
-        "I learned Redux to store a user state in my Linkedin clone, however since learning about Reacts Context API, I try to avoid Redux because of its extensive boilerplate and complexity";
+        "I learned Redux to store a user state in my Linkedin clone, however I try to avoid Redux because of its extensive boilerplate";
     }
     if (knobValue === 90) {
       knobSelectHeader = "React";
@@ -68,7 +68,7 @@ function ToolsKnob() {
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
       knobSelectParagraph =
-        "I have grown to really appreciate Typescript, I think it makes for much more robust, unbreakable code. I love using Typescript with React. This site was implemented in Typescript";
+        "I have grown to really appreciate Typescript, I think having a perfectly-typed solution makes for much more robust and secure code. This site was implemented in Typescript";
     }
   };
 

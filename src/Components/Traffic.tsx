@@ -113,7 +113,6 @@ function Traffic() {
 
   return (
     <div className="traffic">
-      {" "}
       <div className="traffic__container">{traffic}</div>
     </div>
   );
