@@ -37,19 +37,17 @@ function Bio() {
 
           <p>
             <strong> Greetings!</strong> My name is Justin, and I am a Front-end
-            Developer from San Francisco on a mission to help build large-scale
-            products that change the world. My passion for building things began
-            in early childhood, starting with Lincoln Logs and Legos, then to
-            Music Production and Flash Cartoons, where I wrote my first line of
-            code at the age of 14. I have always been a self-starter, quick to
-            pick up new tech. In 2018, I launched a web design firm focused on
-            small businesses, and coded my clients sites with pure HTML, CSS,
-            Javascript, and Bootstrap, giving me a very strong foundation of web
-            dev fundamentals. This path led me wanting more, and made me realize
-            I work best in a team setting. So I took on several mentors and
-            online classes to learn component-based design, write cleaner more
-            scalable code, and added a whole new array of new frameworks and
-            libraries to my toolkit, which can be seen on the know below.
+            Developer from San Francisco on a mission to help build projects
+            that change the world. As a self-starter quick to pick up new tech,
+            I taught myself web development fundamentals in 2013 and have
+            freelanced my way to a high level of skill. In 2018, I launched a
+            web design firm focused on small businesses, and coded my clients
+            sites with pure HTML, CSS, Javascript, and Bootstrap. I enjoy
+            solving problems with complex Logic, but have found Front End the
+            most enjoyable landscape of web app development as its the perfect
+            medium between dev and design. Today I enjoy using React,
+            Typescript, Next.JS, Tailwind CSS, and strive daily toward a Senior
+            level of ability.
           </p>
         </div>
         <div className="bio__right">

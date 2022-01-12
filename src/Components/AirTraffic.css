@@ -1,9 +1,18 @@
 .air__traffic--container {
-  display: inline-block;
+  /* display: flex;
+  align-items: flex-end; */
+  position: relative;
   width: 100%;
-  height: 300px;
-  margin-bottom: 30%;
+  height: 20px;
+  margin-bottom: 0;
   z-index: 2;
+  border: 5px solid red;
+}
+
+@media only screen and (max-width: 768px) {
+  .air__traffic--container {
+    margin-bottom: 600px;
+  }
 }
 
 .plane__left {
