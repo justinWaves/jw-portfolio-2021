@@ -11,16 +11,14 @@
   position: relative;
   height: 1px;
   width: 100%;
-  /* border: 3px solid red; */
   margin-top: 14.5%;
-  /* margin-bottom: 10%; */
   z-index: 6;
 }
 
 @media only screen and (max-width: 768px) {
   .traffic__container {
     width: 150%;
-    margin-top: 22%;
+    margin-top: 22.5%;
   }
 }
 
@@ -36,7 +34,6 @@
   position: relative;
   left: 0;
   vertical-align: bottom;
-  /* margin-top: 12.4%; */
   margin-left: -6%;
   width: 6%;
   animation-name: leftToRight;
@@ -57,7 +54,6 @@
   display: inline-block;
   position: relative;
   left: 0;
-  /* margin-top: 12.4%; */
   margin-left: -6%;
   width: 6%;
   animation-name: rightToLeft;
@@ -78,7 +74,6 @@
   display: inline-block;
   position: relative;
   left: 0;
-  /* margin-top: 11%; */
   margin-left: -2%;
   width: 2%;
   animation-name: leftToRight;
@@ -88,7 +83,6 @@
 
 @media only screen and (max-width: 768px) {
   .bike__left {
-    /* margin-top: 11.4%; */
     left: 18%;
     width: 2%;
     margin-left: -2%;
@@ -99,7 +93,6 @@
   display: inline-block;
   position: relative;
   left: 0;
-  /* margin-top: 11%; */
   margin-left: -2%;
   width: 2%;
   animation-name: rightToLeft;
@@ -109,7 +102,6 @@
 
 @media only screen and (max-width: 768px) {
   .bike__right {
-    /* margin-top: 11.4%; */
     left: 18%;
     width: 2%;
     margin-left: -2%;

@@ -23,7 +23,7 @@ function ToolsKnob() {
     if (knobValue === 10) {
       knobSelectHeader = "Javascript ES6";
       knobSelectParagraph =
-        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. A good example of my Javascript ability can be found on this site, where I created program that generates random cars, bike and planes, that animate across the screen at random speeds in an infinite loop.";
+        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. As a Front-end focused dev, I have a deep understanding of State and Lifecycle in React, event handling, asynchronous code, fetching and storing data from a DB (relational or non relational) and will deliver well performing UI components";
     }
     if (knobValue === 20) {
       knobSelectHeader = "CSS3";
@@ -33,7 +33,7 @@ function ToolsKnob() {
     if (knobValue === 30) {
       knobSelectHeader = "HTML5";
       knobSelectParagraph =
-        "Learned at the same time as CSS nearly in 2014 years ago from CodeAcademy. Now that I mainly use React and its wonderful Virtual DOM I rarely write actual HTML";
+        "Learned at the same time as CSS in 2014 from CodeAcademy, as well as a strong understanding of the DOM. Today I mainly write JSX in React";
     }
     if (knobValue === 40) {
       knobSelectHeader = "Sass";
@@ -58,17 +58,17 @@ function ToolsKnob() {
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
       knobSelectParagraph =
-        "I learned Redux to store a user state in my Linkedin clone, however I try to avoid Redux because of its extensive boilerplate";
+        "I try to avoid Redux because of its extensive boilerplate, and use Reacts Context API instead. However many situations I can see its effectiveness, see my LinkedIn Clone for an example of this";
     }
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "Since learning React I can not go back. Component-based design is so efficient and scalable. I create all React apps purely using functional components, however I can work on a Codebase that use Class Components if necessary.  This site was built with Create-React-App and Typescript";
+        "Since learning React I can not go back. Component-based design is so efficient and scalable. I create all React apps purely using functional components, however I can work on a Codebase that use Class Components as well.";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
       knobSelectParagraph =
-        "I have grown to really appreciate Typescript, I think having a perfectly-typed solution makes for much more robust and secure code. This site was implemented in Typescript";
+        "Having a perfectly-typed solution makes for much more robust and secure code. This site was implemented in Typescript";
     }
   };
 

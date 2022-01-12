@@ -43,9 +43,11 @@ function AirTraffic() {
       top: ${getRandomNumberToString2(50, 200)}px;
     `;
 
-    const handleRemovePlane = (e: any) => {
+    const handleRemovePlane = (
+      e: React.AnimationEvent<HTMLDivElement>
+    ): void => {
       setAirTraffic((airTraffic) =>
-        airTraffic.filter((key: any, i: any) => i !== 0)
+        airTraffic.filter((item: object, i: number) => i !== 0)
       );
     };
 
@@ -56,7 +58,9 @@ function AirTraffic() {
           <Plane
             key={airTrafficIndex}
             className={leftRightPlaneToggle() ? "plane__left" : "plane__right"}
-            onAnimationEnd={(e: any) => handleRemovePlane(e)}
+            onAnimationEnd={(e: React.AnimationEvent<HTMLDivElement>) =>
+              handleRemovePlane(e)
+            }
           >
             <img
               src={

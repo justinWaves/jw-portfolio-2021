@@ -36,7 +36,8 @@ const bikeListDay = [
 function Traffic() {
   const [traffic, setTraffic] = useState<Array<object>>([]);
 
-  const timeout = useRef<any>();
+  const timeout = useRef<NodeJS.Timeout | null>(null);
+
   const [carTrafficIndex, setCarTrafficIndex] = useState(0);
   const [bikeTrafficIndex, setBikeTrafficIndex] = useState(0.1);
 
@@ -64,21 +65,27 @@ function Traffic() {
       z-index: ${leftRightToggle() ? "4" : "1"};
     `;
 
-    const handleRemoveTrafficItem = (e: any) => {
-      setTraffic((traffic: any) =>
-        traffic.filter((key: any, i: any) => i !== 0)
-      );
+    const handleRemoveTrafficItem = (
+      e: React.AnimationEvent<HTMLDivElement>
+    ) => {
+      setTimeout(() => {
+        setTraffic((traffic) =>
+          traffic.filter((item: object, i: number) => i !== 0)
+        );
+      }, 15000);
     };
 
     timeout.current = setInterval(() => {
-      if (traffic.length < 30)
+      if (traffic.length < 35)
         setTraffic([
           ...traffic,
 
           <Cars
             key={carTrafficIndex}
             className={leftRightToggle() ? "car__left" : "car__right"}
-            onAnimationEnd={(e) => handleRemoveTrafficItem(e)}
+            onAnimationEnd={(e: React.AnimationEvent<HTMLDivElement>) =>
+              handleRemoveTrafficItem(e)
+            }
           >
             <img
               src={carListDay[Math.floor(Math.random() * carListDay.length)]}
@@ -99,7 +106,7 @@ function Traffic() {
             />
           </Bikes>,
         ]);
-      else clearTimeout(timeout.current);
+      else clearTimeout(timeout.current as NodeJS.Timeout);
     }, getRandomNumber(50, 2000));
 
     console.log(traffic);
@@ -107,7 +114,7 @@ function Traffic() {
     console.log("Bike Index: " + bikeTrafficIndex.toPrecision(4));
 
     return () => {
-      clearTimeout(timeout.current);
+      clearTimeout(timeout.current as NodeJS.Timeout);
     };
   }, [traffic]);
 

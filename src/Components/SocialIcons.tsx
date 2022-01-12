@@ -8,7 +8,6 @@ import * as themeConf from "../Theme";
 const SocialIconsContain = styled.div`
   display: flex;
   margin-bottom: 5px;
-
   & > a {
     padding: 2px;
     cursor: pointer;

@@ -1,20 +1,15 @@
 import "./Footer.css";
+import { ErrorTypes } from "../types";
+import { IFormValues } from "../types";
 import styled from "styled-components";
 import * as themeConf from "../Theme";
-import emailjs from "emailjs-com";
+import emailjs, { EmailJSResponseStatus } from "emailjs-com";
 import { useEffect, useState } from "react";
 import SocialIcons from "./SocialIcons";
 
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
 `;
-
-interface IFormValues {
-  from_name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
 
 function Footer() {
   const initialValues = { from_name: "", email: "", subject: "", message: "" };
@@ -25,13 +20,15 @@ function Footer() {
   const [ShowErrorAlert, setShowErrorAlert] = useState(false);
   const [ShowLoadingAlert, setShowLoadingAlert] = useState(false);
 
-  const handleChange = (e: any) => {
-    const { name, value } = e.target;
+  const handleChange = (
+    e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
+    const { name, value } = e.target as HTMLInputElement | HTMLTextAreaElement;
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+    event.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
   };
@@ -52,7 +49,7 @@ function Footer() {
   }, [formErrors]);
 
   const validate = (values: IFormValues) => {
-    const errors: any = {};
+    const errors = {} as ErrorTypes;
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.from_name) {
       errors.from_name = "Username is required!";
@@ -165,7 +162,7 @@ function Footer() {
         }`}
         onTransitionEnd={() => setShowErrorAlert(false)}
       >
-        <h1>There were some issues... 😕 </h1>
+        <h2>There were some issues...😕 </h2>
         <p>Please fill out the form correctly</p>
       </div>
 
