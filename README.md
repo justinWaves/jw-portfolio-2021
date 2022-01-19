@@ -1,7 +1,12 @@
-## Hello friend! 🌊🌊🌊🌊🌊🌊
+## Hello! 🌊🌊🌊🌊🌊🌊
 
 This is my 2021 Portfolio Website I designed and built with React. Implemented in Typescript.
 
+### Random Traffic 🚴🏾🚗
+This was the most challenging and most fun part to build. In the Traffic.tsx as well as the AirTraffic.tsx component, random cars and random bikes are selected from respected arrays, and then animate across the screen via CSS at a random speed (appropriate for each vehicle).
+The interval in which the vehicles are generated are also set at a random time between 50 and 2000 ms. This logic is placed in a UseEffect hook, and the traffic items are stored in a state array called "traffic" (airTraffic for the planes), creating a never ending loop. Using Reacts "OnAnimationEnd()" method, the traffic item at index [0] is removed from the state array in a declarative way using a filter method (to avoid mutating the state directly). 
+Since the traffic speed is randomized and the index [0] item may still be present on the screen when the removeTrafficItem function is called, a 15 second timer was put in place, to avoid items from disappearing from the screen. On unmount, the timers are cleared so your browser may be at peace.
+bridge traffic will not exceed 35 items and air traffic will not exceed 5, and I have left in console.logs in place so you can see the code work in real time! All design assets are optimized SVGs to maximize performance, and everything is fully responsive for all screen sizes.
 ### Theme Switching 💅
 
 I handled the light/ dark mode using Styled-Themes / Styled-Components. I only use Styled-components for styles effected by theme switch and included them in the body of each component. The rest of the styling is handled by good-ol CSS files.
