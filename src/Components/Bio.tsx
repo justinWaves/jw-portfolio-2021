@@ -1,34 +1,29 @@
-import { useState } from "react";
 import bioPic from "../images/jwaves even smaller.jpg";
 import "./Bio.css";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
-import { animated, useSpring, config } from "react-spring";
 import ToolsKnob from "./ToolsKnob";
+import ArchiveIcon from "@mui/icons-material/Archive";
 
 const BioContain = styled.div`
   background-color: ${themeConf.backgroundColor};
   color: ${themeConf.textColor};
 `;
 
-const ExpirenceHeader = styled.h2`
+const ExperienceHeader = styled.h2`
   font-size: 40px;
   font-weight: 300;
   color: ${themeConf.secondaryTextColor};
 `;
 
-function Bio() {
-  const [flip, set] = useState(false);
-  const { number } = useSpring({
-    reset: true,
-    reverse: flip,
-    from: { number: 0 },
-    number: 8,
-    delay: 1000,
-    config: config.molasses,
-    // onStart: () => set(!flip),
-  });
+const ResumeButton = styled.button`
+  background-color: ${themeConf.linkColor};
+  &:hover {
+    background-color: ${themeConf.linkColorHover};
+  }
+`;
 
+function Bio() {
   return (
     <BioContain className="bio">
       <div className="bio__topSection">
@@ -36,25 +31,35 @@ function Bio() {
           <img src={bioPic} alt="" />
 
           <p>
-            <strong> Greetings!</strong> My name is Justin, and I am a Front-end
-            Developer from San Francisco on a mission to help build projects
-            that change the world. As a self-starter quick to pick up new tech,
-            I taught myself web development fundamentals in 2013 and have
-            freelanced my way to a high level of skill. In 2018, I launched a
-            web design firm focused on small businesses, and coded my clients
-            sites with pure HTML, CSS, Javascript, and Bootstrap. I enjoy
-            solving problems with complex Logic, but have found Front End the
-            most enjoyable landscape of web app development as its the perfect
-            medium between dev and design. Today I enjoy using React,
+            <strong className="bio__greetings"> Greetings!</strong> My name is
+            Justin, and I am a Front-end Developer from San Francisco on a
+            mission to help build large-scale web apps that change the world. I
+            taught myself web development fundamentals in 2013 and launched my
+            own web design firm 5 years later focused on local small businesses,
+            coding all sites from scratch. As a team member, I adhere to the
+            motto "forever a student" and am always accepting of feedback and
+            critique. I enjoy writing complex logic in Javascript, as well as
+            elegant UX, making Front-End work the most rewarding landscape of
+            web app development personally. Today I enjoy using React,
             Typescript, Next.JS, Tailwind CSS, and strive daily toward a Senior
-            level of ability.
+            level.
           </p>
         </div>
         <div className="bio__right">
-          <ExpirenceHeader>Years of Expirence:</ExpirenceHeader>
-          <animated.h1 className="bio__expirence">
-            {number.to((n) => n.toFixed(1))}
-          </animated.h1>
+          <ExperienceHeader>Years of Experience:</ExperienceHeader>
+
+          <h1 className="bio__experience">8</h1>
+
+          <a
+            href="https://www.dropbox.com/s/vrjajfstbvxa608/JWeisberg-Resume-2022.pdf?dl=1"
+            title="Justin-Weisberg-Resume2021"
+            download
+          >
+            <ResumeButton className="bio__resume--button">
+              <ArchiveIcon />
+              Download Resume
+            </ResumeButton>
+          </a>
         </div>
       </div>
 

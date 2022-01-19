@@ -71,10 +71,6 @@
   box-shadow: 3px 3px 10px #00000050;
 }
 
-.footer > form > button:hover {
-  border: solid white 2px;
-}
-
 /*  ~~~~~~ ALERT FLAGS ~~~~~~~~~   */
 
 .alert__success {

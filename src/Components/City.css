@@ -50,7 +50,6 @@
   display: flex;
   height: 100%;
   width: 100%;
-  /* z-index: 1; */
   animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
   -moz-animation: fadeIn 5s;
@@ -85,42 +84,23 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
-  /* box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff; */
 }
 
 .city__water--day {
-  width: 100%;
   background-image: linear-gradient(#003b63, #3370a6);
-  height: 30%;
+  height: 40%;
+  width: 100%;
   position: relative;
-  top: 35%;
+  top: 30%;
   z-index: 3;
 }
 
-@media only screen and (max-width: 550px) {
-  .city__water--day {
-    height: 50%;
-  }
-}
-
-@media only screen and (min-width: 1350px) {
-  .city__water--day {
-    top: 50%;
-  }
-}
-
-@media only screen and (min-height: 1020px) {
-  .city__water--day {
-    height: 50%;
-  }
-}
-
 .city__water--night {
-  width: 100%;
   background-image: linear-gradient(#001a2b, #003b63);
-  height: 30%;
+  height: 40%;
+  width: 100%;
   position: relative;
-  top: 35%;
+  top: 30%;
   z-index: 3;
 }
 
@@ -136,14 +116,20 @@
   margin-bottom: 200px;
   z-index: 4;
   animation: slide 320s linear infinite alternate;
-  /* transition: ease-in-out 1s; */
 }
+
+@media only screen and (min-width: 1350px) {
+  .city__clouds {
+    margin-bottom: 350px;
+  }
+}
+
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(50%, 0, 0); /* The image width */
+    transform: translate3d(50%, 0, 0);
   }
 }
 

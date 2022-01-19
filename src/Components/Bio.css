@@ -13,6 +13,13 @@
   }
 }
 
+@media only screen and (min-width: 1705px) {
+  .bio {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 .bio__topSection {
   display: flex;
   flex-direction: row;
@@ -65,6 +72,10 @@
   }
 }
 
+.bio__greetings {
+  font-size: 25px;
+}
+
 .bio__right {
   text-align: center;
   display: flex;
@@ -81,7 +92,12 @@
   }
 }
 
-.bio__expirence {
+.bio__right > a {
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.bio__experience {
   font-size: 900%;
   font-weight: 600;
 }
@@ -93,4 +109,22 @@
   justify-content: center;
   text-align: center;
   flex: 1;
+}
+
+.bio__resume--button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #00000050;
+  white-space: nowrap;
 }

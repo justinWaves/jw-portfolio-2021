@@ -22,9 +22,10 @@ function Header() {
         className="header__logo"
         fill={toggleSwitchValue() ? "#fff" : "#8A8A8A"}
       />
-      <h1 className="header__textTop"> Front End Developer</h1>
-      <p className="header__subText">San Francisco, CA</p>
-
+      <div className="header__text--container">
+        <h1 className="header__textTop"> Front End Developer</h1>
+        <p className="header__subText">San Francisco, CA</p>
+      </div>
       <div className="header__toggle--container">
         <LightModeOutlinedIcon className="header__sun" sx={{ fontSize: 40 }} />
         <Switch

@@ -5,6 +5,12 @@
   height: auto;
 }
 
+@media only screen and (min-width: 1800px) {
+  .traffic {
+    margin-top: 0%;
+  }
+}
+
 .traffic__container {
   display: flex;
   align-items: flex-end;

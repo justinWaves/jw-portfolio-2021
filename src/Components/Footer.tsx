@@ -9,6 +9,9 @@ import SocialIcons from "./SocialIcons";
 
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
+  &:hover {
+    background-color: ${themeConf.linkColorHover};
+  }
 `;
 
 function Footer() {

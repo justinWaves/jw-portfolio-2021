@@ -7,7 +7,6 @@ import car_3 from "../images/cars/old-mustang.svg";
 import car_4 from "../images/cars/tesla-red.svg";
 import car_5 from "../images/cars/bently.svg";
 import car_6 from "../images/cars/van-ambulance.svg";
-
 import bike_1 from "../images/bikes/bike-1.svg";
 import bike_2 from "../images/bikes/bike-2.svg";
 import bike_3 from "../images/bikes/bike-3.svg";

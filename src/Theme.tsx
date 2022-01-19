@@ -20,6 +20,11 @@ export const linkColor: theme.ThemeSet = theme("mode", {
   dark: "#BB86FC",
 });
 
+export const linkColorHover: theme.ThemeSet = theme("mode", {
+  light: "#934cff",
+  dark: "#dcc5f9",
+});
+
 export const secondaryTextColor: theme.ThemeSet = theme("mode", {
   light: "#000000",
   dark: "#C8FFF4",

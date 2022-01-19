@@ -58,7 +58,7 @@ function ToolsKnob() {
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
       knobSelectParagraph =
-        "I try to avoid Redux because of its extensive boilerplate, and use Reacts Context API instead. However many situations I can see its effectiveness, see my LinkedIn Clone for an example of this";
+        "I try to avoid Redux because of its extensive boilerplate, and use Reacts Context API instead. In my linkedIn clone I used Redux for user state management";
     }
     if (knobValue === 90) {
       knobSelectHeader = "React";

@@ -16,7 +16,7 @@ const GitHubLink = styled.button`
   color: white;
 
   &:hover {
-    color: #c8fff4;
+    color: #ddd;
   }
 `;
 
