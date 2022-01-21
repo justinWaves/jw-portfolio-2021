@@ -40,9 +40,8 @@ function Traffic() {
   const [carTrafficIndex, setCarTrafficIndex] = useState(0);
   const [bikeTrafficIndex, setBikeTrafficIndex] = useState(0.1);
 
-  const leftRightToggle: () => boolean = () => {
-    if (carTrafficIndex % 2 == 0) return true;
-    else return false;
+  const leftRightToggle = () => {
+    return carTrafficIndex % 2 === 0;
   };
 
   useEffect(() => {
