@@ -37,12 +37,11 @@ function Bio() {
             taught myself web development fundamentals in 2013 and launched my
             own web design firm 5 years later focused on local small businesses,
             coding all sites from scratch. As a team member, I adhere to the
-            motto "forever a student" and am always accepting of feedback and
-            critique. I enjoy writing complex logic in Javascript, as well as
-            elegant UX, making Front-End work the most rewarding landscape of
-            web app development personally. Today I enjoy using React,
-            Typescript, Next.JS, Tailwind CSS, and strive daily toward a Senior
-            level.
+            motto "forever a student" and value all feedback and critique. I
+            enjoy writing complex logic in Javascript, as well as elegant UX,
+            making Front-End work personally my most rewarding landscape of web
+            app development. Today I enjoy using React, Typescript, Next.JS,
+            Tailwind CSS, and strive daily toward a Senior level.
           </p>
         </div>
         <div className="bio__right">

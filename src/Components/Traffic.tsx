@@ -40,7 +40,7 @@ function Traffic() {
   const [carTrafficIndex, setCarTrafficIndex] = useState(0);
   const [bikeTrafficIndex, setBikeTrafficIndex] = useState(0.1);
 
-  const leftRightToggle = () => {
+  const toggleCarsAndBikesImageLeftOrRight = () => {
     return carTrafficIndex % 2 === 0;
   };
 
@@ -55,12 +55,12 @@ function Traffic() {
 
     const Cars = styled.div`
       animation-duration: ${getRandomNumberToString(3, 10)}s;
-      z-index: ${leftRightToggle() ? "3" : "2"};
+      z-index: ${toggleCarsAndBikesImageLeftOrRight() ? "3" : "2"};
     `;
 
     const Bikes = styled.div`
       animation-duration: ${getRandomNumberToString(15, 25)}s;
-      z-index: ${leftRightToggle() ? "4" : "1"};
+      z-index: ${toggleCarsAndBikesImageLeftOrRight() ? "4" : "1"};
     `;
 
     const handleRemoveTrafficItem = (
@@ -80,7 +80,9 @@ function Traffic() {
 
           <Cars
             key={carTrafficIndex}
-            className={leftRightToggle() ? "car__left" : "car__right"}
+            className={
+              toggleCarsAndBikesImageLeftOrRight() ? "car__left" : "car__right"
+            }
             onAnimationEnd={(e: React.AnimationEvent<HTMLDivElement>) =>
               handleRemoveTrafficItem(e)
             }
@@ -88,19 +90,31 @@ function Traffic() {
             <img
               src={carListDay[Math.floor(Math.random() * carListDay.length)]}
               alt=""
-              className={leftRightToggle() ? undefined : "traffic__reverse"}
+              className={
+                toggleCarsAndBikesImageLeftOrRight()
+                  ? undefined
+                  : "traffic__reverse"
+              }
             />
           </Cars>,
 
           <Bikes
             key={bikeTrafficIndex}
-            className={leftRightToggle() ? "bike__left" : "bike__right"}
+            className={
+              toggleCarsAndBikesImageLeftOrRight()
+                ? "bike__left"
+                : "bike__right"
+            }
             onAnimationEnd={(e) => handleRemoveTrafficItem(e)}
           >
             <img
               src={bikeListDay[Math.floor(Math.random() * bikeListDay.length)]}
               alt=""
-              className={leftRightToggle() ? undefined : "traffic__reverse"}
+              className={
+                toggleCarsAndBikesImageLeftOrRight()
+                  ? undefined
+                  : "traffic__reverse"
+              }
             />
           </Bikes>,
         ]);

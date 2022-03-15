@@ -23,7 +23,7 @@ function ToolsKnob() {
     if (knobValue === 10) {
       knobSelectHeader = "Javascript ES6";
       knobSelectParagraph =
-        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. As a Front-end focused dev, I have a deep understanding of State and Lifecycle in React, event handling, asynchronous code, fetching and storing data from a DB (relational or non relational) and will deliver well performing UI components";
+        "Javascript is my favorite programming language and the heart of my entire Frontend Stack. As a Front-end focused dev, I have a deep understanding of State and Lifecycle methods in React, event handling, asynchronous code, and strive to deliver the most performant UI components possible";
     }
     if (knobValue === 20) {
       knobSelectHeader = "CSS3";
@@ -38,12 +38,12 @@ function ToolsKnob() {
     if (knobValue === 40) {
       knobSelectHeader = "Sass";
       knobSelectParagraph =
-        "I have used Sass in many past projects to utilize mix-ins and variables. Now that I use Tailwind and Styled Components, I haven't used it in awhile but it is in the toolbag.";
+        "I have used Sass in many past projects to utilize mix-ins and variables. I prefer to use Tailwind and Styled Components today";
     }
     if (knobValue === 50) {
       knobSelectHeader = "Next.JS";
       knobSelectParagraph =
-        "The Next.JS library for React offers some amazing new features I very excited about such as Image optimization, and Environment variables.";
+        "The Next.JS library for React offers some amazing new features I very excited about such as Image optimization, and Environment variables. Deployment in Vercel is also very cool.";
     }
     if (knobValue === 60) {
       knobSelectHeader = "Tailwind CSS";
@@ -58,12 +58,12 @@ function ToolsKnob() {
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
       knobSelectParagraph =
-        "I try to avoid Redux because of its extensive boilerplate, and use Reacts Context API instead. In my linkedIn clone I used Redux for user state management";
+        "I have used Redux, in the past to manage the state of a user. See My LinkedIn Clone below for an example. Initially I planned on using Redux to handle this site's theme toggle state however found Reacts context API to be a much more elegant solution.";
     }
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "Since learning React I can not go back. Component-based design is so efficient and scalable. I create all React apps purely using functional components, however I can work on a Codebase that use Class Components as well.";
+        "React is my favorite front end framework. Major fan of Component-based design. I typically create all React apps purely using functional components, however I can work on a codebase that use Class Components as well.";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
