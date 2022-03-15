@@ -8,7 +8,7 @@ import { useTheme } from "../ThemeManager";
 function Header() {
   const theme = useTheme();
 
-  const toggleSwitchValue = (): boolean => {
+  const toggleThemeSwitchValue = (): boolean => {
     if (theme.mode === "light") {
       return false;
     } else {
@@ -20,7 +20,7 @@ function Header() {
     <div className="header__container">
       <Logo
         className="header__logo"
-        fill={toggleSwitchValue() ? "#fff" : "#8A8A8A"}
+        fill={toggleThemeSwitchValue() ? "#fff" : "#8A8A8A"}
       />
       <div className="header__text--container">
         <h1 className="header__textTop"> Front End Developer</h1>
@@ -31,7 +31,7 @@ function Header() {
         <Switch
           size="medium"
           onChange={() => theme.toggle()}
-          checked={toggleSwitchValue()}
+          checked={toggleThemeSwitchValue()}
           color="default"
         />
 

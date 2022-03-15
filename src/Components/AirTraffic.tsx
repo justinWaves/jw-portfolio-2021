@@ -19,7 +19,7 @@ function AirTraffic() {
   const [airTrafficIndex, setAirTrafficIndex] = useState(0);
   const timeout = useRef<any>();
 
-  const leftRightPlaneToggle: () => boolean = () => {
+  const togglePlaneImageLeftOrRight: () => boolean = () => {
     if (airTrafficIndex % 2 == 0) return true;
     else return false;
   };
@@ -57,7 +57,9 @@ function AirTraffic() {
           ...airTraffic,
           <Plane
             key={airTrafficIndex}
-            className={leftRightPlaneToggle() ? "plane__left" : "plane__right"}
+            className={
+              togglePlaneImageLeftOrRight() ? "plane__left" : "plane__right"
+            }
             onAnimationEnd={(e: React.AnimationEvent<HTMLDivElement>) =>
               handleRemovePlane(e)
             }
@@ -68,7 +70,7 @@ function AirTraffic() {
               }
               alt=""
               className={
-                leftRightPlaneToggle() ? "traffic__reverse" : undefined
+                togglePlaneImageLeftOrRight() ? "traffic__reverse" : undefined
               }
             />
           </Plane>,

@@ -7,7 +7,7 @@ import AirTraffic from "./AirTraffic";
 
 function City() {
   const theme = useTheme();
-  const toggleSky = (): string => {
+  const changeSkyColorOnThemeToggle = (): string => {
     if (theme.mode === "light") {
       return "city__sky--day";
     } else {
@@ -15,7 +15,7 @@ function City() {
     }
   };
 
-  const toggleWater = (): string => {
+  const changeWaterColorOnThemeToggle = (): string => {
     if (theme.mode === "light") {
       return "city__water--day";
     } else {
@@ -23,7 +23,7 @@ function City() {
     }
   };
 
-  const toggleSunMoon = (): string => {
+  const changeSunAndMoonOnThemeToggle = (): string => {
     if (theme.mode === "light") {
       return "city__sun ";
     } else {
@@ -33,13 +33,13 @@ function City() {
 
   return (
     <div className="city__container">
-      <div className={toggleSky()}></div>
-      <img src={SunMoon} alt="" className={toggleSunMoon()} />
+      <div className={changeSkyColorOnThemeToggle()}></div>
+      <img src={SunMoon} alt="" className={changeSunAndMoonOnThemeToggle()} />
 
       <AirTraffic />
 
-      <div className={toggleWater()}></div>
-      
+      <div className={changeWaterColorOnThemeToggle()}></div>
+
       <Bridge />
 
       <img

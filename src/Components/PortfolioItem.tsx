@@ -1,14 +1,12 @@
 // import React, {useMemo} from "react"
 import "./PortfolioItem.css";
 import { useState } from "react";
-import {PortfolioProps} from "../types"
+import { PortfolioProps } from "../types";
 import { animated } from "@react-spring/web";
 import styled from "styled-components";
 import * as themeConf from "../Theme";
 import GithubLinks from "./GithubLinks";
 import useBoop from "../Hooks/use-boop";
-
-
 
 const ButtonWindowContainer = styled.div`
   background-color: ${themeConf.linkColor};
@@ -39,7 +37,7 @@ function PortfolioItem({
   const [style, trigger] = useBoop({ rotation: 40 });
   const [buttonWindowStyle, setButtonWindowStyle] = useState(false);
 
-  const buttonTextToggle = () => {
+  const viewSiteButtonTextToggle = () => {
     if (buttonWindowStyle) {
       return "Return";
     } else {
@@ -47,7 +45,7 @@ function PortfolioItem({
     }
   };
 
-  const handleChildCLick = () => {
+  const handleClickEventForViewSiteButton = () => {
     setButtonWindowStyle(!buttonWindowStyle);
     trigger();
   };
@@ -77,9 +75,9 @@ function PortfolioItem({
           </div>
         </div>
         <GithubLinks
-          onChildClick={handleChildCLick}
+          onChildClick={handleClickEventForViewSiteButton}
           style={style}
-          buttonText={buttonTextToggle()}
+          buttonText={viewSiteButtonTextToggle()}
         />
         <ButtonWindowContainer
           className={
