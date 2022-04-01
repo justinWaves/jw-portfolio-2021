@@ -6,6 +6,7 @@ import highLife from "../images/highlife-alpha.png";
 import jwPort2018 from "../images/2018port-alpha.png";
 import metaWaves from "../images/metawaves-alpha.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
+import mobileClone from "../images/medium-clone-thumb.png";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
 
@@ -21,6 +22,20 @@ function Projects() {
     <ProjectsContain className="projects">
       <h1 className="projects__title">Recent Projects</h1>
       <div className="projects__contain">
+        <PortfolioItem
+          title="Medium Clone"
+          body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes SSR, ISR, and a working comment section, complete with Form validation using React-Forms. Was a fun project to learn how to use Sanity's query language GROQ to make API calls. Sanity is clean, will be using more in the future for sure"
+          codeUrl="https://github.com/justinWaves/medium-clone"
+          linkUrl="https://medium-clone-8fmph8ycv-justinwaves.vercel.app/"
+          imageSrc={mobileClone}
+          tools={[
+            "React",
+            "Next.js",
+            "Tailwind.css",
+            "Sanity CMS",
+            "Typescript",
+          ]}
+        />
         <PortfolioItem
           title="MetaWaves Chat"
           body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend"
