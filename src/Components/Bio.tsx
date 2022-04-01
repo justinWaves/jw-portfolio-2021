@@ -32,16 +32,24 @@ function Bio() {
 
           <p>
             <strong className="bio__greetings"> Greetings!</strong> My name is
-            Justin, and I am a Front-end Developer from San Francisco on a
-            mission to help build large-scale web apps that change the world. I
-            taught myself web development fundamentals in 2013 and launched my
-            own web design firm 5 years later focused on local small businesses,
-            coding all sites from scratch. As a team member, I adhere to the
-            motto "forever a student" and value all feedback and critique. I
-            enjoy writing complex logic in Javascript, as well as elegant UX,
-            making Front-End work personally my most rewarding landscape of web
-            app development. Today I enjoy using React, Typescript, Next.JS,
-            Tailwind CSS, and strive daily toward a Senior level.
+            Justin, and I am a Web Developer from San Francisco with a strong
+            passion for impeccable UX and keep eye for design. When Im not
+            coding, I am creating music under the moniker{" "}
+            <a
+              href="https://distrokid.com/hyperfollow/justinwaves/sun-will-rise-3"
+              target="_blank"
+            >
+              Justin Waves
+            </a>{" "}
+            which has led to many performances around the Bay Area, including
+            Outside Lands 2019. I taught myself web development fundamentals in
+            2013 and launched my own web design firm 5 years later focused on
+            local small businesses, coding all sites from scratch. Though my
+            talent is best suited for Front-end work, I have built several full
+            stack web apps some of which can be found below. Always learning and
+            expanding mt toolbox. Today I enjoy using React, Typescript,
+            Next.JS, Tailwind CSS, and am actively seeking a role on a agile dev
+            team. Let's build!
           </p>
         </div>
         <div className="bio__right">
