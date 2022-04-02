@@ -23,6 +23,11 @@ const ResumeButton = styled.button`
   }
 `;
 
+const BioLink = styled.a`
+  color: ${themeConf.linkColor};
+  text-decoration: none;
+`;
+
 function Bio() {
   return (
     <BioContain className="bio">
@@ -35,12 +40,12 @@ function Bio() {
             Justin, and I am a Web Developer from San Francisco with a strong
             passion for impeccable UX and keen eye for design. When Im not
             coding, I am creating music under the moniker{" "}
-            <a
+            <BioLink
               href="https://distrokid.com/hyperfollow/justinwaves/sun-will-rise-3"
               target="_blank"
             >
               Justin Waves
-            </a>{" "}
+            </BioLink>{" "}
             which has led to many performances around the Bay Area, including
             Outside Lands 2019. I taught myself web development fundamentals in
             2013 and launched my own web design firm 5 years later focused on

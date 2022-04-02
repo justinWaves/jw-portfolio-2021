@@ -24,7 +24,7 @@ function Projects() {
       <div className="projects__contain">
         <PortfolioItem
           title="Medium Clone"
-          body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes SSR, ISR, and a working comment section, complete with Form validation using React-Forms. Was a fun project to learn how to use Sanity's query language GROQ to make API calls. Sanity is clean, will be using more in the future for sure"
+          body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes SSR, ISR, and a working comment section, complete with Form validation using React-Forms. Was a fun project to learn how to fetch data using Sanity's query language GROQ."
           codeUrl="https://github.com/justinWaves/medium-clone"
           linkUrl="https://medium-clone-8fmph8ycv-justinwaves.vercel.app/"
           imageSrc={mobileClone}
@@ -32,7 +32,7 @@ function Projects() {
             "React",
             "Next.js",
             "Tailwind.css",
-            "Sanity CMS",
+            "Sanity.io",
             "Typescript",
           ]}
         />
