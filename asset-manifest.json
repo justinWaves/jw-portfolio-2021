@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.0ae721ec.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.caa6cc0c.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.caa6cc0c.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.b01bd5ca.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.2e17a125.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.2e17a125.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
     "static/js/2.f13133c8.chunk.js": "/jw-portfolio-2021/static/js/2.f13133c8.chunk.js",
     "static/js/2.f13133c8.chunk.js.map": "/jw-portfolio-2021/static/js/2.f13133c8.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.0ae721ec.chunk.css.map": "/jw-portfolio-2021/static/css/main.0ae721ec.chunk.css.map",
+    "static/css/main.b01bd5ca.chunk.css.map": "/jw-portfolio-2021/static/css/main.b01bd5ca.chunk.css.map",
     "static/js/2.f13133c8.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.f13133c8.chunk.js.LICENSE.txt",
     "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
@@ -31,6 +31,7 @@
     "static/media/jweisberg__textlogo.c37f276e.svg": "/jw-portfolio-2021/static/media/jweisberg__textlogo.c37f276e.svg",
     "static/media/jwportfolioSS-alpha.580d4e5b.png": "/jw-portfolio-2021/static/media/jwportfolioSS-alpha.580d4e5b.png",
     "static/media/linkedin-alpha.b9dd7c5c.png": "/jw-portfolio-2021/static/media/linkedin-alpha.b9dd7c5c.png",
+    "static/media/medium-clone-thumb.cae4f488.png": "/jw-portfolio-2021/static/media/medium-clone-thumb.cae4f488.png",
     "static/media/metawaves-alpha.10cf4c6e.png": "/jw-portfolio-2021/static/media/metawaves-alpha.10cf4c6e.png",
     "static/media/old-mustang.87854d2e.svg": "/jw-portfolio-2021/static/media/old-mustang.87854d2e.svg",
     "static/media/pink-lambo.cf493f82.svg": "/jw-portfolio-2021/static/media/pink-lambo.cf493f82.svg",
@@ -47,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ec7f94b.js",
     "static/js/2.f13133c8.chunk.js",
-    "static/css/main.0ae721ec.chunk.css",
-    "static/js/main.caa6cc0c.chunk.js"
+    "static/css/main.b01bd5ca.chunk.css",
+    "static/js/main.2e17a125.chunk.js"
   ]
 }
