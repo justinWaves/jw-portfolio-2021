@@ -33,10 +33,18 @@
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 50px;
+  max-width: 1800px;
 }
 
 @media only screen and (max-width: 768px) {
   .projects__contain {
     margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .projects__contain {
+    padding-top: 100px;
+    margin: auto;
   }
 }
