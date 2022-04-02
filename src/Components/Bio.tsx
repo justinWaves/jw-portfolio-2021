@@ -33,7 +33,7 @@ function Bio() {
           <p>
             <strong className="bio__greetings"> Greetings!</strong> My name is
             Justin, and I am a Web Developer from San Francisco with a strong
-            passion for impeccable UX and keep eye for design. When Im not
+            passion for impeccable UX and keen eye for design. When Im not
             coding, I am creating music under the moniker{" "}
             <a
               href="https://distrokid.com/hyperfollow/justinwaves/sun-will-rise-3"
@@ -45,11 +45,11 @@ function Bio() {
             Outside Lands 2019. I taught myself web development fundamentals in
             2013 and launched my own web design firm 5 years later focused on
             local small businesses, coding all sites from scratch. Though my
-            talent is best suited for Front-end work, I have built several full
-            stack web apps some of which can be found below. Always learning and
-            expanding mt toolbox. Today I enjoy using React, Typescript,
-            Next.JS, Tailwind CSS, and am actively seeking a role on a agile dev
-            team. Let's build!
+            talent is best suited for front-end work, I have built several full
+            stack web apps some of which can be found below. Learning new tech
+            and expanding my toolbox is exciting to me. Today I enjoy using
+            React, Typescript, Next.JS, TailwindCSS, and I am actively seeking a
+            role on a agile dev team. Let's build!
           </p>
         </div>
         <div className="bio__right">
