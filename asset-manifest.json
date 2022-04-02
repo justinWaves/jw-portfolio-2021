@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.b01bd5ca.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.93c1053e.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.93c1053e.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.e1ec5201.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.ff09944b.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.ff09944b.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
     "static/js/2.f13133c8.chunk.js": "/jw-portfolio-2021/static/js/2.f13133c8.chunk.js",
     "static/js/2.f13133c8.chunk.js.map": "/jw-portfolio-2021/static/js/2.f13133c8.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.b01bd5ca.chunk.css.map": "/jw-portfolio-2021/static/css/main.b01bd5ca.chunk.css.map",
+    "static/css/main.e1ec5201.chunk.css.map": "/jw-portfolio-2021/static/css/main.e1ec5201.chunk.css.map",
     "static/js/2.f13133c8.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.f13133c8.chunk.js.LICENSE.txt",
     "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ec7f94b.js",
     "static/js/2.f13133c8.chunk.js",
-    "static/css/main.b01bd5ca.chunk.css",
-    "static/js/main.93c1053e.chunk.js"
+    "static/css/main.e1ec5201.chunk.css",
+    "static/js/main.ff09944b.chunk.js"
   ]
 }
