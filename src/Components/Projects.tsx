@@ -7,6 +7,7 @@ import jwPort2018 from "../images/2018port-alpha.png";
 import metaWaves from "../images/metawaves-alpha.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
 import mobileClone from "../images/medium-clone-thumb.png";
+import es6 from "../images/es6-thumbnail.png";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
 
@@ -22,6 +23,14 @@ function Projects() {
     <ProjectsContain className="projects">
       <h1 className="projects__title">Recent Projects</h1>
       <div className="projects__contain">
+        <PortfolioItem
+          title="Syntax Highlighter"
+          body="ES6 Syntax highlighter app implemented in React and Typescript"
+          codeUrl="https://github.com/justinWaves/es6-code-formatter"
+          linkUrl="https://github.com/justinWaves/es6-code-formatter"
+          imageSrc={es6}
+          tools={["React", "Typescript"]}
+        />
         <PortfolioItem
           title="Medium Clone"
           body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes SSR, ISR, and a working comment section, complete with Form validation using React-Forms. Was a fun project to learn how to fetch data using Sanity's query language GROQ."
