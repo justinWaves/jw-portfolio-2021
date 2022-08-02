@@ -52,15 +52,15 @@ function Bio() {
             local small businesses, coding all sites from scratch. Though my
             talent is best suited for front-end work, I have built several full
             stack web apps some of which can be found below. Learning new tech
-            and expanding my toolbox is exciting to me. Today I enjoy using
-            React, Typescript, Next.JS, TailwindCSS, and I am actively seeking a
-            role on a agile dev team. Let's build!
+            and expanding my toolbox is a true passion of mine. Today I enjoy
+            using React, Typescript, Next.JS, TailwindCSS, and I am actively
+            seeking a role on a agile dev team. Let's build!
           </p>
         </div>
         <div className="bio__right">
-          <ExperienceHeader>Years of Experience:</ExperienceHeader>
+          <ExperienceHeader>Years Coding:</ExperienceHeader>
 
-          <h1 className="bio__experience">8</h1>
+          <h1 className="bio__experience">9</h1>
 
           <a
             href="https://www.dropbox.com/s/vrjajfstbvxa608/JWeisberg-Resume-2022.pdf?dl=1"
