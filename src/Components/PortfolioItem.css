@@ -108,7 +108,7 @@
 
 .portfolio__listItems {
   position: relative;
-  left: -23px;
+  left: 0;
 }
 
 @media only screen and (max-width: 979px) {
