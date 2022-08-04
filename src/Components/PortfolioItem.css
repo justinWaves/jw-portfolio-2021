@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   height: 250px;
-  width: 400px;
+  width: 420px;
   position: relative;
   border-radius: 20px;
   margin: 10px;
@@ -10,7 +10,7 @@
   overflow: hidden;
   z-index: 1;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 979px) {
   .portfolioItem__container {
     width: 90vw;
     height: 250px;
@@ -52,8 +52,9 @@
   justify-content: space-between;
   position: relative;
   z-index: 2;
+  width: 285px;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 979px) {
   .portfolio__content--left {
     display: flex;
     flex-direction: column;
@@ -73,15 +74,13 @@
 
 .portfolio__content--right {
   display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
-  z-index: 99;
+  width: 110px;
+  position: relative;
+  right: -8px;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 979px) {
   .portfolio__content--right {
     display: flex;
     flex-direction: column;
@@ -101,37 +100,33 @@
   }
 }
 
-.portfolio__listItems {
+.portfolio__tech-used {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 20px;
-  margin-left: -25px;
   max-width: 100px;
 }
 
-@media only screen and (max-width: 960px) {
-  .portfolio__listItems {
+.portfolio__listItems {
+  position: relative;
+  left: -10px;
+}
+
+@media only screen and (max-width: 979px) {
+  .portfolio__tech-used {
     margin-left: 0px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .portfolio__listItems {
+  .portfolio__tech-used {
     margin-bottom: 20px;
     margin-left: 20px;
   }
 }
 
-.portfolio__listItems--hidden {
+.portfolio__tech-used--hidden {
   visibility: hidden;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-left: -25px;
 }
 
 /*   ~~~~~~~~ CONTENT CENTER ~~~~~~~~  */
@@ -141,11 +136,12 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 979px) {
   .portfolioItem__content--center {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
     margin-left: -60px;
     z-index: 2;
     flex: 0.3;
@@ -165,13 +161,13 @@
 
 /* ~~~~~~~~ THUMBNAIL IMAGE~~~~~~~~  */
 
-.porfolioItem__image {
+.portfolioItem__image-container {
   border-radius: 0px 0px 0px 20px;
   z-index: 2;
 }
 
-@media only screen and (max-width: 960px) {
-  .porfolioItem__image {
+@media only screen and (max-width: 979px) {
+  .portfolioItem__image-container {
     border-radius: 0px 0px 0px 20px;
     height: 179px;
     width: 285px;
@@ -179,10 +175,55 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .porfolioItem__image {
+  .portfolioItem__image-container {
     border-radius: 0px 0px 0px 0px;
     margin-bottom: 20px;
   }
+}
+
+.portfolioItem__mobile-overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  height: 179px;
+  width: 245px;
+  border-radius: 0px 20px 0px 20px;
+  overflow: scroll;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  background-color: #00000090;
+}
+
+@media only screen and (max-width: 979px) {
+  .portfolioItem__mobile-overlay {
+    display: none;
+  }
+}
+
+.portfolioItem__image {
+  position: absolute;
+  bottom: 0;
+}
+
+.portfolioItem__image-blurry {
+  position: absolute;
+  bottom: 0;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 979px) {
+  .portfolioItem__image-blurry {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+}
+
+.portfolioItem__display-none {
+  display: none;
 }
 
 /* ~~~~~~~~~ GH LINK WINDOW~~~~~~~~~~~~*/
@@ -224,7 +265,7 @@
   justify-content: space-around;
   margin: 20px;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 979px) {
   .gh__button--container {
     flex-direction: column;
 
@@ -237,8 +278,8 @@
   background: white;
   color: #6200ee;
   width: 150px;
-  height: 100px;
-  border-radius: 20px;
+  height: 75px;
+  border-radius: 3px;
   text-align: center;
   font-size: 22px;
   white-space: nowrap;
@@ -247,7 +288,7 @@
   animation: 1s cubic-bezier(0.88, 0.01, 0.19, 0.98) fadeInLeft;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 979px) {
   .gh__button--link {
     width: 86%;
     height: 80px;
@@ -269,10 +310,7 @@
   cursor: pointer;
   background: rgb(233, 233, 233);
   transition: all 0.25s;
-  transform: scale(100%, 107%);
-
-  /* border-left: 3px solid #c8fff4;
-  border-bottom: 3px solid #c8fff4; */
+  transform: scale(100%, 105%);
 }
 
 @keyframes fadeInLeft {

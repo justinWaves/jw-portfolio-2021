@@ -21,7 +21,6 @@ const PortfolioItemContain = styled(animated.div)`
 const ListItemTitle = styled.h4`
   color: ${themeConf.secondaryTextColor};
   margin-bottom: 5px;
-  margin-left: 10px;
 `;
 
 function PortfolioItem({
@@ -36,6 +35,7 @@ function PortfolioItem({
 
   const [style, trigger] = useBoop({ rotation: 40 });
   const [buttonWindowStyle, setButtonWindowStyle] = useState(false);
+  const [isCursorHovering, setIsCursorHovering] = useState(false);
 
   const viewSiteButtonTextToggle = () => {
     if (buttonWindowStyle) {
@@ -50,12 +50,39 @@ function PortfolioItem({
     trigger();
   };
 
+  const onPortfolioItemHover = () => {
+    setIsCursorHovering(!isCursorHovering);
+  };
+
   return (
     <div className="portfolioItem__main">
-      <PortfolioItemContain className="portfolioItem__container">
+      <PortfolioItemContain
+        className="portfolioItem__container"
+        onMouseEnter={onPortfolioItemHover}
+        onMouseLeave={onPortfolioItemHover}
+      >
         <div className="portfolio__content--left">
           <h1 className="portfolioItem__title">{title}</h1>
-          <img className="porfolioItem__image" src={imageSrc} alt="" />
+          <div className="portfolioItem__image-container">
+            <div
+              className={
+                isCursorHovering
+                  ? "portfolioItem__mobile-overlay"
+                  : "portfolioItem__display-none"
+              }
+            >
+              <div className="portfolioItem__mobile-overlay-text">{body}</div>
+            </div>
+            <img
+              className={
+                isCursorHovering
+                  ? "portfolioItem__image-blurry"
+                  : "portfolioItem__image"
+              }
+              src={imageSrc}
+              alt=""
+            />
+          </div>
         </div>
 
         <div className="portfolioItem__content--center">
@@ -66,12 +93,12 @@ function PortfolioItem({
           <div
             className={
               buttonWindowStyle
-                ? "portfolio__listItems--hidden"
-                : "portfolio__listItems"
+                ? "portfolio__tech-used--hidden"
+                : "portfolio__tech-used"
             }
           >
             <ListItemTitle>Tech Used</ListItemTitle>
-            <ul>{listItems}</ul>
+            <ul className="portfolio__listItems">{listItems}</ul>
           </div>
         </div>
         <GithubLinks
