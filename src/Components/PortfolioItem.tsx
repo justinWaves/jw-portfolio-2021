@@ -10,7 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import useBoop from "../Hooks/use-boop";
 
 const ButtonWindowContainer = styled.div`
-  background-color: ${themeConf.linkColor};
+  background-color: ${themeConf.linkWindowBackgroundColor};
 `;
 
 const PortfolioItemContain = styled(animated.div)`

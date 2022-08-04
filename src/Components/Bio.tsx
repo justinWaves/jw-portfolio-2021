@@ -50,7 +50,7 @@ function Bio() {
             Outside Lands 2019. I taught myself web development fundamentals in
             2013 and launched my own web design firm 5 years later focused on
             local small businesses, coding all sites from scratch. Though my
-            talent is best suited for front-end work, I have built several full
+            talent is best suited for front end work, I have built several full
             stack web apps some of which can be found below. Learning new tech
             and expanding my toolbox is a true passion of mine. Today I enjoy
             using React, Typescript, Next.JS, TailwindCSS, and I am actively

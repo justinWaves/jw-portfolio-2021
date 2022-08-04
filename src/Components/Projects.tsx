@@ -25,7 +25,7 @@ function Projects() {
       <div className="projects__contain">
         <PortfolioItem
           title="Syntax Highlighter"
-          body="ES6 Syntax highlighter app implemented in React and Typescript"
+          body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
           codeUrl="https://github.com/justinWaves/es6-code-formatter"
           linkUrl="https://github.com/justinWaves/es6-code-formatter"
           imageSrc={es6}
@@ -47,7 +47,7 @@ function Projects() {
         />
         <PortfolioItem
           title="MetaWaves Chat"
-          body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend"
+          body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend."
           codeUrl="https://github.com/justinWaves/metaverse-challenge"
           linkUrl="https://metaverse-challenge-alpha-eight.vercel.app/"
           imageSrc={metaWaves}
@@ -63,7 +63,7 @@ function Projects() {
         />
         <PortfolioItem
           title="LinkedIn Clone"
-          body="React app that uses Redux to manage user state, and a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only as of now"
+          body="React app that uses Redux to manage user state, and a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only."
           codeUrl=" "
           linkUrl="https://linkedin-clone-6520a.firebaseapp.com/"
           imageSrc={linkedinClone}
@@ -71,7 +71,7 @@ function Projects() {
         />
         <PortfolioItem
           title="Tic React Toe"
-          body="Create-React-App that uses Reacts useState hook to manage the players state. I  installed Sass so I could use an animated gradient for the winner text. "
+          body="Create-React-App that uses Reacts useState hook to manage the players state. I used Sass so I could use an animated gradient for the winner text. "
           codeUrl="https://github.com/justinWaves/tic-react-toe"
           linkUrl="https://justinwaves.github.io/tic-react-toe/"
           imageSrc={ticTactToe}
@@ -87,7 +87,7 @@ function Projects() {
         />
         <PortfolioItem
           title="JW Portfolio 2018"
-          body="My First Portfolio site, you may see some similarities to this one. It slow, clunky but it works. I used CSS to size and animate differnet PNG of gears as a background. The site is fully responsive."
+          body="My First Portfolio site, you may see some similarities to this one. It slow, clunky but it works. I used CSS to size and animate different PNG of gears as a background. The site is fully responsive."
           codeUrl="https://github.com/justinWaves/JW-Portfolio"
           linkUrl="https://justinwaves.github.io/JW-Portfolio/"
           imageSrc={jwPort2018}

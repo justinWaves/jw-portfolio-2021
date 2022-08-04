@@ -30,12 +30,7 @@ export const secondaryTextColor: theme.ThemeSet = theme("mode", {
   dark: "#C8FFF4",
 });
 
-// export const buttonBackgroundColor = theme("mode", {
-//   light: "#4400ff",
-//   dark: "#6200EE",
-// });
-
-// export const buttonTextColor = theme("mode", {
-//   light: "#eee",
-//   dark: "#222",
-// });
+export const linkWindowBackgroundColor = theme("mode", {
+  light: "#6200EE95",
+  dark: "#BB86FC95",
+});
