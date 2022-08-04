@@ -6,6 +6,7 @@ import { animated } from "@react-spring/web";
 import styled from "styled-components";
 import * as themeConf from "../Theme";
 import GithubLinks from "./GithubLinks";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import useBoop from "../Hooks/use-boop";
 
 const ButtonWindowContainer = styled.div`
@@ -34,11 +35,11 @@ function PortfolioItem({
   const listItems = tools.map((tool: string) => <li key={tool}>{tool}</li>);
 
   const [style, trigger] = useBoop({ rotation: 40 });
-  const [buttonWindowStyle, setButtonWindowStyle] = useState(false);
+  const [isButtonMenuVisible, setIsButtonMenuVisible] = useState(false);
   const [isCursorHovering, setIsCursorHovering] = useState(false);
 
   const viewSiteButtonTextToggle = () => {
-    if (buttonWindowStyle) {
+    if (isButtonMenuVisible) {
       return "Return";
     } else {
       return "View Site";
@@ -46,7 +47,7 @@ function PortfolioItem({
   };
 
   const handleClickEventForViewSiteButton = () => {
-    setButtonWindowStyle(!buttonWindowStyle);
+    setIsButtonMenuVisible(!isButtonMenuVisible);
     trigger();
   };
 
@@ -92,7 +93,7 @@ function PortfolioItem({
         <div className="portfolio__content--right">
           <div
             className={
-              buttonWindowStyle
+              isButtonMenuVisible
                 ? "portfolio__tech-used--hidden"
                 : "portfolio__tech-used"
             }
@@ -108,17 +109,23 @@ function PortfolioItem({
         />
         <ButtonWindowContainer
           className={
-            buttonWindowStyle
+            isButtonMenuVisible
               ? "gh__linkWindow--show"
               : "gh__linkWindow--hidden"
           }
         >
           <div className="gh__button--container">
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-              <button className="gh__button--link">View Site</button>
+              <button className="gh__button--link">
+                <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                <p>View Site</p>
+              </button>
             </a>
             <a href={codeUrl} target="_blank" rel="noopener noreferrer">
-              <button className="gh__button--link">View Code</button>
+              <button className="gh__button--link">
+                <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                <p>View Code</p>
+              </button>
             </a>
           </div>
         </ButtonWindowContainer>

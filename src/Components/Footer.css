@@ -6,12 +6,18 @@
   width: 100%;
 }
 
+/* .footer__logo {
+  width: 50%;
+  height: auto;
+  margin-top: 40px;
+} */
+
 .footer__contactHeader {
   display: flex;
   z-index: 1;
   font-size: 40px;
   font-weight: 200;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .footer__textBottom {
@@ -29,18 +35,26 @@
   width: 80%;
 }
 
-.footer > form > input {
+.footer > form > div > input {
   margin: 10px;
-  width: 80%;
+  width: 90%;
   height: 30px;
   max-width: 250px;
-
   border: none;
   outline-width: 0;
   padding-left: 10px;
-  border-radius: 20px;
+  border-radius: 3px;
   box-shadow: 3px 3px 10px #00000050;
 }
+
+.footer__input-contain {
+  display: flex;
+  width: 20rem;
+  flex-direction: row;
+  align-items: center;
+  color: #8a8a8a;
+}
+
 .footer > form > textarea {
   margin: 10px;
   height: 150px;
@@ -53,7 +67,7 @@
   outline-width: 0;
   padding-left: 10px;
   padding-top: 10px;
-  border-radius: 20px;
+  border-radius: 3px;
   box-shadow: 3px 3px 10px #00000050;
 }
 
@@ -62,7 +76,7 @@
   width: 80%;
   max-width: 200px;
   border: none;
-  border-radius: 20px;
+  border-radius: 3px;
   height: 40px;
   color: white;
   font-weight: 700;

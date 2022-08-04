@@ -1,4 +1,6 @@
 import "./Footer.css";
+import { ReactComponent as Logo } from "../images/jweisberg__textlogo.svg";
+import { useTheme } from "../ThemeManager";
 import { ErrorTypes } from "../types";
 import { IFormValues } from "../types";
 import styled from "styled-components";
@@ -6,11 +8,16 @@ import * as themeConf from "../Theme";
 import emailjs, { EmailJSResponseStatus } from "emailjs-com";
 import { useEffect, useState } from "react";
 import SocialIcons from "./SocialIcons";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import EmailIcon from "@mui/icons-material/Email";
+import SubjectIcon from "@mui/icons-material/Subject";
 
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
   &:hover {
     background-color: ${themeConf.linkColorHover};
+    border-radius: 10px;
+    transition: 0.5s;
   }
 `;
 
@@ -22,6 +29,16 @@ function Footer() {
   const [ShowSuccessAlert, setShowSuccessAlert] = useState(false);
   const [ShowErrorAlert, setShowErrorAlert] = useState(false);
   const [ShowLoadingAlert, setShowLoadingAlert] = useState(false);
+
+  const theme = useTheme();
+
+  const toggleThemeSwitchValue = (): boolean => {
+    if (theme.mode === "light") {
+      return false;
+    } else {
+      return true;
+    }
+  };
 
   const handleChange = (
     e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -66,7 +83,7 @@ function Footer() {
       errors.subject = "Subject is required";
     }
     if (!values.message) {
-      errors.message = "You didn't write anything...";
+      errors.message = "Please write a message";
     }
 
     return errors;
@@ -98,36 +115,51 @@ function Footer() {
 
   return (
     <div className="footer">
-      <h1 className="footer__contactHeader">Let's get in touch!</h1>
+      {/* <Logo
+        className="footer__logo"
+        fill={toggleThemeSwitchValue() ? "#fff" : "#8A8A8A"}
+      /> */}
+      <h1 className="footer__contactHeader">Let's Chat! 📬</h1>
       <form onSubmit={handleSubmit}>
         <p className="alert__text">{formErrors.from_name}</p>
-        <input
-          name="from_name"
-          placeholder="Name"
-          type="text"
-          value={formValues.from_name}
-          onChange={handleChange}
-        />
+
+        <div className="footer__input-contain">
+          <AccountCircleIcon />
+          <input
+            name="from_name"
+            placeholder="Name"
+            type="text"
+            value={formValues.from_name}
+            onChange={handleChange}
+          />
+        </div>
 
         <p className="alert__text">{formErrors.email}</p>
-        <input
-          name="email"
-          placeholder="Email"
-          type="email"
-          aria-describedby="emailHelp"
-          value={formValues.email}
-          onChange={handleChange}
-        />
+
+        <div className="footer__input-contain">
+          <EmailIcon />
+          <input
+            name="email"
+            placeholder="Email"
+            type="email"
+            aria-describedby="emailHelp"
+            value={formValues.email}
+            onChange={handleChange}
+          />
+        </div>
 
         <p className="alert__text">{formErrors.subject}</p>
-        <input
-          name="subject"
-          placeholder="Subject"
-          type="subject"
-          className="form__control--subject"
-          value={formValues.subject}
-          onChange={handleChange}
-        />
+        <div className="footer__input-contain">
+          <SubjectIcon />
+          <input
+            name="subject"
+            placeholder="Subject"
+            type="subject"
+            className="form__control--subject"
+            value={formValues.subject}
+            onChange={handleChange}
+          />
+        </div>
 
         <p className="alert__text">{formErrors.message}</p>
         <textarea
