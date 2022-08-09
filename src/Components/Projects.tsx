@@ -63,7 +63,7 @@ function Projects() {
         />
         <PortfolioItem
           title="LinkedIn Clone"
-          body="React app that uses Redux to manage user state, and a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only."
+          body="React app that uses Redux to manage global state of user, a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only."
           codeUrl=" "
           linkUrl="https://linkedin-clone-6520a.firebaseapp.com/"
           imageSrc={linkedinClone}
@@ -71,7 +71,7 @@ function Projects() {
         />
         <PortfolioItem
           title="Tic React Toe"
-          body="Create-React-App that uses Reacts useState hook to manage the players state. I used Sass so I could use an animated gradient for the winner text. "
+          body="Tic Tac Toe game rendered in React."
           codeUrl="https://github.com/justinWaves/tic-react-toe"
           linkUrl="https://justinwaves.github.io/tic-react-toe/"
           imageSrc={ticTactToe}
@@ -87,7 +87,7 @@ function Projects() {
         />
         <PortfolioItem
           title="JW Portfolio 2018"
-          body="My First Portfolio site, you may see some similarities to this one. It slow, clunky but it works. I used CSS to size and animate different PNG of gears as a background. The site is fully responsive."
+          body="My First Portfolio site, you may see some similarities to this one. I used CSS to size and animate different PNG of gears as a background. The site is fully responsive."
           codeUrl="https://github.com/justinWaves/JW-Portfolio"
           linkUrl="https://justinwaves.github.io/JW-Portfolio/"
           imageSrc={jwPort2018}
