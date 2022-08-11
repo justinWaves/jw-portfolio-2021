@@ -37,24 +37,23 @@ function Bio() {
 
           <p>
             <strong className="bio__greetings"> Greetings!</strong> My name is
-            Justin, and I am a Web Developer from San Francisco with a strong
-            passion for impeccable UX and keen eye for design. When Im not
-            coding, I am creating music under the moniker{" "}
+            Justin, and I am a Web Developer with a strong passion for
+            impeccable UX and a keen eye for design. When Im not coding, I am
+            creating music under the moniker{" "}
             <BioLink
               href="https://distrokid.com/hyperfollow/justinwaves/sun-will-rise-3"
               target="_blank"
             >
               Justin Waves
-            </BioLink>{" "}
-            which has led to many performances around the Bay Area, including
-            Outside Lands 2019. I taught myself web development fundamentals in
-            2013 and launched my own web design firm 5 years later focused on
-            local small businesses, coding all sites from scratch. Though my
-            talent is best suited for front end work, I have built several full
-            stack web apps some of which can be found below. Learning new tech
-            and expanding my toolbox is a true passion of mine. Today I enjoy
-            using React, Typescript, Next.JS, TailwindCSS, and I am actively
-            seeking a role on a agile dev team. Let's build!
+            </BioLink>
+            . I taught myself web development fundamentals in 2013 and launched
+            my own web design firm 5 years later focused on local small
+            businesses, coding all sites from scratch. Though my talents are
+            best suited for front end work, I have built several full stack web
+            apps, some of which can be found below. Learning new tech is a skill
+            I have had since birth, and my toolbox is constantly expanding.
+            Today I enjoy using React, Typescript, Next.JS, TailwindCSS, and I
+            am actively seeking a role on a agile dev team. Let's build!
           </p>
         </div>
         <div className="bio__right">
