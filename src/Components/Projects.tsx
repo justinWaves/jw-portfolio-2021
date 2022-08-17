@@ -27,7 +27,7 @@ function Projects() {
           title="Syntax Highlighter"
           body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
           codeUrl="https://github.com/justinWaves/es6-code-formatter"
-          linkUrl="https://github.com/justinWaves/es6-code-formatter"
+          linkUrl="https://justinwaves.github.io/es6-code-formatter/"
           imageSrc={es6}
           tools={["React", "Typescript"]}
         />
