@@ -6,7 +6,7 @@ import highLife from "../images/highlife-alpha.png";
 import jwPort2018 from "../images/2018port-alpha.png";
 import metaWaves from "../images/metawaves-alpha.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
-import mobileClone from "../images/medium-clone-thumb.png";
+import jWavesBlog from "../images/jwavesblog-alpha.png";
 import es6 from "../images/es6-thumbnail.png";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
@@ -32,11 +32,11 @@ function Projects() {
           tools={["React", "Typescript"]}
         />
         <PortfolioItem
-          title="Medium Clone"
-          body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes SSR, ISR, and a working comment section, complete with Form validation using React-Forms. Was a fun project to learn how to fetch data using Sanity's query language GROQ."
-          codeUrl="https://github.com/justinWaves/medium-clone"
-          linkUrl="https://medium-clone-8fmph8ycv-justinwaves.vercel.app/"
-          imageSrc={mobileClone}
+          title="Justin Waves Blog"
+          body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes Dynamic Routes, Server Side Rendering, Incremental Static Regeneration, a working comment section, and Form validation using React-Forms. Also utilized custom made RESTful API's using Sanity's query language GROQ to read and write data from the database."
+          codeUrl="https://github.com/justinWaves/justinwaves-blog"
+          linkUrl="https://justinwaves-blog.vercel.app/"
+          imageSrc={jWavesBlog}
           tools={[
             "React",
             "Next.js",
