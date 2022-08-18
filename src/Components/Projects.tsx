@@ -3,6 +3,7 @@ import "./Projects.css";
 import linkedinClone from "../images/linkedin-alpha.png";
 import ticTactToe from "../images/tictactoe-alpha.png";
 import highLife from "../images/highlife-alpha.png";
+import tac from "../images/TAC-alpha.png";
 import jwPort2018 from "../images/2018port-alpha.png";
 import metaWaves from "../images/metawaves-alpha.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
@@ -84,6 +85,14 @@ function Projects() {
           linkUrl="https://www.highlifepages.com/"
           imageSrc={highLife}
           tools={["Bootstrap", "HTML", "Sass", "Javascript"]}
+        />
+        <PortfolioItem
+          title="Trinity Alpine"
+          body="One of the sites I built for a Highlife Pages Client. It is fully responsive, made with Bootstrap4, JQuery, and plain ol HTML and CSS"
+          codeUrl="https://github.com/justinWaves/trinity-alpine"
+          linkUrl="https://justinwaves.github.io/trinity-alpine/"
+          imageSrc={tac}
+          tools={["Bootstrap", "JQuery", "HTML", "CSS"]}
         />
         <PortfolioItem
           title="JW Portfolio 2018"
