@@ -9,7 +9,7 @@ function useBoop({
   scale = 1,
   timing = 150,
   springConfig = {
-    tension: 300,
+    tension: 700,
     friction: 10,
   },
 }) {
