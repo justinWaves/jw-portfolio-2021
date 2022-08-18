@@ -144,9 +144,10 @@
   .portfolioItem__content--center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     margin-left: -60px;
+    overflow: scroll;
     z-index: 2;
     flex: 0.3;
   }
@@ -328,7 +329,7 @@
 
 .gh__button--link:hover {
   cursor: pointer;
-  transition: all 0.25s;
+  transition: 0.25s ease-in-out;
   box-shadow: 0px 0px 0px #dddddd;
   transform: translate(5px, 3px);
 }
@@ -336,21 +337,21 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-700px);
+    transform: translateY(-400px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @-webkit-keyframes fadeInLeft {
   0% {
     -webkit-opacity: 0;
-    -webkit-transform: translateX(-700px);
+    -webkit-transform: translateY(-400px);
   }
   100% {
     -webkit-opacity: 1;
-    -webkit-transform: translateX(0);
+    -webkit-transform: translateY(0);
   }
 }

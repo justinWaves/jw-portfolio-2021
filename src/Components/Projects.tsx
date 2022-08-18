@@ -22,7 +22,7 @@ const ProjectsContain = styled.div`
 function Projects() {
   return (
     <ProjectsContain className="projects">
-      <h1 className="projects__title">Recent Projects</h1>
+      <h1 className="projects__title">Portfolio Projects</h1>
       <div className="projects__contain">
         <PortfolioItem
           title="Syntax Highlighter"
@@ -76,7 +76,7 @@ function Projects() {
           codeUrl="https://github.com/justinWaves/tic-react-toe"
           linkUrl="https://justinwaves.github.io/tic-react-toe/"
           imageSrc={ticTactToe}
-          tools={["React", "Sass", "SVG"]}
+          tools={["React", "Sass"]}
         />
         <PortfolioItem
           title="HighLife Pages"
