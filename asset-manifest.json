@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jw-portfolio-2021/static/css/main.55cff32f.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.9d7b21f6.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.9d7b21f6.chunk.js.map",
+    "main.js": "/jw-portfolio-2021/static/js/main.bb849061.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.bb849061.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.2ec7f94b.js.map",
     "static/js/2.1e329b44.chunk.js": "/jw-portfolio-2021/static/js/2.1e329b44.chunk.js",
@@ -13,6 +13,7 @@
     "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
+    "static/media/TAC-alpha.bc2fbaad.png": "/jw-portfolio-2021/static/media/TAC-alpha.bc2fbaad.png",
     "static/media/bently.d6f7fad2.svg": "/jw-portfolio-2021/static/media/bently.d6f7fad2.svg",
     "static/media/bike-1.1a152deb.svg": "/jw-portfolio-2021/static/media/bike-1.1a152deb.svg",
     "static/media/bike-2.eeb8ed1d.svg": "/jw-portfolio-2021/static/media/bike-2.eeb8ed1d.svg",
@@ -49,6 +50,6 @@
     "static/js/runtime-main.2ec7f94b.js",
     "static/js/2.1e329b44.chunk.js",
     "static/css/main.55cff32f.chunk.css",
-    "static/js/main.9d7b21f6.chunk.js"
+    "static/js/main.bb849061.chunk.js"
   ]
 }
