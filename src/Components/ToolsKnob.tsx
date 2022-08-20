@@ -68,7 +68,7 @@ function ToolsKnob() {
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
       knobSelectParagraph =
-        "Having a strongly-typed codebase makes for much more robust and secure code. I've grown to really love Typescript despite it yelling at me at times. This site was implemented in Typescript";
+        "Having a strongly-typed codebase makes for much more robust and secure code. Learning Typescript also helped me understand other strongly-typed languages. I don't build projects with out it";
     }
   };
 

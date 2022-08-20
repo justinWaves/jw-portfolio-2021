@@ -14,10 +14,22 @@
 
 .footer__contactHeader {
   display: flex;
+  flex-direction: column;
   z-index: 1;
+
+  margin-top: 100px;
+  align-items: center;
+}
+
+.footer__contactHeader-title {
   font-size: 45px;
   font-weight: 200;
-  margin-top: 100px;
+}
+
+.footer__contactHeader-subtitle {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .footer__textBottom {
@@ -90,7 +102,7 @@
 /*  ~~~~~~ ALERT FLAGS ~~~~~~~~~   */
 
 .alert__success {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   position: absolute;
   bottom: 0;
@@ -117,7 +129,7 @@
 }
 
 .alert__error {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   position: absolute;
   bottom: 0;
@@ -132,7 +144,7 @@
 }
 
 .alert__loading {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   position: absolute;
   bottom: 0;

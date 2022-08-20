@@ -22,7 +22,9 @@ const ProjectsContain = styled.div`
 function Projects() {
   return (
     <ProjectsContain className="projects">
-      <h1 className="projects__title">Portfolio Projects</h1>
+      <h1 className="projects__title">
+        <strong>Portfolio</strong> Projects
+      </h1>
       <div className="projects__contain">
         <PortfolioItem
           title="Syntax Highlighter"

@@ -1,26 +1,16 @@
 import bioPic from "../images/jwaves even smaller.jpg";
 import "./Bio.css";
 import * as themeConf from "../Theme";
+import { useTheme } from "../ThemeManager";
 import styled from "styled-components";
 import ToolsKnob from "./ToolsKnob";
-import ArchiveIcon from "@mui/icons-material/Archive";
+import BioRight from "./BioRight";
+import BioHeader from "./BioHeader";
+import { fontSize } from "@mui/system";
 
 const BioContain = styled.div`
   background-color: ${themeConf.backgroundColor};
   color: ${themeConf.textColor};
-`;
-
-const ExperienceHeader = styled.h2`
-  font-size: 40px;
-  font-weight: 300;
-  color: ${themeConf.secondaryTextColor};
-`;
-
-const ResumeButton = styled.button`
-  background-color: ${themeConf.linkColor};
-  &:hover {
-    background-color: ${themeConf.linkColorHover};
-  }
 `;
 
 const BioLink = styled.a`
@@ -29,49 +19,63 @@ const BioLink = styled.a`
 `;
 
 function Bio() {
+  const theme = useTheme();
+  let isLight = true;
+  if (theme.mode === "light") {
+    isLight = !isLight;
+  }
   return (
     <BioContain className="bio">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="bio__underwater-divider"
+      >
+        <path
+          fill={isLight ? "#1A3B63" : "#3470A6"}
+          fill-opacity="1"
+          d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,133.3C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
+      <BioHeader />
       <div className="bio__topSection">
         <div className="bio__left">
           <img src={bioPic} alt="" />
-
-          <p>
-            <strong className="bio__greetings"> Greetings!</strong> My name is
-            Justin, and I am a Web Developer with a strong passion for
-            impeccable UX and a keen eye for design. When Im not coding, I am
-            creating music under the moniker{" "}
-            <BioLink
-              href="https://distrokid.com/hyperfollow/justinwaves/sun-will-rise-3"
-              target="_blank"
-            >
-              Justin Waves
-            </BioLink>
-            . I taught myself web development fundamentals in 2013 and launched
-            my own web design firm 5 years later focused on local small
-            businesses, coding all sites from scratch. Though my talents are
-            best suited for front end work, I have built several full stack web
-            apps, some of which can be found below. Learning new tech is a skill
-            I have had since birth, and my toolbox is constantly expanding.
-            Today I enjoy using React, Typescript, Next.JS, TailwindCSS, and I
-            am actively seeking a role on a agile dev team. Let's build!
-          </p>
+          <div className="bio__text-background">
+            <p>
+              and{" "}
+              <span style={{ fontSize: 20 }}>
+                {" "}
+                🖥☕️ <strong>I love coding </strong>
+              </span>
+              beautiful, performant user interfaces with React + Typescript. I
+              deployed my first consumer-facing website in 2013 after learning
+              HTML, CSS, and JS fundamentals through CodeAcademy. 5 years later
+              I started a web design firm called{" "}
+              <BioLink href="https://www.highlifepages.com/" target="_blank">
+                HighLife Pages
+              </BioLink>
+              . The most valuable skills I have developed as a self-taught
+              programmer, is the ability to stay current and adapt to new tech
+              quickly, as well as the ability to self-manage and take 100%
+              ownership over my work. Today I am fully focused on larger
+              projects and have tailored my skill sets to serve an agile dev
+              environment. Thanks to the help of some senior-level mentors, I
+              have learned to write clean, scalable, performant, well-tested,
+              production ready code. Woah, thats a lot of adjectives. When I am
+              not writing code, you can find me climbing, playing jazz piano,
+              jamming on guitar, or producing electronic music under the moniker{" "}
+              <BioLink
+                href="https://justinwaves-blog.vercel.app/"
+                target="_blank"
+              >
+                Justin Waves
+              </BioLink>
+              .
+            </p>
+          </div>
         </div>
-        <div className="bio__right">
-          <ExperienceHeader>Years Coding:</ExperienceHeader>
-
-          <h1 className="bio__experience">9</h1>
-
-          <a
-            href="https://www.dropbox.com/s/vrjajfstbvxa608/JWeisberg-Resume-2022.pdf?dl=1"
-            title="Justin-Weisberg-Resume2021"
-            download
-          >
-            <ResumeButton className="bio__resume--button">
-              <ArchiveIcon />
-              Download Resume
-            </ResumeButton>
-          </a>
-        </div>
+        <BioRight />
       </div>
 
       <div className="bio__tools">

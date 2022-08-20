@@ -1,22 +1,27 @@
 .bio {
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
   flex-wrap: wrap;
   overflow-x: hidden;
   z-index: 1;
-  margin-top: 10px;
+  align-items: center;
 }
+
+.bio__underwater-divider {
+  width: 100vw;
+}
+
 @media only screen and (max-width: 768px) {
   .bio {
     flex-wrap: nowrap;
   }
 }
 
-@media only screen and (min-width: 1705px) {
+@media only screen and (min-width: 1550px) {
   .bio {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -31,6 +36,7 @@
   margin-left: 1rem;
   margin-top: 20px;
   z-index: 3;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,9 +60,22 @@
   box-shadow: 3px 3px 10px #00000050;
 }
 
-.bio__left > p {
-  font-size: 16px;
-  font-weight: 500;
+@media only screen and (max-width: 768px) {
+  .bio__left > img {
+    height: 400px;
+    width: 400px;
+    flex: 1;
+    border-radius: 100% 100% 0% 0%;
+    shape-outside: circle() margin-box;
+    margin: 18px;
+    z-index: 5;
+    box-shadow: 3px 3px 10px #00000050;
+  }
+}
+
+.bio__left > div > p {
+  font-size: 20px;
+  font-weight: 400;
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 20px;
@@ -64,8 +83,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .bio__left > p {
+  .bio__left > div > p {
     flex: 1;
+    font-size: 16px;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -73,34 +93,11 @@
   }
 }
 
+.bio__text-background {
+}
+
 .bio__greetings {
   font-size: 25px;
-}
-
-.bio__right {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 0.4;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .bio__right {
-    flex: 1;
-  }
-}
-
-.bio__right > a {
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-.bio__experience {
-  font-size: 900%;
-  font-weight: 600;
 }
 
 /*~~~~~~~~~~Tools Knob Section~~~~~~~~~~~*/
@@ -110,22 +107,4 @@
   justify-content: center;
   text-align: center;
   flex: 1;
-}
-
-.bio__resume--button {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 240px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
-  border-radius: 20px;
-  height: 40px;
-  color: white;
-  font-weight: 700;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 3px 3px 10px #00000050;
-  white-space: nowrap;
 }

@@ -9,21 +9,14 @@ import styled from "styled-components";
 
 function Header() {
   const theme = useTheme();
-
-  const toggleThemeSwitchValue = (): boolean => {
-    if (theme.mode === "light") {
-      return false;
-    } else {
-      return true;
-    }
-  };
+  let isLight = true;
+  if (theme.mode === "light") {
+    isLight = !isLight;
+  }
 
   return (
     <div className="header__container">
-      <Logo
-        className="header__logo"
-        fill={toggleThemeSwitchValue() ? "#fff" : "#8A8A8A"}
-      />
+      <Logo className="header__logo" fill={isLight ? "#fff" : "#8A8A8A"} />
       <div className="header__text--container">
         <h1 className="header__textTop"> Front End Developer</h1>
         <p className="header__subText">San Francisco, CA</p>
@@ -33,7 +26,7 @@ function Header() {
         <Switch
           size="medium"
           onChange={() => theme.toggle()}
-          checked={toggleThemeSwitchValue()}
+          checked={isLight}
           color="default"
         />
 

@@ -11,6 +11,7 @@ import SocialIcons from "./SocialIcons";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import SubjectIcon from "@mui/icons-material/Subject";
+import { truncate } from "fs";
 
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
@@ -35,9 +36,8 @@ function Footer() {
   const toggleThemeSwitchValue = (): boolean => {
     if (theme.mode === "light") {
       return false;
-    } else {
-      return true;
     }
+    return true;
   };
 
   const handleChange = (
@@ -115,11 +115,13 @@ function Footer() {
 
   return (
     <div className="footer">
-      {/* <Logo
-        className="footer__logo"
-        fill={toggleThemeSwitchValue() ? "#fff" : "#8A8A8A"}
-      /> */}
-      <h1 className="footer__contactHeader">Let's Chat! 📬</h1>
+      <div className="footer__contactHeader">
+        <h1 className="footer__contactHeader-title">
+          <strong> Inquiries?</strong> Good Jokes? <br />
+          <br />
+        </h1>
+        <h1 className="footer__contactHeader-subtitle">Reach out Below! 📬</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <p className="alert__text">{formErrors.from_name}</p>
 
