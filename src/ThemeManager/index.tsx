@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeContext } from "../types";
 
-const defaultMode = "light";
+const defaultMode = "dark";
 
 export const ManageThemeContext: React.Context<ThemeContext> =
   React.createContext({

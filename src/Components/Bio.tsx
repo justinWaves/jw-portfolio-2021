@@ -6,7 +6,6 @@ import styled from "styled-components";
 import ToolsKnob from "./ToolsKnob";
 import BioRight from "./BioRight";
 import BioHeader from "./BioHeader";
-import { fontSize } from "@mui/system";
 
 const BioContain = styled.div`
   background-color: ${themeConf.backgroundColor};
@@ -20,9 +19,11 @@ const BioLink = styled.a`
 
 function Bio() {
   const theme = useTheme();
-  let isLight = true;
+  let isLight = null;
   if (theme.mode === "light") {
-    isLight = !isLight;
+    isLight = true;
+  } else {
+    isLight = false;
   }
   return (
     <>
@@ -32,7 +33,7 @@ function Bio() {
         className="bio__underwater-divider"
       >
         <path
-          fill={isLight ? "#1A3B63" : "#3470A6"}
+          fill={isLight ? "#3470A6" : "#1A3B63"}
           fill-opacity="1"
           d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,133.3C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
         ></path>

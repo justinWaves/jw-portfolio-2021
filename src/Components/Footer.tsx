@@ -1,6 +1,4 @@
 import "./Footer.css";
-import { ReactComponent as Logo } from "../images/jweisberg__textlogo.svg";
-import { useTheme } from "../ThemeManager";
 import { ErrorTypes } from "../types";
 import { IFormValues } from "../types";
 import styled from "styled-components";
@@ -11,7 +9,6 @@ import SocialIcons from "./SocialIcons";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import SubjectIcon from "@mui/icons-material/Subject";
-import { truncate } from "fs";
 
 const FormButton = styled.button`
   background-color: ${themeConf.linkColor};
@@ -22,23 +19,17 @@ const FormButton = styled.button`
   }
 `;
 
+const LoadingAlert = styled.div`
+  background-color: ${themeConf.linkColor};
+`;
+
 function Footer() {
   const initialValues = { from_name: "", email: "", subject: "", message: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState<any>({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const [ShowSuccessAlert, setShowSuccessAlert] = useState(true);
-  const [ShowErrorAlert, setShowErrorAlert] = useState(false);
-  const [ShowLoadingAlert, setShowLoadingAlert] = useState(false);
-
-  const theme = useTheme();
-
-  const toggleThemeSwitchValue = (): boolean => {
-    if (theme.mode === "light") {
-      return false;
-    }
-    return true;
-  };
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [showLoadingAlert, setShowLoadingAlert] = useState(false);
 
   const handleChange = (
     e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -55,10 +46,8 @@ function Footer() {
 
   useEffect(() => {
     if (Object.keys(formErrors).length > 0 && isSubmit) {
-      setShowErrorAlert(true);
       setTimeout(() => {
         setIsSubmit(false);
-        setShowErrorAlert(false);
       }, 500);
     }
 
@@ -105,7 +94,7 @@ function Footer() {
           setFormValues(initialValues);
           setTimeout(() => {
             setShowSuccessAlert(false);
-          }, 4000);
+          }, 7000);
         },
         (error) => {
           console.log(error.text);
@@ -122,6 +111,7 @@ function Footer() {
         </h1>
         <h1 className="footer__contactHeader-subtitle">Reach out Below! 📬</h1>
       </div>
+
       <form onSubmit={handleSubmit}>
         <p className="alert__text">{formErrors.from_name}</p>
 
@@ -170,10 +160,42 @@ function Footer() {
           value={formValues.message}
           onChange={handleChange}
         />
+        {showLoadingAlert || showSuccessAlert ? (
+          <div>
+            {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}
+            <div
+              className={`alert__success ${
+                showSuccessAlert ? "alert-shown" : "alert__hidden"
+              }`}
+              onTransitionEnd={() => setShowSuccessAlert(false)}
+            >
+              <h1>Success! 🎉 </h1>
+              <p>Thank you for reaching out. I will get back to you ASAP</p>
+            </div>
 
-        <FormButton type="submit" value="Send">
-          Submit
-        </FormButton>
+            <LoadingAlert
+              className={`alert__loading ${
+                showLoadingAlert ? "alert-shown" : "alert__hidden--noanimate"
+              }`}
+              onTransitionEnd={() => setShowSuccessAlert(false)}
+            >
+              <div className="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </LoadingAlert>
+          </div>
+        ) : (
+          <FormButton type="submit" value="Send">
+            Submit
+          </FormButton>
+        )}
       </form>
 
       <SocialIcons />
@@ -181,45 +203,6 @@ function Footer() {
       <p className="footer__textBottom">
         Designed and built by Justin Weisberg 2022
       </p>
-
-      {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}
-      <div
-        className={`alert__success ${
-          ShowSuccessAlert ? "alert-shown" : "alert__hidden"
-        }`}
-        onTransitionEnd={() => setShowSuccessAlert(false)}
-      >
-        <h1>Success! 🎉 </h1>
-        <p>Thank you for reaching out. I will get back to you ASAP</p>
-      </div>
-
-      <div
-        className={`alert__error ${
-          ShowErrorAlert ? "alert__shown" : "alert__hidden"
-        }`}
-        onTransitionEnd={() => setShowErrorAlert(false)}
-      >
-        <h2>There were some issues...😕 </h2>
-        <p>Please fill out the form correctly</p>
-      </div>
-
-      <div
-        className={`alert__loading ${
-          ShowLoadingAlert ? "alert-shown" : "alert__hidden--noanimate"
-        }`}
-        onTransitionEnd={() => setShowSuccessAlert(false)}
-      >
-        <div className="lds-roller">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function Header() {
     <div className="header__container">
       <Logo className="header__logo" fill={isLight ? "#fff" : "#8A8A8A"} />
       <div className="header__text--container">
-        <h1 className="header__textTop"> Front End Developer</h1>
+        <h1 className="header__textTop"> Software Developer</h1>
         <p className="header__subText">San Francisco, CA</p>
       </div>
       <div className="header__toggle--container">
