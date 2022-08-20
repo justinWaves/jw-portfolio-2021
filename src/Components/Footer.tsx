@@ -27,7 +27,7 @@ function Footer() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState<any>({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const [ShowSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [ShowSuccessAlert, setShowSuccessAlert] = useState(true);
   const [ShowErrorAlert, setShowErrorAlert] = useState(false);
   const [ShowLoadingAlert, setShowLoadingAlert] = useState(false);
 
@@ -129,7 +129,7 @@ function Footer() {
           <AccountCircleIcon />
           <input
             name="from_name"
-            placeholder="Name"
+            placeholder="Name*"
             type="text"
             value={formValues.from_name}
             onChange={handleChange}
@@ -142,7 +142,7 @@ function Footer() {
           <EmailIcon />
           <input
             name="email"
-            placeholder="Email"
+            placeholder="Email*"
             type="email"
             aria-describedby="emailHelp"
             value={formValues.email}
@@ -155,7 +155,7 @@ function Footer() {
           <SubjectIcon />
           <input
             name="subject"
-            placeholder="Subject"
+            placeholder="Subject*"
             type="subject"
             className="form__control--subject"
             value={formValues.subject}
@@ -166,7 +166,7 @@ function Footer() {
         <p className="alert__text">{formErrors.message}</p>
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder="Message*"
           value={formValues.message}
           onChange={handleChange}
         />
@@ -179,7 +179,7 @@ function Footer() {
       <SocialIcons />
 
       <p className="footer__textBottom">
-        Designed and built by Justin Weisberg. 2021
+        Designed and built by Justin Weisberg 2022
       </p>
 
       {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}

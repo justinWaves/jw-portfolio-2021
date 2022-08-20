@@ -6,17 +6,11 @@
   width: 100%;
 }
 
-/* .footer__logo {
-  width: 50%;
-  height: auto;
-  margin-top: 40px;
-} */
-
 .footer__contactHeader {
   display: flex;
   flex-direction: column;
   z-index: 1;
-
+  text-align: center;
   margin-top: 100px;
   align-items: center;
 }
@@ -102,18 +96,17 @@
 /*  ~~~~~~ ALERT FLAGS ~~~~~~~~~   */
 
 .alert__success {
-  width: 100%;
+  width: 80%;
   height: 100px;
   position: absolute;
   bottom: 0;
   color: white;
   background-color: green;
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   flex-direction: column;
   padding-top: 10px;
   align-items: center;
-  z-index: 9999999;
   border-radius: 100px 100px 0px 0px;
 }
 
@@ -129,7 +122,7 @@
 }
 
 .alert__error {
-  width: 100%;
+  width: 80%;
   height: 100px;
   position: absolute;
   bottom: 0;
@@ -144,7 +137,7 @@
 }
 
 .alert__loading {
-  width: 100%;
+  width: 80%;
   height: 100px;
   position: absolute;
   bottom: 0;
