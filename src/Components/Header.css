@@ -20,7 +20,7 @@
   .header__container {
     flex-direction: row;
     justify-content: space-around;
-    height: 20vh;
+    height: 30vh;
   }
 }
 
