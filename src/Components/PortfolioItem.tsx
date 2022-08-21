@@ -8,8 +8,9 @@ import * as themeConf from "../Theme";
 import GithubLinks from "./GithubLinks";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import useBoop from "../Hooks/use-boop";
+import { config, useSpring } from "react-spring";
 
-const ButtonWindowContainer = styled.div`
+const ButtonWindowContainer = styled(animated.div)`
   background-color: ${themeConf.linkWindowBackgroundColor};
 `;
 
@@ -38,14 +39,6 @@ function PortfolioItem({
   const [isButtonMenuVisible, setIsButtonMenuVisible] = useState(false);
   const [isCursorHovering, setIsCursorHovering] = useState(false);
 
-  const viewSiteButtonTextToggle = () => {
-    if (isButtonMenuVisible) {
-      return "Return";
-    } else {
-      return "View Site";
-    }
-  };
-
   const handleClickEventForViewSiteButton = () => {
     setIsButtonMenuVisible(!isButtonMenuVisible);
     trigger();
@@ -54,6 +47,36 @@ function PortfolioItem({
   const onPortfolioItemHover = () => {
     setIsCursorHovering(!isCursorHovering);
   };
+
+  const linkWindowAnimation = useSpring({
+    config: config.slow,
+    from: {
+      opacity: 0,
+      transform: "translate3d(72%, 70%, 0)",
+      borderRadius: "1500px 0px 0px 20px",
+    },
+    to: {
+      opacity: isButtonMenuVisible ? 1 : 0,
+      transform: isButtonMenuVisible
+        ? "translate3d(0, 0, 0)"
+        : "translate3d(72%, 70%, 0)",
+      borderRadius: isButtonMenuVisible
+        ? "20px 0px 0px 20px"
+        : "1500px 0px 0px 20px",
+    },
+  });
+
+  const buttonAnimation = useSpring({
+    config: config.wobbly,
+    delay: 100,
+    from: {
+      transform: "TranslateY(-400px)",
+    },
+    to: {
+      opacity: isButtonMenuVisible ? 1 : 0,
+      transform: isButtonMenuVisible ? "TranslateY(0px)" : "TranslateY(-400px)",
+    },
+  });
 
   return (
     <div className="portfolioItem__main">
@@ -105,16 +128,20 @@ function PortfolioItem({
         <GithubLinks
           onChildClick={handleClickEventForViewSiteButton}
           style={style}
-          buttonText={viewSiteButtonTextToggle()}
+          buttonText={isButtonMenuVisible ? "Return" : "View Site"}
         />
         <ButtonWindowContainer
+          style={linkWindowAnimation}
           className={
             isButtonMenuVisible
               ? "gh__linkWindow--show"
               : "gh__linkWindow--hidden"
           }
         >
-          <div className="gh__button--container">
+          <animated.div
+            style={buttonAnimation}
+            className="gh__button--container"
+          >
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
               <button className="gh__button--link">
                 <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
@@ -127,7 +154,7 @@ function PortfolioItem({
                 <p>View Code</p>
               </button>
             </a>
-          </div>
+          </animated.div>
         </ButtonWindowContainer>
       </PortfolioItemContain>
     </div>
