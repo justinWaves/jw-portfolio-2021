@@ -4,6 +4,7 @@
   place-items: center;
   max-width: 100%;
   height: 70vh;
+  height: -webkit-fill-available;
   border-radius: 100px 100px 0px 0px;
   overflow: hidden;
   box-shadow: 3px 3px 10px #00000050;
@@ -87,7 +88,7 @@
 
 .city__water--day {
   background-image: linear-gradient(#003b63, #3370a6);
-  height: 20vh;
+  height: 20%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -96,13 +97,13 @@
 
 @media only screen and (min-width: 1023px) {
   .city__water--day {
-    height: 22vh;
+    height: 22%;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .city__water--day {
-    height: 25vh;
+    height: 25%;
   }
 }
 
@@ -114,7 +115,7 @@
 
 .city__water--night {
   background-image: linear-gradient(#001a2b, #003b63);
-  height: 20vh;
+  height: 20%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -123,13 +124,13 @@
 
 @media only screen and (min-width: 1023px) {
   .city__water--night {
-    height: 22vh;
+    height: 22%;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .city__water--night {
-    height: 25vh;
+    height: 25%;
   }
 }
 
