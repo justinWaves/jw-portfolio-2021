@@ -1,10 +1,9 @@
 .city__container {
   display: grid;
   grid-template: 1fr / 1fr;
-  place-items: center;
+  /* place-items: center; */
   max-width: 100%;
   max-height: 70vh;
-
   border-radius: 100px 100px 0px 0px;
   overflow: hidden;
   box-shadow: 3px 3px 10px #00000050;
@@ -43,7 +42,7 @@
 
 .city__sky--night::before {
   background-image: url("../images/StarsNight.svg");
-  background-size: 100% 50%;
+  background-size: 150% 50%;
   background-repeat: no-repeat;
   margin-top: -40px;
   content: "";
@@ -57,7 +56,9 @@
 }
 
 .city__sun {
-  margin-bottom: -100px;
+  position: relative;
+  top: 40px;
+  margin: auto;
   height: 100%;
   z-index: 2;
   -webkit-animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
@@ -72,7 +73,9 @@
 }
 
 .city__moon {
-  margin-bottom: -100px;
+  position: relative;
+  top: 40px;
+  margin: auto;
   height: 100%;
   z-index: 2;
   -webkit-animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
@@ -97,7 +100,7 @@
 
 @media only screen and (min-width: 1023px) {
   .city__water--day {
-    height: 22%;
+    height: 2%;
   }
 }
 
@@ -124,7 +127,7 @@
 
 @media only screen and (min-width: 1023px) {
   .city__water--night {
-    height: 22%;
+    height: 35%;
   }
 }
 
@@ -138,19 +141,25 @@
   .city__water--night {
     height: 10%;
   }
+
+  @media only screen and (max-height: 550px) {
+    .city__water--night {
+      height: 0%;
+    }
+  }
 }
 
 .city__clouds {
+  margin-top: 80px;
   width: 400%;
   min-width: 100%;
-  margin-bottom: 200px;
+
   z-index: 4;
   animation: slide 320s linear infinite alternate;
 }
 
 @media only screen and (min-width: 1350px) {
   .city__clouds {
-    margin-bottom: 350px;
   }
 }
 
