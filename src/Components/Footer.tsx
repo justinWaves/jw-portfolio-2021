@@ -107,7 +107,6 @@ function Footer() {
       <div className="footer__contactHeader">
         <h1 className="footer__contactHeader-title">
           <strong> Inquiries?</strong> Good Jokes? <br />
-          <br />
         </h1>
         <h1 className="footer__contactHeader-subtitle">Reach out Below! 📬</h1>
       </div>

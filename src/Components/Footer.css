@@ -11,13 +11,14 @@
   flex-direction: column;
   z-index: 1;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 160px;
   align-items: center;
 }
 
 .footer__contactHeader-title {
   font-size: 45px;
   font-weight: 200;
+  margin-bottom: 40px;
 }
 
 .footer__contactHeader-subtitle {
