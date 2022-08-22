@@ -3,9 +3,7 @@ import { ReactComponent as Logo } from "../images/jweisberg__textlogo.svg";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import Switch from "@mui/material/Switch";
-import * as themeConf from "../Theme";
 import { useTheme } from "../ThemeManager";
-import styled from "styled-components";
 
 function Header() {
   const theme = useTheme();

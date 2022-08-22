@@ -22,7 +22,7 @@
 
 @media only screen and (max-height: 600px) {
   .city__container {
-    max-height: 70vh;
+    max-height: 80vh;
   }
 }
 
@@ -125,7 +125,7 @@
 
 @media only screen and (min-width: 1023px) {
   .city__water--night {
-    height: 35%;
+    height: 20%;
   }
 }
 
@@ -137,10 +137,10 @@
 
 @media only screen and (max-height: 600px) {
   .city__water--night {
-    height: 10%;
+    height: 15%;
   }
 
-  @media only screen and (max-height: 550px) {
+  @media only screen and (max-height: 500px) {
     .city__water--night {
       height: 0%;
     }
