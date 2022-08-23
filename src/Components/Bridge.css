@@ -1,34 +1,9 @@
 .bridge {
-  position: absolute;
-  top: 35%;
   display: grid;
   grid-template: 1fr / 1fr;
   place-items: center;
   width: 100%;
-}
-
-@media only screen and (min-width: 1023px) {
-  .bridge {
-    top: 20%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .bridge {
-    top: 40%;
-  }
-}
-
-@media only screen and (max-width: 435px) {
-  .bridge {
-    top: 45%;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .bridge {
-    top: 60%;
-  }
+  margin-bottom: 20%;
 }
 
 .bridge > * {

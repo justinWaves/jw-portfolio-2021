@@ -46,7 +46,7 @@
   margin: 10px;
   width: 100%;
   height: 30px;
-  max-width: 250px;
+
   border: none;
   outline-width: 0;
   padding-left: 10px;
@@ -58,6 +58,7 @@
 .footer__input-contain {
   display: flex;
   width: 20rem;
+  max-width: 100%;
   flex-direction: row;
   align-items: center;
   color: #8a8a8a;
@@ -66,11 +67,11 @@
 .footer > form > textarea {
   margin: 10px;
   height: 150px;
-  min-height: 150px;
-  max-height: 400px;
-  width: 80%;
-  max-width: 550px;
-  min-width: 350px;
+  /* min-height: 150px;
+  max-height: 400px; */
+
+  max-width: 100%;
+  width: 350px;
   border: none;
   outline-width: 0;
   padding-left: 10px;
