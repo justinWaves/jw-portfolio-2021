@@ -6,10 +6,6 @@
   justify-content: center;
   height: 30vh;
   z-index: 100;
-
-  /* margin-left: 2%;
-  margin-right: 2%;
-  box-shadow: 3px 3px 10px #00000050; */
 }
 
 @media only screen and (min-width: 1023px) {

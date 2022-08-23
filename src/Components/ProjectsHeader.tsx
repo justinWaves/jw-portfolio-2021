@@ -16,7 +16,7 @@ function ProjectsHeader() {
       opacity: dataRef?.isIntersecting ? 1 : 0,
       transform: dataRef?.isIntersecting
         ? "skew(0deg, 0deg)"
-        : "skew(50deg, 0deg)",
+        : "skew(-50deg, 0deg)",
     },
   });
 
