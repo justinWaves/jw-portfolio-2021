@@ -35,6 +35,12 @@
   z-index: 0;
 }
 
+@media only screen and (min-width: 1240px) {
+  .city__sky--day {
+    height: 100vh;
+  }
+}
+
 .city__sky--night {
   position: absolute;
   top: 0;
@@ -42,6 +48,12 @@
   background-image: linear-gradient(#251f61, #3378bd);
   height: 70vh;
   z-index: 0;
+}
+
+@media only screen and (min-width: 1240px) {
+  .city__sky--night {
+    height: 100vh;
+  }
 }
 
 .city__sky--night::before {
@@ -74,6 +86,12 @@
   -o-user-select: none;
 }
 
+@media only screen and (min-width: 1240px) {
+  .city__sun {
+    top: 160px;
+  }
+}
+
 .city__moon {
   position: absolute;
   top: 40px;
@@ -89,6 +107,12 @@
   -o-user-select: none;
 }
 
+@media only screen and (min-width: 1240px) {
+  .city__moon {
+    top: 160px;
+  }
+}
+
 .city__water--day {
   background-image: linear-gradient(#003b63, #3370a6);
   height: 20vh;
@@ -101,6 +125,12 @@
 @media only screen and (max-width: 450px) {
   .city__water--day {
     height: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .city__water--day {
+    height: 30vh;
   }
 }
 
