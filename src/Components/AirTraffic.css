@@ -1,14 +1,10 @@
 .air__traffic--container {
+  position: absolute;
+  top: 10px;
   display: flex;
   align-items: flex-end;
-  width: 100%;
-  z-index: 2;
-}
-
-@media only screen and (max-width: 768px) {
-  .air__traffic--container {
-    margin-bottom: 600px;
-  }
+  width: 100vw;
+  z-index: 3;
 }
 
 .plane__left {

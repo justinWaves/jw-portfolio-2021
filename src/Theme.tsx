@@ -5,6 +5,11 @@ export const backgroundColor: theme.ThemeSet = theme("mode", {
   dark: "#2a2a2a",
 });
 
+export const backgroundColorAlpha: theme.ThemeSet = theme("mode", {
+  light: "#DDDDDD",
+  dark: "#2a2a2a",
+});
+
 export const secondaryBackgroundColor: theme.ThemeSet = theme("mode", {
   light: "#FFFFFF",
   dark: "#121212",

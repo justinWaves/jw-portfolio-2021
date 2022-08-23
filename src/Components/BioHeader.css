@@ -3,7 +3,7 @@
   font-size: 80px;
   font-weight: 100;
   text-shadow: 0px 2px 5px 00000050;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 100px;
   flex: 1;
 }
@@ -11,7 +11,7 @@
 @media only screen and (max-width: 894px) {
   .bioHeader__text {
     font-size: 4rem;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     text-align: center;
   }
 }

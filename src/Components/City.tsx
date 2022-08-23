@@ -16,17 +16,18 @@ function City() {
 
   return (
     <div className="city__container">
-      <div className={isLight ? "city__sky--day" : "city__sky--night"}></div>
+      <AirTraffic />
+
       <img
         src={SunMoon}
         alt=""
         className={isLight ? "city__sun " : "city__moon"}
       />
-      <AirTraffic />
+      <Bridge />
       <div
         className={isLight ? "city__water--day" : "city__water--night"}
       ></div>
-      <Bridge />
+
       <img
         width="200%"
         height="auto"
@@ -34,6 +35,7 @@ function City() {
         alt=""
         className="city__clouds"
       />
+      <div className={isLight ? "city__sky--day" : "city__sky--night"}></div>
     </div>
   );
 }

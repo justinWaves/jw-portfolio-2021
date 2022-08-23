@@ -1,5 +1,6 @@
 import PortfolioItem from "./PortfolioItem";
 import "./Projects.css";
+import ProjectsHeader from "./ProjectsHeader";
 import linkedinClone from "../images/linkedin-alpha.png";
 import ticTactToe from "../images/tictactoe-alpha.png";
 import highLife from "../images/highlife-alpha.png";
@@ -22,9 +23,7 @@ const ProjectsContain = styled.div`
 function Projects() {
   return (
     <ProjectsContain className="projects">
-      <h1 className="projects__title">
-        <strong>Portfolio</strong> Projects
-      </h1>
+      <ProjectsHeader />
       <div className="projects__contain">
         <PortfolioItem
           title="Syntax Highlighter"

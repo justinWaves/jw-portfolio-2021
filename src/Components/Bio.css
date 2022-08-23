@@ -43,15 +43,6 @@
   z-index: 3;
 }
 
-@media only screen and (max-width: 768px) {
-  .bio__left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-  }
-}
-
 .bio__left > img {
   height: 250px;
   width: 250px;
@@ -64,16 +55,12 @@
   box-shadow: 3px 3px 10px #00000050;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 460px) {
   .bio__left > img {
+    width: 50%;
     height: auto;
-    width: 80%;
-    flex: 1;
-    border-radius: 100% 100% 0% 0%;
-    shape-outside: circle() margin-box;
-
-    z-index: 5;
-    box-shadow: 3px 3px 10px #00000050;
+    border-radius: 100% 100% 100% 0%;
+    shape-outside: circle() none;
   }
 }
 

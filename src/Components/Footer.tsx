@@ -4,7 +4,9 @@ import { IFormValues } from "../types";
 import styled from "styled-components";
 import * as themeConf from "../Theme";
 import emailjs, { EmailJSResponseStatus } from "emailjs-com";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import useIntersectionObserver from "../Hooks/intersection-observer";
+import { animated, useSpring, config } from "react-spring";
 import SocialIcons from "./SocialIcons";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
@@ -30,6 +32,22 @@ function Footer() {
   const [isSubmit, setIsSubmit] = useState(false);
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [showLoadingAlert, setShowLoadingAlert] = useState(false);
+
+  const triggerRef = useRef<HTMLDivElement>(null);
+  const dataRef = useIntersectionObserver(triggerRef, {
+    freezeOnceVisible: false,
+  });
+
+  const footerHeaderAnimation = useSpring({
+    config: config.wobbly,
+    from: { opacity: 0, transform: "skew(0deg, 0deg)" },
+    to: {
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+      transform: dataRef?.isIntersecting
+        ? "skew(0deg, 0deg)"
+        : "skew(-80deg, 0deg)",
+    },
+  });
 
   const handleChange = (
     e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -105,9 +123,13 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__contactHeader">
-        <h1 className="footer__contactHeader-title">
+        <animated.h1
+          style={footerHeaderAnimation}
+          className="footer__contactHeader-title"
+        >
           <strong> Inquiries?</strong> Good Jokes? <br />
-        </h1>
+        </animated.h1>
+        <div ref={triggerRef} />
         <h1 className="footer__contactHeader-subtitle">Reach out Below! 📬</h1>
       </div>
 

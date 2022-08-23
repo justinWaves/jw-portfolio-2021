@@ -3,8 +3,39 @@
   grid-template: 1fr / 1fr;
   place-items: center;
   width: 100%;
-  margin-bottom: 20%;
+  overflow: hidden;
+  z-index: 10;
+  margin-top: 20px;
 }
+
+/* @media only screen and (max-width: 575px) {
+  .bridge {
+    bottom: 10%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bridge {
+    bottom: 23%;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .bridge {
+    bottom: -5%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .bridge {
+    bottom: -15%;
+  }
+}
+
+@media only screen and (max-height: 580px) {
+  .bridge {
+    bottom: -25%;
+  }
+} */
 
 .bridge > * {
   grid-column: 1 / 1;

@@ -50,7 +50,7 @@ function Bio() {
                   <strong>...and I love to code </strong>
                 </span>
                 beautiful, performant user interfaces with React + Typescript.
-                In 2013 I deployed my first consumer-facing website. 5 years
+                In 2013, I deployed my first consumer-facing website. 5 years
                 later I started a web design firm called{" "}
                 <BioLink href="https://www.highlifepages.com/" target="_blank">
                   HighLife Pages
