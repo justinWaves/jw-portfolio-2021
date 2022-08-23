@@ -3,7 +3,6 @@
   align-items: center;
   flex-direction: column;
   z-index: 1;
-  width: 100%;
 }
 
 .footer__contactHeader {
@@ -31,6 +30,7 @@
   font-weight: 200;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .footer > form {
