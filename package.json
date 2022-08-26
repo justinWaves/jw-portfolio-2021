@@ -58,6 +58,7 @@
   "devDependencies": {
     "@types/aos": "^3.0.4",
     "@types/styled-components": "^5.1.16",
-    "@types/styled-theming": "^2.2.5"
+    "@types/styled-theming": "^2.2.5",
+    "cypress": "^10.6.0"
   }
 }
