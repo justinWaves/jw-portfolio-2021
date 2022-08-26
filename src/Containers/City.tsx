@@ -1,9 +1,9 @@
 import "./City.css";
-import Bridge from "./Bridge";
+import Bridge from "../Components/Bridge";
 import Clouds from "../images/clouds.svg";
 import SunMoon from "../images/SunMoonGlow.svg";
 import { useTheme } from "../ThemeManager";
-import AirTraffic from "./AirTraffic";
+import AirTraffic from "../Components/AirTraffic";
 
 function City() {
   const theme = useTheme();

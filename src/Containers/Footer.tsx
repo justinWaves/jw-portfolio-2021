@@ -7,7 +7,7 @@ import emailjs, { EmailJSResponseStatus } from "emailjs-com";
 import { useEffect, useState, useRef } from "react";
 import useIntersectionObserver from "../Hooks/intersection-observer";
 import { animated, useSpring, config } from "react-spring";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../Components/SocialIcons";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import SubjectIcon from "@mui/icons-material/Subject";

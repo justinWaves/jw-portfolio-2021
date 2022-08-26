@@ -3,9 +3,9 @@ import "./Bio.css";
 import * as themeConf from "../Theme";
 import { useTheme } from "../ThemeManager";
 import styled from "styled-components";
-import ToolsKnob from "./ToolsKnob";
-import BioRight from "./BioRight";
-import BioHeader from "./BioHeader";
+import ToolsKnob from "../Components/ToolsKnob";
+import BioRight from "../Components/BioRight";
+import BioHeader from "../Components/BioHeader";
 
 const BioContain = styled.div`
   background-color: ${themeConf.backgroundColor};

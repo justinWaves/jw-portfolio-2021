@@ -3,7 +3,6 @@
   grid-template: 1fr / 1fr;
   place-items: center;
   width: 100%;
-  /* overflow: hidden; */
   z-index: 10;
   margin-top: 20px;
 }

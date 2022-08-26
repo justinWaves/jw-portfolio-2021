@@ -1,6 +1,6 @@
-import PortfolioItem from "./PortfolioItem";
+import PortfolioItem from "../Components/PortfolioItem";
 import "./Projects.css";
-import ProjectsHeader from "./ProjectsHeader";
+import ProjectsHeader from "../Components/ProjectsHeader";
 import linkedinClone from "../images/linkedin-alpha.png";
 import ticTactToe from "../images/tictactoe-alpha.png";
 import highLife from "../images/highlife-alpha.png";
