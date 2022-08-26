@@ -1,29 +1,12 @@
 import "./Footer.css";
+import EmailForm from "../Components/EmailForm";
 import { ErrorTypes } from "../types";
 import { IFormValues } from "../types";
-import styled from "styled-components";
-import * as themeConf from "../Theme";
-import emailjs, { EmailJSResponseStatus } from "emailjs-com";
+import emailjs from "emailjs-com";
 import { useEffect, useState, useRef } from "react";
 import useIntersectionObserver from "../Hooks/intersection-observer";
 import { animated, useSpring, config } from "react-spring";
 import SocialIcons from "../Components/SocialIcons";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import EmailIcon from "@mui/icons-material/Email";
-import SubjectIcon from "@mui/icons-material/Subject";
-
-const FormButton = styled.button`
-  background-color: ${themeConf.linkColor};
-  &:hover {
-    background-color: ${themeConf.linkColorHover};
-    border-radius: 10px;
-    transition: 0.5s;
-  }
-`;
-
-const LoadingAlert = styled.div`
-  background-color: ${themeConf.linkColor};
-`;
 
 function Footer() {
   const initialValues = { from_name: "", email: "", subject: "", message: "" };
@@ -133,91 +116,14 @@ function Footer() {
         <h1 className="footer__contactHeader-subtitle">Reach out Below! 📬</h1>
       </div>
 
-      <form onSubmit={handleSubmit}>
-        <p className="alert__text">{formErrors.from_name}</p>
-
-        <div className="footer__input-contain">
-          <AccountCircleIcon />
-          <input
-            name="from_name"
-            placeholder="Name*"
-            type="text"
-            value={formValues.from_name}
-            onChange={handleChange}
-          />
-        </div>
-
-        <p className="alert__text">{formErrors.email}</p>
-
-        <div className="footer__input-contain">
-          <EmailIcon />
-          <input
-            name="email"
-            placeholder="Email*"
-            type="email"
-            aria-describedby="emailHelp"
-            value={formValues.email}
-            onChange={handleChange}
-          />
-        </div>
-
-        <p className="alert__text">{formErrors.subject}</p>
-        <div className="footer__input-contain">
-          <SubjectIcon />
-          <input
-            name="subject"
-            placeholder="Subject*"
-            type="subject"
-            className="form__control--subject"
-            value={formValues.subject}
-            onChange={handleChange}
-          />
-        </div>
-
-        <p className="alert__text">{formErrors.message}</p>
-        <textarea
-          name="message"
-          placeholder="Message*"
-          value={formValues.message}
-          onChange={handleChange}
-        />
-        {showLoadingAlert || showSuccessAlert ? (
-          <div>
-            {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}
-            <div
-              className={`alert__success ${
-                showSuccessAlert ? "alert-shown" : "alert__hidden"
-              }`}
-              onTransitionEnd={() => setShowSuccessAlert(false)}
-            >
-              <h1>Success! 🎉 </h1>
-              <p>Thank you for reaching out. I will get back to you ASAP</p>
-            </div>
-
-            <LoadingAlert
-              className={`alert__loading ${
-                showLoadingAlert ? "alert-shown" : "alert__hidden--noanimate"
-              }`}
-              onTransitionEnd={() => setShowSuccessAlert(false)}
-            >
-              <div className="lds-roller">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </LoadingAlert>
-          </div>
-        ) : (
-          <FormButton type="submit" value="Send">
-            Submit
-          </FormButton>
-        )}
-      </form>
+      <EmailForm
+        formValues={formValues}
+        formErrors={formErrors}
+        showAlert={showSuccessAlert}
+        showLoadingAlert={showLoadingAlert}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
 
       <SocialIcons />
 

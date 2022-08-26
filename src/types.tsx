@@ -25,3 +25,24 @@ export interface ErrorTypes {
   subject: string;
   message: string;
 }
+
+export interface EmailFormTypes {
+  formValues: {
+    from_name: string;
+    email: string;
+    subject: string;
+    message: string;
+  };
+  formErrors: {
+    from_name: string;
+    email: string;
+    subject: string;
+    message: string;
+  };
+  showAlert: boolean;
+  showLoadingAlert: boolean;
+  handleChange: (
+    e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+}
