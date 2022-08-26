@@ -1,0 +1,49 @@
+.bioLeft {
+  flex: 0.6;
+  z-index: 3;
+}
+
+.bioLeft > img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  float: left;
+  border-radius: 100% 100% 100% 100%;
+  shape-outside: circle() margin-box;
+  margin: 18px;
+  z-index: 5;
+  box-shadow: 3px 3px 10px #00000050;
+}
+
+@media only screen and (max-width: 460px) {
+  .bioLeft > img {
+    width: 50%;
+    height: auto;
+    border-radius: 100% 100% 100% 0%;
+    shape-outside: circle() none;
+  }
+}
+
+.bioLeft > div > p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 20px;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 768px) {
+  .bioLeft > div > p {
+    flex: 1;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.bioLeft__text--contain {
+  padding: 10px;
+}

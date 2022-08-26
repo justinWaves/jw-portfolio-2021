@@ -13,7 +13,7 @@ const AppBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
+  overflow-x: hidden;
 `;
 
 const App: React.FC = () => {

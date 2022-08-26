@@ -4,24 +4,34 @@ import Clouds from "../images/clouds.svg";
 import SunMoon from "../images/SunMoonGlow.svg";
 import { useTheme } from "../ThemeManager";
 import AirTraffic from "../Components/AirTraffic";
+import { animated, useSpring, config } from "react-spring";
 
 function City() {
   const theme = useTheme();
-  let isLight = null;
+  let isLight: boolean = false;
   if (theme.mode === "light") {
     isLight = true;
   } else {
     isLight = false;
   }
 
+  const headerStyle = useSpring({
+    config: config.wobbly,
+    from: { transform: "rotate(180deg)" },
+    to: {
+      transform: isLight ? "rotate(0deg)" : "rotate(180deg)",
+    },
+  });
+
   return (
     <div className="city__container">
       <AirTraffic />
 
-      <img
+      <animated.img
         src={SunMoon}
         alt=""
-        className={isLight ? "city__sun " : "city__moon"}
+        className="city__sun-and-moon"
+        style={headerStyle}
       />
       <Bridge />
       <div

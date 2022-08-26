@@ -71,44 +71,14 @@
   -o-animation: fadeIn 5s;
 }
 
-.city__sun {
+.city__sun-and-moon {
   position: absolute;
   top: 40px;
   z-index: 2;
-  -webkit-animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
-  -moz-animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
-  animation: spin2 2s cubic-bezier(0.37, -0.01, 0, 1);
-  animation-fill-mode: forwards;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
 }
 
 @media only screen and (min-width: 1240px) {
-  .city__sun {
-    top: 160px;
-  }
-}
-
-.city__moon {
-  position: absolute;
-  top: 40px;
-  z-index: 2;
-  -webkit-animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
-  -moz-animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
-  animation: spin 2s cubic-bezier(0.37, -0.01, 0, 1);
-  animation-fill-mode: forwards;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-}
-
-@media only screen and (min-width: 1240px) {
-  .city__moon {
+  .city__sun-and-moon {
     top: 160px;
   }
 }
@@ -233,46 +203,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(180deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(180deg);
-  }
-}
-@keyframes spin {
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-@-moz-keyframes spin2 {
-  0% {
-    -moz-transform: rotate(180deg);
-  }
-  100% {
-    -moz-transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes spin2 {
-  0% {
-    -webkit-transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-  }
-}
-@keyframes spin2 {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
