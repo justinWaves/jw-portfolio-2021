@@ -36,14 +36,14 @@ function ToolsKnob() {
         "Learned at the same time as CSS in 2013 from CodeAcademy, as well as a strong understanding of the DOM. Today I mainly write JSX in React";
     }
     if (knobValue === 40) {
-      knobSelectHeader = "Sass";
+      knobSelectHeader = "Cypress/ Testing Library";
       knobSelectParagraph =
-        "I have used Sass in many past projects to utilize mix-ins and variables. I prefer to use Tailwind and Styled Components today";
+        "For implementing unit/ integration tests I have been using Testing Library, and Cypress for e2e tests.";
     }
     if (knobValue === 50) {
       knobSelectHeader = "Next.JS";
       knobSelectParagraph =
-        "The Next.JS library for React has been a go-to for all my latest projects. Utilizing Image optimization, Server Side Rendering, and deployment to vercel makes for lighting fast UX and better SEO";
+        "The Next.JS library for React has been a go-to for all my latest projects. Utilizing Image optimization, Server Side Rendering, Dynamic routes, Incremental Static Regeneration, and deployment to vercel makes for lighting fast UX and better SEO";
     }
     if (knobValue === 60) {
       knobSelectHeader = "Tailwind CSS";
@@ -58,12 +58,12 @@ function ToolsKnob() {
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
       knobSelectParagraph =
-        "I have used Redux, numerous times to manage global state. See My LinkedIn Clone below for an example. Initially I planned on using Redux to handle this site's theme toggle state however found Reacts context API to be a much more elegant solution.";
+        "My global state manager of choice is Redux. In this portfolio site, redux was overkill for managing the global theme state, so I used React Context API instead. This logic can be found in a directory called 'ThemeManager' located in the repo for this project";
     }
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "React is my favorite and most used front end framework. I eat sleep and breath React apps. ";
+        "React is my first pick framework for developing user interfaces. This mainly based off its performance, and the amount of cool libraries created around the framework (IE. React-Spring, React-Forms, React-Testing_Language, Next.JS, etc)";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
@@ -93,7 +93,9 @@ function ToolsKnob() {
           Tailwind<br></br> CSS
         </h5>
         <h5 className="knob__label--6">Next.js</h5>
-        <h5 className="knob__label--7">Sass</h5>
+        <h5 className="knob__label--7">
+          Cypress/ <br /> Testing Library
+        </h5>
         <h5 className="knob__label--8">HTML5</h5>
         <h5 className="knob__label--9">CSS3</h5>
         <h5 className="knob__label--10">
