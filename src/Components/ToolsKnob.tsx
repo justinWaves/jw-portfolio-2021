@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 const ToolsDescription = styled.div`
   border-color: ${themeConf.linkColor};
+  border-width: 3px;
 `;
 
 function ToolsKnob() {
@@ -18,37 +19,37 @@ function ToolsKnob() {
     if (knobValue === 0) {
       knobSelectHeader = "VS Code";
       knobSelectParagraph =
-        "I write all my applications with this text editor. Extensions such as Emmet, Prettier, and IntelliSense keep my code beautiful, my workflow fast, and makes use of machine learning to automate monotonous processes ";
+        "Just like the majority of software engineers, VS Code is my IDE of choice. Extensions such as Emmet, Prettier, and IntelliSense keep my code beautiful, my workflow fast, and makes use of machine learning to automate monotonous processes";
     }
     if (knobValue === 10) {
       knobSelectHeader = "Javascript ES6";
       knobSelectParagraph =
-        "Javascript is my favorite and most used programming language. As a Front End focused dev, I have a deep understanding of State and Lifecycle methods in React, event handling, asynchronous code, and strive to deliver the most performant UI components possible";
+        "Since completing CodeAcademy's Javascript online course in 2013, JS has become my primary programming language and the core of nearly every stack I have worked with. From creating graphic user interfaces for web apps, to implementing data structures, JS is my #1.";
     }
     if (knobValue === 20) {
-      knobSelectHeader = "CSS3";
+      knobSelectHeader = "CSS3 / HTML5";
       knobSelectParagraph =
-        "CSS is one of the first languages I have learned and is one of my strengths. I am crafty with Media Queries for Responsive design, I love Flexbox, and animations";
+        "I began to learn basic HTML and CSS when I was in highschool (circa 2004) to customize my Xanga blog. After completing CodeAcademy's a web-fundamentals course in 2013, I began creating websites for local businesses, picking up jQuery, Bootstrap, PHP and Javascript along the way.";
     }
     if (knobValue === 30) {
-      knobSelectHeader = "HTML5";
+      knobSelectHeader = "React Spring";
       knobSelectParagraph =
-        "Learned at the same time as CSS in 2013 from CodeAcademy, as well as a strong understanding of the DOM. Today I mainly write JSX in React";
+        "This is one of the coolest animation libraries I have come across. The physics-based possibilities seem to be endless, and I experience far better cross-browser support for js-based animations than pure CSS ones.";
     }
     if (knobValue === 40) {
-      knobSelectHeader = "Cypress/ Testing Library";
+      knobSelectHeader = "Cypress/  Testing Library";
       knobSelectParagraph =
-        "For implementing unit/ integration tests I have been using Testing Library, and Cypress for e2e tests.";
+        "For implementing unit/ integration tests I have been using React's Testing Library, and Cypress for e2e tests.";
     }
     if (knobValue === 50) {
       knobSelectHeader = "Next.JS";
       knobSelectParagraph =
-        "The Next.JS library for React has been a go-to for all my latest projects. Utilizing Image optimization, Server Side Rendering, Dynamic routes, Incremental Static Regeneration, and deployment to vercel makes for lighting fast UX and better SEO";
+        "The Next.JS library for React has become a go-to for all my latest projects. Utilizing Image optimization, Server Side Rendering, Dynamic routes, Incremental Static Regeneration, and deployment to vercel makes for lighting fast UX and better SEO.";
     }
     if (knobValue === 60) {
       knobSelectHeader = "Tailwind CSS";
       knobSelectParagraph =
-        "I love the workflow and performance of Tailwind CSS. Keeps for a tidy file structure. Great for large team-based projects. Go-to for Mobile-First Design ";
+        "I love the workflow and performance of Tailwind CSS. Keeps for a tidy file structure. Great for large team-based projects. Go-to for Mobile-First Design.";
     }
     if (knobValue === 70) {
       knobSelectHeader = "Styled Components";
@@ -58,12 +59,12 @@ function ToolsKnob() {
     if (knobValue === 80) {
       knobSelectHeader = "Redux";
       knobSelectParagraph =
-        "My global state manager of choice is Redux. In this portfolio site, redux was overkill for managing the global theme state, so I used React Context API instead. This logic can be found in a directory called 'ThemeManager' located in the repo for this project";
+        "My global state manager of choice is Redux. In this portfolio site, redux was overkill for managing the global theme state, so I used React Context API instead. This logic can be found in a directory called 'ThemeManager' located in the repo for this project.";
     }
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "React is my first pick framework for developing user interfaces. This mainly based off its performance, and the amount of cool libraries created around the framework (IE. React-Spring, React-Forms, React-Testing_Language, Next.JS, etc)";
+        "Traversing the virtual DOM has become a favorite pastime of mine. Mainly due its performance and popularity, React has becoming my primary framework for developing user interfaces. The amount of awesome libraries created around the framework is also a huge benefit.";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";
@@ -96,8 +97,8 @@ function ToolsKnob() {
         <h5 className="knob__label--7">
           Cypress/ <br /> Testing Library
         </h5>
-        <h5 className="knob__label--8">HTML5</h5>
-        <h5 className="knob__label--9">CSS3</h5>
+        <h5 className="knob__label--8"> React Spring</h5>
+        <h5 className="knob__label--9">CSS / HTML</h5>
         <h5 className="knob__label--10">
           Javascript <br></br> ES6
         </h5>
