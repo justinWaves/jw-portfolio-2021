@@ -7,16 +7,16 @@ import styled from "styled-components";
 import Switch from "@mui/material/Switch";
 import { useTheme } from "../ThemeManager";
 
+const HeaderContainer = styled.div`
+  // background-color: ${themeConf.backgroundColorAlpha};
+`;
+
 function Header() {
   const theme = useTheme();
   let isLight = true;
   if (theme.mode === "light") {
     isLight = !isLight;
   }
-
-  const HeaderContainer = styled.div`
-    // background-color: ${themeConf.backgroundColorAlpha};
-  `;
 
   return (
     <HeaderContainer className="header__container">
