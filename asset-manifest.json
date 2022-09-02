@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.a8839a71.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.df805e56.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.df805e56.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.e193e84d.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.6b898d0e.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.6b898d0e.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js.map",
     "static/js/2.6e90e7ef.chunk.js": "/jw-portfolio-2021/static/js/2.6e90e7ef.chunk.js",
     "static/js/2.6e90e7ef.chunk.js.map": "/jw-portfolio-2021/static/js/2.6e90e7ef.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.a8839a71.chunk.css.map": "/jw-portfolio-2021/static/css/main.a8839a71.chunk.css.map",
+    "static/css/main.e193e84d.chunk.css.map": "/jw-portfolio-2021/static/css/main.e193e84d.chunk.css.map",
     "static/js/2.6e90e7ef.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.6e90e7ef.chunk.js.LICENSE.txt",
-    "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
     "static/media/TAC-alpha.bc2fbaad.png": "/jw-portfolio-2021/static/media/TAC-alpha.bc2fbaad.png",
@@ -33,7 +32,6 @@
     "static/media/jweisberg__textlogo.c37f276e.svg": "/jw-portfolio-2021/static/media/jweisberg__textlogo.c37f276e.svg",
     "static/media/jwportfolioSS-alpha.580d4e5b.png": "/jw-portfolio-2021/static/media/jwportfolioSS-alpha.580d4e5b.png",
     "static/media/linkedin-alpha.b9dd7c5c.png": "/jw-portfolio-2021/static/media/linkedin-alpha.b9dd7c5c.png",
-    "static/media/metawaves-alpha.10cf4c6e.png": "/jw-portfolio-2021/static/media/metawaves-alpha.10cf4c6e.png",
     "static/media/old-mustang.87854d2e.svg": "/jw-portfolio-2021/static/media/old-mustang.87854d2e.svg",
     "static/media/pink-lambo.cf493f82.svg": "/jw-portfolio-2021/static/media/pink-lambo.cf493f82.svg",
     "static/media/planeAsset 1.dcf8d071.svg": "/jw-portfolio-2021/static/media/planeAsset 1.dcf8d071.svg",
@@ -43,13 +41,12 @@
     "static/media/planeAsset 5.59b12f36.svg": "/jw-portfolio-2021/static/media/planeAsset 5.59b12f36.svg",
     "static/media/planeAsset 6.dc37c1de.svg": "/jw-portfolio-2021/static/media/planeAsset 6.dc37c1de.svg",
     "static/media/tesla-red.b3586859.svg": "/jw-portfolio-2021/static/media/tesla-red.b3586859.svg",
-    "static/media/tictactoe-alpha.51794e49.png": "/jw-portfolio-2021/static/media/tictactoe-alpha.51794e49.png",
     "static/media/van-ambulance.ca0610c0.svg": "/jw-portfolio-2021/static/media/van-ambulance.ca0610c0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1fc2ee82.js",
     "static/js/2.6e90e7ef.chunk.js",
-    "static/css/main.a8839a71.chunk.css",
-    "static/js/main.df805e56.chunk.js"
+    "static/css/main.e193e84d.chunk.css",
+    "static/js/main.6b898d0e.chunk.js"
   ]
 }
