@@ -54,7 +54,7 @@ function BioRight() {
   return (
     <>
       <div className="bio-right">
-        <ExperienceHeader>Years Coding:</ExperienceHeader>
+        <ExperienceHeader>Years of Experience</ExperienceHeader>
 
         <>{Number()}</>
         <div ref={triggerRef} />
