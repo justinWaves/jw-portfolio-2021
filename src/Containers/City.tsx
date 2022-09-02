@@ -16,7 +16,7 @@ function City() {
   }
 
   const headerStyle = useSpring({
-    config: config.wobbly,
+    config: config.molasses,
     from: { transform: "rotate(180deg)" },
     to: {
       transform: isLight ? "rotate(0deg)" : "rotate(180deg)",
