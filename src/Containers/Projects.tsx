@@ -47,14 +47,14 @@ function Projects() {
             "Typescript",
           ]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="MetaWaves Chat"
           body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend."
           codeUrl="https://github.com/justinWaves/metaverse-challenge"
           linkUrl="https://metaverse-challenge-alpha-eight.vercel.app/"
           imageSrc={metaWaves}
           tools={["React", "Next.js", "Tailwind.css", "Moralis", "MetaMask"]}
-        />
+        /> */}
         <PortfolioItem
           title="JW Portfolio 2021"
           body="Portfolio App made with Typescript and React. Uses Styled-Themes/ Styled Components and React's Context API to handle light/dark mode."
@@ -71,14 +71,14 @@ function Projects() {
           imageSrc={linkedinClone}
           tools={["React", "Redux", "Firebase", "Material UI"]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="Tic React Toe"
           body="Tic Tac Toe game rendered in React."
           codeUrl="https://github.com/justinWaves/tic-react-toe"
           linkUrl="https://justinwaves.github.io/tic-react-toe/"
           imageSrc={ticTactToe}
           tools={["React", "Sass"]}
-        />
+        /> */}
         <PortfolioItem
           title="HighLife Pages"
           body="Web Design firm I created focused on cannabis start-ups. During this time I created all my websites using bootstrap, HTML, Sass, vanilla Javascript, and managed client sites via an FTP server called Cyberduck."
@@ -95,14 +95,14 @@ function Projects() {
           imageSrc={tac}
           tools={["Bootstrap", "JQuery", "HTML", "CSS"]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="JW Portfolio 2018"
           body="My First Portfolio site, you may see some similarities to this one. I used CSS to size and animate different PNG of gears as a background. The site is fully responsive."
           codeUrl="https://github.com/justinWaves/JW-Portfolio"
           linkUrl="https://justinwaves.github.io/JW-Portfolio/"
           imageSrc={jwPort2018}
           tools={["Bootstrap", "HTML", "CSS", "Javascript"]}
-        />
+        /> */}
       </div>
     </ProjectsContain>
   );
