@@ -16,10 +16,6 @@ import bike_6 from "../images/bikes/bike-6.svg";
 import bike_7 from "../images/bikes/bike-7.svg";
 import bike_8 from "../images/bikes/bike-8.svg";
 
-const getRandomNumber = (min: number, max: number) => {
-  return Math.random() * (max - min) + min;
-};
-
 const carListDay = [car_1, car_2, car_3, car_4, car_5, car_6];
 const bikeListDay = [
   bike_1,
@@ -32,36 +28,39 @@ const bikeListDay = [
   bike_8,
 ];
 
+const getRandomNumber = (min: number, max: number) => {
+  return Math.random() * (max - min) + min;
+};
+
+const getRandomNumberToString = (min: number, max: number) => {
+  const result = Math.random() * (max - min) + min;
+  return result.toString();
+};
+
+let carTrafficIndex = 0;
+let bikeTrafficIndex = 0.1;
+
+const isTrafficItemEven = () => {
+  return carTrafficIndex % 2 === 0;
+};
+
+const Cars = styled.div`
+  animation-duration: ${getRandomNumberToString(3, 10)}s;
+  z-index: ${isTrafficItemEven() ? "3" : "2"};
+`;
+
+const Bikes = styled.div`
+  animation-duration: ${getRandomNumberToString(15, 25)}s;
+  z-index: ${isTrafficItemEven() ? "4" : "1"};
+`;
+
 function Traffic() {
+  const timeout = useRef<NodeJS.Timeout | null>(null);
   const [traffic, setTraffic] = useState<Array<object>>([]);
 
-  const timeout = useRef<NodeJS.Timeout | null>(null);
-
-  const [carTrafficIndex, setCarTrafficIndex] = useState(0);
-  const [bikeTrafficIndex, setBikeTrafficIndex] = useState(0.1);
-
-  const toggleCarsAndBikesImageLeftOrRight = () => {
-    return carTrafficIndex % 2 === 0;
-  };
-
   useEffect(() => {
-    const getRandomNumberToString = (min: number, max: number) => {
-      const result = Math.random() * (max - min) + min;
-      return result.toString();
-    };
-
-    setCarTrafficIndex(carTrafficIndex + 1);
-    setBikeTrafficIndex(bikeTrafficIndex + 0.1);
-
-    const Cars = styled.div`
-      animation-duration: ${getRandomNumberToString(3, 10)}s;
-      z-index: ${toggleCarsAndBikesImageLeftOrRight() ? "3" : "2"};
-    `;
-
-    const Bikes = styled.div`
-      animation-duration: ${getRandomNumberToString(15, 25)}s;
-      z-index: ${toggleCarsAndBikesImageLeftOrRight() ? "4" : "1"};
-    `;
+    carTrafficIndex++;
+    bikeTrafficIndex++;
 
     const handleRemoveTrafficItem = (
       e: React.AnimationEvent<HTMLDivElement>
@@ -80,9 +79,7 @@ function Traffic() {
 
           <Cars
             key={carTrafficIndex}
-            className={
-              toggleCarsAndBikesImageLeftOrRight() ? "car__left" : "car__right"
-            }
+            className={isTrafficItemEven() ? "car__left" : "car__right"}
             onAnimationEnd={(e: React.AnimationEvent<HTMLDivElement>) =>
               handleRemoveTrafficItem(e)
             }
@@ -90,31 +87,19 @@ function Traffic() {
             <img
               src={carListDay[Math.floor(Math.random() * carListDay.length)]}
               alt=""
-              className={
-                toggleCarsAndBikesImageLeftOrRight()
-                  ? undefined
-                  : "traffic__reverse"
-              }
+              className={isTrafficItemEven() ? undefined : "traffic__reverse"}
             />
           </Cars>,
 
           <Bikes
             key={bikeTrafficIndex}
-            className={
-              toggleCarsAndBikesImageLeftOrRight()
-                ? "bike__left"
-                : "bike__right"
-            }
+            className={isTrafficItemEven() ? "bike__left" : "bike__right"}
             onAnimationEnd={(e) => handleRemoveTrafficItem(e)}
           >
             <img
               src={bikeListDay[Math.floor(Math.random() * bikeListDay.length)]}
               alt=""
-              className={
-                toggleCarsAndBikesImageLeftOrRight()
-                  ? undefined
-                  : "traffic__reverse"
-              }
+              className={isTrafficItemEven() ? undefined : "traffic__reverse"}
             />
           </Bikes>,
         ]);
