@@ -1,12 +1,12 @@
 import "./BioLeft.css";
 import bioPic from "../images/jwaves even smaller.jpg";
-import styled from "styled-components";
-import * as themeConf from "../Theme";
+// import styled from "styled-components";
+// import * as themeConf from "../Theme";
 
-const BioLink = styled.a`
-  color: ${themeConf.linkColor};
-  text-decoration: none;
-`;
+// const BioLink = styled.a`
+//   color: ${themeConf.linkColor};
+//   text-decoration: none;
+// `;
 
 function BioLeft() {
   return (

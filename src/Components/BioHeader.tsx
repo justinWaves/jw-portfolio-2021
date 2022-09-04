@@ -1,5 +1,5 @@
 import "./BioHeader.css";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import useIntersectionObserver from "../Hooks/intersection-observer";
 import { animated, useSpring, config } from "react-spring";
 

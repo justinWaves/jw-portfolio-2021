@@ -27,7 +27,7 @@ const planeListDay = [plane_1, plane_2, plane_3, plane_4, plane_5, plane_6];
 let airTrafficIndex = 0;
 
 const isPlaneIndexEven: () => boolean = () => {
-  return airTrafficIndex % 2 == 0;
+  return airTrafficIndex % 2 === 0;
 };
 
 const Plane = styled.div`

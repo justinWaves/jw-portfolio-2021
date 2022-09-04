@@ -26,7 +26,7 @@ function BioRight() {
   });
 
   const Number = () => {
-    const [flip, set] = useState(false);
+    const [flip] = useState(false);
     const { number } = useSpring({
       reset: true,
       reverse: flip,
