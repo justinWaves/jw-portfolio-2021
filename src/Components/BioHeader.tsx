@@ -6,7 +6,7 @@ import { animated, useSpring, config } from "react-spring";
 function BioHeader() {
   const triggerRef = useRef<HTMLDivElement>(null);
   const dataRef = useIntersectionObserver(triggerRef, {
-    freezeOnceVisible: false,
+    freezeOnceVisible: true,
   });
 
   const headerStyle = useSpring({
@@ -16,7 +16,7 @@ function BioHeader() {
       opacity: dataRef?.isIntersecting ? 1 : 0,
       transform: dataRef?.isIntersecting
         ? "skew(0deg, 0deg)"
-        : "skew(-80deg, 0deg)",
+        : "skew(-30deg, 20deg)",
     },
   });
   return (
