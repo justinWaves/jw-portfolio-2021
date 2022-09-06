@@ -30,8 +30,8 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(#4073ff, #52b0ee, #d2e0e8, #ffffff);
-  height: 70vh;
+  background-image: linear-gradient(#4073ff, #52b0ee, #d2e0e8, #c9dee8);
+  height: 80vh;
   z-index: 0;
 }
 
@@ -46,7 +46,7 @@
   top: 0;
   width: 100%;
   background-image: linear-gradient(#251f61, #3378bd);
-  height: 70vh;
+  height: 80vh;
   z-index: 0;
 }
 
