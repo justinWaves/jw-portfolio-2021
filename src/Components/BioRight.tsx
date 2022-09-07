@@ -1,22 +1,15 @@
 import "./BioRight.css";
-import ArchiveIcon from "@mui/icons-material/Archive";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
 import useIntersectionObserver from "../Hooks/intersection-observer";
 import { useRef, useState } from "react";
 import { animated, useSpring, config } from "react-spring";
+import ResumeButton from "./ResumeButton";
 
 const ExperienceHeader = styled.h2`
   font-size: 40px;
   font-weight: 300;
   color: ${themeConf.secondaryTextColor};
-`;
-
-const ResumeButton = styled.button`
-  background-color: ${themeConf.linkColor};
-  &:hover {
-    background-color: ${themeConf.linkColorHover};
-  }
 `;
 
 function BioRight() {
@@ -58,16 +51,8 @@ function BioRight() {
 
         <>{Number()}</>
         <div ref={triggerRef} />
-        <a
-          href="https://www.dropbox.com/s/vrjajfstbvxa608/JWeisberg-Resume-2022.pdf?dl=1"
-          title="Justin-Weisberg-Resume2021"
-          download
-        >
-          <ResumeButton className="bio-right__resume-button">
-            <ArchiveIcon />
-            Download Resume
-          </ResumeButton>
-        </a>
+
+        <ResumeButton />
       </div>
     </>
   );

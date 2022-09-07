@@ -1,0 +1,17 @@
+.resume-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #00000050;
+  white-space: nowrap;
+}
