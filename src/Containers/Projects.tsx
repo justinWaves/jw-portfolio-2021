@@ -7,6 +7,7 @@ import highLife from "../images/highlife-alpha.png";
 import tac from "../images/TAC-alpha.png";
 // import jwPort2018 from "../images/2018port-alpha.png";
 // import metaWaves from "../images/metawaves-alpha.png";
+import meanTN from "../images/mean-tn.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
 import jWavesBlog from "../images/jwavesblog-alpha.png";
 import es6 from "../images/es6-thumbnail.png";
@@ -25,6 +26,20 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
+        <PortfolioItem
+          title="MEAN-monster"
+          body="Full-stack web app built with Angular Material the MEAN stack. Utilizes Lazy Loading, web tokens for user auth, MIME validator for file upload and more 🎊"
+          codeUrl="https://github.com/justinWaves/mean-monster"
+          linkUrl="http://meanmonster-env.eba-mrydrakz.us-west-1.elasticbeanstalk.com/"
+          imageSrc={meanTN}
+          tools={[
+            "MongoDB,",
+            "Express.JS",
+            "Angular.JS",
+            "Node.JS",
+            "Angular Material",
+          ]}
+        />
         <PortfolioItem
           title="Syntax Highlighter"
           body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
