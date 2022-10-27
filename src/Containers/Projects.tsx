@@ -26,7 +26,7 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
-        <PortfolioItem
+        {/* <PortfolioItem
           title="MEAN-monster"
           body="Full-stack web app built with Angular Material the MEAN stack. Utilizes Lazy Loading, web tokens for user auth, MIME validator for file upload and more 🎊"
           codeUrl="https://github.com/justinWaves/mean-monster"
@@ -47,7 +47,7 @@ function Projects() {
           linkUrl="https://justinwaves.github.io/es6-code-formatter/"
           imageSrc={es6}
           tools={["React", "Typescript"]}
-        />
+        /> */}
         <PortfolioItem
           title="Justin Waves Blog"
           body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes Dynamic Routes, Server Side Rendering, Incremental Static Regeneration, a working comment section, and Form validation using React-Forms. Also utilized custom made RESTful API's using Sanity's query language GROQ to read and write data from the database."
