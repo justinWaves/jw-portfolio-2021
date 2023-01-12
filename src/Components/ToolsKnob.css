@@ -49,18 +49,18 @@
 
 .knob__label--0 {
   position: relative;
-  top: 235px;
+  top: 225px;
   left: 0px;
 }
 .knob__label--1 {
   position: relative;
-  top: 235px;
-  left: -90px;
+  top: 230px;
+  left: -95px;
 }
 .knob__label--2 {
   position: relative;
   top: 265px;
-  left: -110px;
+  left: -115px;
 }
 .knob__label--3 {
   position: relative;
@@ -90,12 +90,12 @@
 .knob__label--8 {
   position: relative;
   top: 175px;
-  left: 140px;
+  left: 145px;
 }
 .knob__label--9 {
   position: relative;
   top: 110px;
-  left: 130px;
+  left: 135px;
 }
 .knob__label--10 {
   position: relative;
