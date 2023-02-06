@@ -2,14 +2,13 @@ import PortfolioItem from "../Components/PortfolioItem";
 import "./Projects.css";
 import ProjectsHeader from "../Components/ProjectsHeader";
 import linkedinClone from "../images/linkedin-alpha.png";
-// import ticTactToe from "../images/tictactoe-alpha.png";
 import highLife from "../images/highlife-alpha.png";
 import tac from "../images/TAC-alpha.png";
-// import jwPort2018 from "../images/2018port-alpha.png";
-// import metaWaves from "../images/metawaves-alpha.png";
-import meanTN from "../images/mean-tn.png";
+import milanoTN from "../images/milano-thumbnail.png";
+import metaWaves from "../images/metawaves-alpha.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
 import jWavesBlog from "../images/jwavesblog-alpha.png";
+import netflixTN from "../images/netflix-tn.png";
 import es6 from "../images/es6-thumbnail.png";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
@@ -26,28 +25,36 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
-        {/* <PortfolioItem
-          title="MEAN-monster"
-          body="Full-stack web app built with Angular Material the MEAN stack. Utilizes Lazy Loading, web tokens for user auth, MIME validator for file upload and more 🎊"
-          codeUrl="https://github.com/justinWaves/mean-monster"
-          linkUrl="http://meanmonster-env.eba-mrydrakz.us-west-1.elasticbeanstalk.com/"
-          imageSrc={meanTN}
+        <PortfolioItem
+          title="Matt Milano Art"
+          body="Full-stack web app built with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
+          codeUrl="https://github.com/justinWaves/milano-art"
+          linkUrl="https://milano-art.vercel.app/"
+          imageSrc={milanoTN}
           tools={[
-            "MongoDB,",
-            "Express.JS",
-            "Angular.JS",
-            "Node.JS",
-            "Angular Material",
+            "React",
+            "Next.js",
+            "Tailwind.css",
+            "Sanity.io",
+            "Typescript",
           ]}
         />
         <PortfolioItem
-          title="Syntax Highlighter"
-          body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
-          codeUrl="https://github.com/justinWaves/es6-code-formatter"
-          linkUrl="https://justinwaves.github.io/es6-code-formatter/"
-          imageSrc={es6}
-          tools={["React", "Typescript"]}
-        /> */}
+          title="Netflix Clone"
+          body="Full Stack Netflix clone built with working Stipe Checkout. Fetches movie data from TMDB. Built with a Firebase Backend (Firestore/ Google Auth), React, Redux, TailwindCSS, impemented in Typescript  🎊"
+          codeUrl="https://github.com/justinWaves/netflix-build"
+          linkUrl="https://netflix-clone-38dd5.firebaseapp.com/"
+          imageSrc={netflixTN}
+          tools={[
+            "React",
+            "Redux",
+            "Stripe Checkout",
+            "Firebase",
+
+            "Typescript",
+          ]}
+        />
+
         <PortfolioItem
           title="Justin Waves Blog"
           body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes Dynamic Routes, Server Side Rendering, Incremental Static Regeneration, a working comment section, and Form validation using React-Forms. Also utilized custom made RESTful API's using Sanity's query language GROQ to read and write data from the database."
@@ -62,14 +69,22 @@ function Projects() {
             "Typescript",
           ]}
         />
-        {/* <PortfolioItem
+        <PortfolioItem
           title="MetaWaves Chat"
           body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend."
           codeUrl="https://github.com/justinWaves/metaverse-challenge"
           linkUrl="https://metaverse-challenge-alpha-eight.vercel.app/"
           imageSrc={metaWaves}
           tools={["React", "Next.js", "Tailwind.css", "Moralis", "MetaMask"]}
-        /> */}
+        />
+        <PortfolioItem
+          title="Syntax Highlighter"
+          body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
+          codeUrl="https://github.com/justinWaves/es6-code-formatter"
+          linkUrl="https://justinwaves.github.io/es6-code-formatter/"
+          imageSrc={es6}
+          tools={["React", "Typescript"]}
+        />
         <PortfolioItem
           title="JW Portfolio 2021"
           body="Portfolio App made with Typescript and React. Uses Styled-Themes/ Styled Components and React's Context API to handle light/dark mode."
