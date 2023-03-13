@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.7c6bc461.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.9550a669.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.9550a669.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.a87e4d52.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.15b14cc3.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.15b14cc3.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js.map",
-    "static/js/2.6d756581.chunk.js": "/jw-portfolio-2021/static/js/2.6d756581.chunk.js",
-    "static/js/2.6d756581.chunk.js.map": "/jw-portfolio-2021/static/js/2.6d756581.chunk.js.map",
+    "static/js/2.6434a68b.chunk.js": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js",
+    "static/js/2.6434a68b.chunk.js.map": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.7c6bc461.chunk.css.map": "/jw-portfolio-2021/static/css/main.7c6bc461.chunk.css.map",
-    "static/js/2.6d756581.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.6d756581.chunk.js.LICENSE.txt",
+    "static/css/main.a87e4d52.chunk.css.map": "/jw-portfolio-2021/static/css/main.a87e4d52.chunk.css.map",
+    "static/js/2.6434a68b.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js.LICENSE.txt",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
     "static/media/TAC-alpha.bc2fbaad.png": "/jw-portfolio-2021/static/media/TAC-alpha.bc2fbaad.png",
@@ -32,7 +32,6 @@
     "static/media/jweisberg__textlogo.c37f276e.svg": "/jw-portfolio-2021/static/media/jweisberg__textlogo.c37f276e.svg",
     "static/media/jwportfolioSS-alpha.580d4e5b.png": "/jw-portfolio-2021/static/media/jwportfolioSS-alpha.580d4e5b.png",
     "static/media/linkedin-alpha.b9dd7c5c.png": "/jw-portfolio-2021/static/media/linkedin-alpha.b9dd7c5c.png",
-    "static/media/metawaves-alpha.10cf4c6e.png": "/jw-portfolio-2021/static/media/metawaves-alpha.10cf4c6e.png",
     "static/media/milano-thumbnail.a8d171ca.png": "/jw-portfolio-2021/static/media/milano-thumbnail.a8d171ca.png",
     "static/media/netflix-tn.9de811e5.png": "/jw-portfolio-2021/static/media/netflix-tn.9de811e5.png",
     "static/media/old-mustang.87854d2e.svg": "/jw-portfolio-2021/static/media/old-mustang.87854d2e.svg",
@@ -43,13 +42,14 @@
     "static/media/planeAsset 4.d974202c.svg": "/jw-portfolio-2021/static/media/planeAsset 4.d974202c.svg",
     "static/media/planeAsset 5.59b12f36.svg": "/jw-portfolio-2021/static/media/planeAsset 5.59b12f36.svg",
     "static/media/planeAsset 6.dc37c1de.svg": "/jw-portfolio-2021/static/media/planeAsset 6.dc37c1de.svg",
+    "static/media/ramboTN.9b132b3c.png": "/jw-portfolio-2021/static/media/ramboTN.9b132b3c.png",
     "static/media/tesla-red.b3586859.svg": "/jw-portfolio-2021/static/media/tesla-red.b3586859.svg",
     "static/media/van-ambulance.ca0610c0.svg": "/jw-portfolio-2021/static/media/van-ambulance.ca0610c0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1fc2ee82.js",
-    "static/js/2.6d756581.chunk.js",
-    "static/css/main.7c6bc461.chunk.css",
-    "static/js/main.9550a669.chunk.js"
+    "static/js/2.6434a68b.chunk.js",
+    "static/css/main.a87e4d52.chunk.css",
+    "static/js/main.15b14cc3.chunk.js"
   ]
 }
