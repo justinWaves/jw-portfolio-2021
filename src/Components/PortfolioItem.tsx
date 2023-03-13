@@ -12,6 +12,7 @@ import { config, useSpring } from "react-spring";
 
 const ButtonWindowContainer = styled(animated.div)`
   background-color: ${themeConf.linkWindowBackgroundColor};
+  backdrop-filter: blur(10px);
 `;
 
 const PortfolioItemContain = styled(animated.div)`

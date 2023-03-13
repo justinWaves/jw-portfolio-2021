@@ -6,6 +6,7 @@ import highLife from "../images/highlife-alpha.png";
 import tac from "../images/TAC-alpha.png";
 import milanoTN from "../images/milano-thumbnail.png";
 import metaWaves from "../images/metawaves-alpha.png";
+import ramboTN from "../images/ramboTN.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
 import jWavesBlog from "../images/jwavesblog-alpha.png";
 import netflixTN from "../images/netflix-tn.png";
@@ -26,6 +27,20 @@ function Projects() {
       <ProjectsHeader />
       <div className="projects__contain">
         <PortfolioItem
+          title="Rambo Party"
+          body="Full-stack web app built for client with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
+          codeUrl="https://github.com/justinWaves/rambo-site"
+          linkUrl="https://rambo-site.vercel.app/"
+          imageSrc={ramboTN}
+          tools={[
+            "React",
+            "Next.js",
+            "Tailwind.css",
+            "Sanity.io",
+            "Typescript",
+          ]}
+        />
+        <PortfolioItem
           title="Matt Milano Art"
           body="Full-stack web app built with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
           codeUrl="https://github.com/justinWaves/milano-art"
@@ -39,6 +54,7 @@ function Projects() {
             "Typescript",
           ]}
         />
+
         <PortfolioItem
           title="Netflix Clone"
           body="Full Stack Netflix clone built with working Stipe Checkout. Fetches movie data from TMDB. Built with a Firebase Backend (Firestore/ Google Auth), React, Redux, TailwindCSS, impemented in Typescript  🎊"
@@ -69,14 +85,14 @@ function Projects() {
             "Typescript",
           ]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="MetaWaves Chat"
           body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend."
           codeUrl="https://github.com/justinWaves/metaverse-challenge"
           linkUrl="https://metaverse-challenge-alpha-eight.vercel.app/"
           imageSrc={metaWaves}
           tools={["React", "Next.js", "Tailwind.css", "Moralis", "MetaMask"]}
-        />
+        /> */}
         <PortfolioItem
           title="Syntax Highlighter"
           body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."

@@ -13,7 +13,7 @@ const ResumeButtonWrap = styled.button`
 function ResumeButton() {
   return (
     <a
-      href="https://www.dropbox.com/s/u9kvlouixm5ak4y/Justin%20Weisberg%20Resume%202022.pdf?dl=1"
+      href="https://www.dropbox.com/s/36e140uivy03ve0/JWeisberg-Resume-2023.pdf?dl=0"
       title="Justin-Weisberg-Resume2021"
       download
     >
