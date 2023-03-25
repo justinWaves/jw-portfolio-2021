@@ -22,7 +22,7 @@ function BioHeader() {
   return (
     <>
       <animated.h1 style={headerStyle} className="bioHeader__text">
-        <strong> Hello!</strong> My name is Justin,
+        <strong> Hello!</strong> My name is Justin
       </animated.h1>
       <div ref={triggerRef} />
     </>
