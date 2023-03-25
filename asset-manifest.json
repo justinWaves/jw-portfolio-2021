@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.a87e4d52.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.15b14cc3.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.15b14cc3.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.6fa5a74c.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.c205e5ed.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.c205e5ed.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js.map",
     "static/js/2.6434a68b.chunk.js": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js",
     "static/js/2.6434a68b.chunk.js.map": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.a87e4d52.chunk.css.map": "/jw-portfolio-2021/static/css/main.a87e4d52.chunk.css.map",
+    "static/css/main.6fa5a74c.chunk.css.map": "/jw-portfolio-2021/static/css/main.6fa5a74c.chunk.css.map",
     "static/js/2.6434a68b.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js.LICENSE.txt",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
@@ -43,13 +43,14 @@
     "static/media/planeAsset 5.59b12f36.svg": "/jw-portfolio-2021/static/media/planeAsset 5.59b12f36.svg",
     "static/media/planeAsset 6.dc37c1de.svg": "/jw-portfolio-2021/static/media/planeAsset 6.dc37c1de.svg",
     "static/media/ramboTN.9b132b3c.png": "/jw-portfolio-2021/static/media/ramboTN.9b132b3c.png",
+    "static/media/ronbo-TN.d64fd123.png": "/jw-portfolio-2021/static/media/ronbo-TN.d64fd123.png",
     "static/media/tesla-red.b3586859.svg": "/jw-portfolio-2021/static/media/tesla-red.b3586859.svg",
     "static/media/van-ambulance.ca0610c0.svg": "/jw-portfolio-2021/static/media/van-ambulance.ca0610c0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1fc2ee82.js",
     "static/js/2.6434a68b.chunk.js",
-    "static/css/main.a87e4d52.chunk.css",
-    "static/js/main.15b14cc3.chunk.js"
+    "static/css/main.6fa5a74c.chunk.css",
+    "static/js/main.c205e5ed.chunk.js"
   ]
 }
