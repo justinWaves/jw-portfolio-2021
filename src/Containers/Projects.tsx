@@ -5,6 +5,7 @@ import linkedinClone from "../images/linkedin-alpha.png";
 import highLife from "../images/highlife-alpha.png";
 import tac from "../images/TAC-alpha.png";
 import milanoTN from "../images/milano-thumbnail.png";
+import ronboTN from "../images/ronbo-TN.png";
 import metaWaves from "../images/metawaves-alpha.png";
 import ramboTN from "../images/ramboTN.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
@@ -27,18 +28,20 @@ function Projects() {
       <ProjectsHeader />
       <div className="projects__contain">
         <PortfolioItem
+          title="Ronbow Demo"
+          body=" Simple design demo made with React, Tailwind CSS 🎊"
+          codeUrl="https://github.com/justinWaves/ronbo-demo"
+          linkUrl="https://ronbo-demo.vercel.app/"
+          imageSrc={ronboTN}
+          tools={["React", "Tailwind CSS", "Material UI"]}
+        />
+        <PortfolioItem
           title="Rambo Party"
           body="Full-stack web app built for client with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
           codeUrl="https://github.com/justinWaves/rambo-site"
           linkUrl="https://rambo-site.vercel.app/"
           imageSrc={ramboTN}
-          tools={[
-            "React",
-            "Next.js",
-            "Tailwind.css",
-            "Sanity.io",
-            "Typescript",
-          ]}
+          tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
         />
         <PortfolioItem
           title="Matt Milano Art"
@@ -46,13 +49,7 @@ function Projects() {
           codeUrl="https://github.com/justinWaves/milano-art"
           linkUrl="https://milano-art.vercel.app/"
           imageSrc={milanoTN}
-          tools={[
-            "React",
-            "Next.js",
-            "Tailwind.css",
-            "Sanity.io",
-            "Typescript",
-          ]}
+          tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
         />
 
         <PortfolioItem
@@ -77,13 +74,7 @@ function Projects() {
           codeUrl="https://github.com/justinWaves/justinwaves-blog"
           linkUrl="https://justinwaves-blog.vercel.app/"
           imageSrc={jWavesBlog}
-          tools={[
-            "React",
-            "Next.js",
-            "Tailwind.css",
-            "Sanity.io",
-            "Typescript",
-          ]}
+          tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
         />
         {/* <PortfolioItem
           title="MetaWaves Chat"
@@ -93,14 +84,14 @@ function Projects() {
           imageSrc={metaWaves}
           tools={["React", "Next.js", "Tailwind.css", "Moralis", "MetaMask"]}
         /> */}
-        <PortfolioItem
+        {/* <PortfolioItem
           title="Syntax Highlighter"
           body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
           codeUrl="https://github.com/justinWaves/es6-code-formatter"
           linkUrl="https://justinwaves.github.io/es6-code-formatter/"
           imageSrc={es6}
           tools={["React", "Typescript"]}
-        />
+        /> */}
         <PortfolioItem
           title="JW Portfolio 2021"
           body="Portfolio App made with Typescript and React. Uses Styled-Themes/ Styled Components and React's Context API to handle light/dark mode."
