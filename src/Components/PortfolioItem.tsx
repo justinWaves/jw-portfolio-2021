@@ -149,12 +149,21 @@ function PortfolioItem({
                 <p>View Site</p>
               </button>
             </a>
-            <a href={codeUrl} target="_blank" rel="noopener noreferrer">
-              <button className="gh__button--link">
-                <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
-                <p>View Code</p>
+            {codeUrl ? (
+              <a href={codeUrl} target="_blank" rel="noopener noreferrer">
+                <button className="gh__button--link">
+                  <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                  <p>View Code</p>
+                </button>
+              </a>
+            ) : (
+              <button className="gh__button--link-canceled">
+                <p>
+                  Codebase is not <br />
+                  Publicly Available
+                </p>
               </button>
-            </a>
+            )}
           </animated.div>
         </ButtonWindowContainer>
       </PortfolioItemContain>

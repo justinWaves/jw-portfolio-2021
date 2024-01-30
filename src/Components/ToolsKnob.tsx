@@ -19,7 +19,7 @@ function ToolsKnob() {
     if (knobValue === 0) {
       knobSelectHeader = "VS Code";
       knobSelectParagraph =
-        "Just like the majority of software engineers, VS Code is my IDE of choice. Extensions such as Emmet, Prettier, and IntelliSense keep my code beautiful, my workflow fast, and makes use of machine learning to automate monotonous processes";
+        "VS Code is my IDE of choice. Extensions such as Emmet, Prettier, and IntelliSense keep my code beautiful, my workflow fast, and makes use of machine learning to automate monotonous processes";
     }
     if (knobValue === 10) {
       knobSelectHeader = "Javascript ES6";
@@ -64,7 +64,7 @@ function ToolsKnob() {
     if (knobValue === 90) {
       knobSelectHeader = "React";
       knobSelectParagraph =
-        "Traversing the virtual DOM has become a favorite pastime of mine. Mainly due its performance and popularity, React has becoming my primary framework for developing user interfaces. The amount of awesome libraries created around the framework is also a huge benefit.";
+        "Expert at traversing the virtual DOM. Mainly due its performance and popularity, React has becoming my primary framework for developing user interfaces. The amount of awesome libraries created around the framework is also a huge benefit.";
     }
     if (knobValue === 100) {
       knobSelectHeader = "Typescript";

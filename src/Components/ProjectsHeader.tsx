@@ -26,7 +26,7 @@ function ProjectsHeader() {
         style={projectHeaderAnimation}
         className="projectsHeader__title"
       >
-        <strong>Portfolio</strong> Projects
+        <strong>Recent</strong> Projects
       </animated.h1>
       <div ref={triggerRef} />
     </>

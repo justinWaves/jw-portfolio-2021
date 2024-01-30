@@ -249,7 +249,6 @@
   flex-direction: column;
   border-radius: 20px;
   position: absolute;
-  
   top: 0;
   left: 0;
   right: 0;
@@ -285,12 +284,28 @@
   height: 100px;
   border-radius: 3px;
   text-align: center;
-  font-size: 22px;
+  font-size: 16px;
   margin-left: 1rem;
   margin-right: 1rem;
   white-space: nowrap;
   margin-bottom: 60px;
   box-shadow: 5px 7px 0px #dddddd;
+}
+.gh__button--link-canceled {
+  border: hidden;
+  background: lightgray;
+  color: #575757;
+  width: 10rem;
+  height: 100px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+  margin-bottom: 60px;
+  box-shadow: 5px 7px 0px #949494;
+  cursor: not-allowed;
 }
 
 @media only screen and (max-width: 979px) {

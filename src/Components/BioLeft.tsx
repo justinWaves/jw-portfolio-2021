@@ -21,7 +21,7 @@ function BioLeft() {
           React, Node.js, Next.JS, and Typescript, I ship well tested,
           production ready code optimized for performance and scalability.
           Outside of software development, you can find me climbing, playing
-          piano, jamming on guitar, or producing music under the name{" "}
+          piano/guitar, or producing music under the name{" "}
           <BioLink href="https://justinwaves-blog.vercel.app/" target="_blank">
             Justin Waves 🌊
           </BioLink>

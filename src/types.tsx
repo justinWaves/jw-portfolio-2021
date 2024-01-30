@@ -13,7 +13,7 @@ export interface IFormValues {
 export interface PortfolioProps {
   title: string;
   body: string;
-  codeUrl: string;
+  codeUrl?: string;
   linkUrl: string;
   imageSrc: string;
   tools: string[];
