@@ -63,6 +63,7 @@
 .header__textTop {
   font-weight: 300;
   font-size: 3.5vh;
+  text-align: center;
 }
 
 @media only screen and (max-height: 600px) {

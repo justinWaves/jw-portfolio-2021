@@ -53,14 +53,14 @@ function Projects() {
           imageSrc={adTN}
           tools={["React", "Next.JS", "Typescript", "Tailwind CSS", "Sanity", "Shopify"]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="Rambo Party"
           body="Full-stack web app built for client with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
           codeUrl="https://github.com/justinWaves/rambo-site"
           linkUrl="https://rambo-site.vercel.app/"
           imageSrc={ramboTN}
           tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
-        />
+        /> */}
         <PortfolioItem
           title="Matt Milano Art"
           body="Full-stack web app built with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
@@ -111,21 +111,21 @@ function Projects() {
           tools={["React", "Typescript"]}
         />
         <PortfolioItem
-          title="JW Portfolio 2021"
+          title="JW Portfolio site"
           body="Portfolio App made with Typescript and React. Uses Styled-Themes/ Styled Components and React's Context API to handle light/dark mode."
           codeUrl="https://github.com/justinWaves/jw-portfolio-2021"
           linkUrl="https://justinwaves.github.io/jw-portfolio-2021/"
           imageSrc={jwPort2021}
           tools={["React", "Typescript", "Styled Components", "Material UI"]}
         />
-        {/* <PortfolioItem
+        <PortfolioItem
           title="LinkedIn Clone"
           body="React app that uses Redux to manage global state of user, a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only."
           codeUrl="https://github.com/justinWaves/linkedin-clone"
           linkUrl="https://linkedin-clone-6520a.firebaseapp.com/"
           imageSrc={linkedinClone}
           tools={["React", "Redux", "Firebase", "Material UI"]}
-        /> */}
+        />
         {/* <PortfolioItem
           title="Tic React Toe"
           body="Tic Tac Toe game rendered in React."
