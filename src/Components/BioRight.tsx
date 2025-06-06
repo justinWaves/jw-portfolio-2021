@@ -24,7 +24,7 @@ function BioRight() {
       reset: true,
       reverse: flip,
       from: { number: 0 },
-      number: 10.1,
+      number: 12.2,
       delay: 200,
       config: config.molasses,
     });

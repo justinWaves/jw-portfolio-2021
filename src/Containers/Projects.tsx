@@ -2,6 +2,8 @@ import PortfolioItem from "../Components/PortfolioItem";
 import "./Projects.css";
 import ProjectsHeader from "../Components/ProjectsHeader";
 import linkedinClone from "../images/linkedin-alpha.png";
+import sonataPiano from "../images/sonata-thumbnail.png"
+import hearthAI from "../images/hearth-TN.png"
 import highLife from "../images/highlife-alpha.png";
 import tac from "../images/TAC-alpha.png";
 import milanoTN from "../images/milano-thumbnail.png";
@@ -29,29 +31,59 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
-        {/* <PortfolioItem
-          title="Ronbow Demo"
-          body=" Simple design demo made with React, Tailwind CSS 🎊"
-          codeUrl="https://github.com/justinWaves/ronbo-demo"
-          linkUrl="https://ronbo-demo.vercel.app/"
-          imageSrc={ronboTN}
-          tools={["React", "Tailwind CSS", "Material UI"]}
-        /> */}
-         <PortfolioItem
+        <PortfolioItem
           title="Pointment"
           body="As a Frontend Software Engineer at Stacks Du Beurre in San Francisco, I have been a contributer for Pointment. A suite of high performaning react apps that help nail salons reach new clients and organize their booking flow."
           codeUrl=""
           linkUrl="https://www.pointmentapp.com/"
           imageSrc={pointmentTN}
-          tools={["React", "Typescript", "Tailwind CSS", "Prisma", "AWS", "TypeGraphQL"]}
+          tools={[
+            "React",
+            "Typescript",
+            "Tailwind CSS",
+            "Prisma",
+            "AWS",
+            "TypeGraphQL",
+          ]}
         />
-           <PortfolioItem
+        <PortfolioItem
+          title="Sonata Piano Works"
+          body="Next.JS + Sanity site with blog I Vibe Coded in a few days for my own Piano Tuning/ repair business. Feautres a referal code generator and custom CRM + Scheduler"
+          codeUrl=""
+          linkUrl="https://www.sonatapianoworks.com/"
+          imageSrc={sonataPiano}
+          tools={["React", "Next.JS", "Typescript", "Tailwind CSS", "Sanity"]}
+        />
+        <PortfolioItem
+          title="Hearth AI Challenge"
+          body="Take-home coding challenge where I had to express a given group of contacts and their 'temperature' score. Utilized Next.JS's App router, and React Spring animations"
+          codeUrl="https://github.com/justinWaves/hearth-fe-take-home"
+          linkUrl="https://hearth-fe-take-home.vercel.app/"
+          imageSrc={hearthAI}
+          tools={["React", "Next.JS", "Typescript", "Tailwind CSS"]}
+        />
+        <PortfolioItem
           title="Artisan Direct"
           body="Headless Shopify Store front built with Next.JS React and Sanity"
           codeUrl=""
           linkUrl="https://www.artisandirect.shop/"
           imageSrc={adTN}
-          tools={["React", "Next.JS", "Typescript", "Tailwind CSS", "Sanity", "Shopify"]}
+          tools={[
+            "React",
+            "Next.JS",
+            "Typescript",
+            "Tailwind CSS",
+            "Sanity",
+            "Shopify",
+          ]}
+        />
+        <PortfolioItem
+          title="Ronbow Demo"
+          body="Ddesign demo made with React, Tailwind CSS 🎊"
+          codeUrl="https://github.com/justinWaves/ronbo-demo"
+          linkUrl="https://ronbo-demo.vercel.app/"
+          imageSrc={ronboTN}
+          tools={["React", "Tailwind CSS", "Material UI"]}
         />
         {/* <PortfolioItem
           title="Rambo Party"
@@ -85,7 +117,14 @@ function Projects() {
             "Typescript",
           ]}
         /> */}
-
+        {/* <PortfolioItem
+          title="Tic React Toe"
+          body="Tic Tac Toe game rendered in React."
+          codeUrl="https://github.com/justinWaves/tic-react-toe"
+          linkUrl="https://justinwaves.github.io/tic-react-toe/"
+          imageSrc={ticTactToe}
+          tools={["React", "Sass"]}
+        /> */}
         <PortfolioItem
           title="Justin Waves Blog"
           body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes Dynamic Routes, Server Side Rendering, Incremental Static Regeneration, a working comment section, and Form validation using React-Forms. Also utilized custom made RESTful API's using Sanity's query language GROQ to read and write data from the database."
@@ -94,14 +133,14 @@ function Projects() {
           imageSrc={jWavesBlog}
           tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="MetaWaves Chat"
           body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend."
           codeUrl="https://github.com/justinWaves/metaverse-challenge"
           linkUrl="https://metaverse-challenge-alpha-eight.vercel.app/"
           imageSrc={metaWaves}
           tools={["React", "Next.js", "Tailwind.css", "Moralis", "MetaMask"]}
-        />
+        /> */}
         <PortfolioItem
           title="Syntax Highlighter"
           body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
