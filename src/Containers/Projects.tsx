@@ -10,6 +10,7 @@ import milanoTN from "../images/milano-thumbnail.png";
 import ronboTN from "../images/ronbo-TN.png";
 import metaWaves from "../images/metawaves-alpha.png";
 import ramboTN from "../images/ramboTN.png";
+import minesurfer from "../images/minesurfer-TN.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
 import pointmentTN from "../images/pointmentTN.png";
 import jWavesBlog from "../images/jwavesblog-alpha.png";
@@ -18,6 +19,7 @@ import es6 from "../images/es6-thumbnail.png";
 import adTN from "../images/adTN.png";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
+import jwPort2018 from "../images/2018port-alpha.png";
 
 const ProjectsContain = styled.div`
   background-color: ${themeConf.secondaryBackgroundColor};
@@ -101,6 +103,14 @@ function Projects() {
           imageSrc={milanoTN}
           tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
         />
+        <PortfolioItem
+          title="MINESURFER 🏄‍♂️"
+          body="Recreated the classic game Minesweeper in React. Features a custom made algorithm to generate the minefield and calculate the number of mines around each square."
+          codeUrl="https://github.com/justinWaves/ms-3"
+          linkUrl="https://justinwaves.github.io/ms-3/"
+          imageSrc={minesurfer}
+          tools={["React", "Typescript", "Tailwind CSS"]}
+        />
 
         {/* <PortfolioItem
           title="Netflix Clone"
@@ -150,7 +160,7 @@ function Projects() {
           tools={["React", "Typescript"]}
         />
         <PortfolioItem
-          title="JW Portfolio site"
+          title="JW Portfolio 2021"
           body="Portfolio App made with Typescript and React. Uses Styled-Themes/ Styled Components and React's Context API to handle light/dark mode."
           codeUrl="https://github.com/justinWaves/jw-portfolio-2021"
           linkUrl="https://justinwaves.github.io/jw-portfolio-2021/"
@@ -189,14 +199,14 @@ function Projects() {
           imageSrc={tac}
           tools={["Bootstrap", "JQuery", "HTML", "CSS"]}
         /> */}
-        {/* <PortfolioItem
+        <PortfolioItem
           title="JW Portfolio 2018"
-          body="My First Portfolio site, you may see some similarities to this one. I used CSS to size and animate different PNG of gears as a background. The site is fully responsive."
+          body="My First Portfolio site, you may see some similarities to this one. I used CSS to size and animate different PNG of gears as a background."
           codeUrl="https://github.com/justinWaves/JW-Portfolio"
           linkUrl="https://justinwaves.github.io/JW-Portfolio/"
           imageSrc={jwPort2018}
           tools={["Bootstrap", "HTML", "CSS", "Javascript"]}
-        /> */}
+        />
       </div>
     </ProjectsContain>
   );
