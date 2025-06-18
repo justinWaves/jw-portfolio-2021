@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/jw-portfolio-2021/static/css/main.a372223d.chunk.css",
-    "main.js": "/jw-portfolio-2021/static/js/main.cabb1b9b.chunk.js",
-    "main.js.map": "/jw-portfolio-2021/static/js/main.cabb1b9b.chunk.js.map",
+    "main.css": "/jw-portfolio-2021/static/css/main.06c6c94f.chunk.css",
+    "main.js": "/jw-portfolio-2021/static/js/main.ec00e8be.chunk.js",
+    "main.js.map": "/jw-portfolio-2021/static/js/main.ec00e8be.chunk.js.map",
     "runtime-main.js": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js",
     "runtime-main.js.map": "/jw-portfolio-2021/static/js/runtime-main.1fc2ee82.js.map",
     "static/js/2.6434a68b.chunk.js": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js",
     "static/js/2.6434a68b.chunk.js.map": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js.map",
     "index.html": "/jw-portfolio-2021/index.html",
-    "static/css/main.a372223d.chunk.css.map": "/jw-portfolio-2021/static/css/main.a372223d.chunk.css.map",
+    "static/css/main.06c6c94f.chunk.css.map": "/jw-portfolio-2021/static/css/main.06c6c94f.chunk.css.map",
     "static/js/2.6434a68b.chunk.js.LICENSE.txt": "/jw-portfolio-2021/static/js/2.6434a68b.chunk.js.LICENSE.txt",
-    "static/media/2018port-alpha.4575ce21.png": "/jw-portfolio-2021/static/media/2018port-alpha.4575ce21.png",
     "static/media/City.css": "/jw-portfolio-2021/static/media/StarsNight.a631a7dc.svg",
     "static/media/SunMoonGlow.34351f56.svg": "/jw-portfolio-2021/static/media/SunMoonGlow.34351f56.svg",
     "static/media/adTN.e2dd7ece.png": "/jw-portfolio-2021/static/media/adTN.e2dd7ece.png",
@@ -45,6 +44,7 @@
     "static/media/planeAsset 6.dc37c1de.svg": "/jw-portfolio-2021/static/media/planeAsset 6.dc37c1de.svg",
     "static/media/pointmentTN.c6c470e1.png": "/jw-portfolio-2021/static/media/pointmentTN.c6c470e1.png",
     "static/media/ronbo-TN.d64fd123.png": "/jw-portfolio-2021/static/media/ronbo-TN.d64fd123.png",
+    "static/media/sonata-crm-TN.2a9c15d0.png": "/jw-portfolio-2021/static/media/sonata-crm-TN.2a9c15d0.png",
     "static/media/sonata-thumbnail.52b2eace.png": "/jw-portfolio-2021/static/media/sonata-thumbnail.52b2eace.png",
     "static/media/tesla-red.b3586859.svg": "/jw-portfolio-2021/static/media/tesla-red.b3586859.svg",
     "static/media/van-ambulance.ca0610c0.svg": "/jw-portfolio-2021/static/media/van-ambulance.ca0610c0.svg"
@@ -52,7 +52,7 @@
   "entrypoints": [
     "static/js/runtime-main.1fc2ee82.js",
     "static/js/2.6434a68b.chunk.js",
-    "static/css/main.a372223d.chunk.css",
-    "static/js/main.cabb1b9b.chunk.js"
+    "static/css/main.06c6c94f.chunk.css",
+    "static/js/main.ec00e8be.chunk.js"
   ]
 }
