@@ -39,8 +39,8 @@ export interface EmailFormTypes {
     subject: string;
     message: string;
   };
-  showAlert: boolean;
-  showLoadingAlert: boolean;
+  showToast: boolean;
+  showLoadingToast: boolean;
   handleChange: (
     e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;

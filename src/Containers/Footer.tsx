@@ -13,8 +13,8 @@ function Footer() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState<any>({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [showLoadingAlert, setShowLoadingAlert] = useState(false);
+  const [showSuccessToast, setShowSuccessToast] = useState(false);
+  const [showLoadingToast, setShowLoadingToast] = useState(false);
 
   const triggerRef = useRef<HTMLDivElement>(null);
   const dataRef = useIntersectionObserver(triggerRef, {
@@ -53,7 +53,7 @@ function Footer() {
     }
 
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      setShowLoadingAlert(true);
+      setShowLoadingToast(true);
       sendEmail();
     }
   }, [formErrors]);
@@ -90,11 +90,11 @@ function Footer() {
       .then(
         (result) => {
           console.log(result.text);
-          setShowLoadingAlert(false);
-          setShowSuccessAlert(true);
+          setShowLoadingToast(false);
+          setShowSuccessToast(true);
           setFormValues(initialValues);
           setTimeout(() => {
-            setShowSuccessAlert(false);
+            setShowSuccessToast(false);
           }, 7000);
         },
         (error) => {
@@ -119,8 +119,8 @@ function Footer() {
       <EmailForm
         formValues={formValues}
         formErrors={formErrors}
-        showAlert={showSuccessAlert}
-        showLoadingAlert={showLoadingAlert}
+        showToast={showSuccessToast}
+        showLoadingToast={showLoadingToast}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />

@@ -9,7 +9,7 @@ import tac from "../images/TAC-alpha.png";
 import milanoTN from "../images/milano-thumbnail.png";
 import ronboTN from "../images/ronbo-TN.png";
 import metaWaves from "../images/metawaves-alpha.png";
-import ramboTN from "../images/ramboTN.png";
+import sonataCRM from "../images/sonata-crm-TN.png";
 import minesurfer from "../images/minesurfer-TN.png";
 import jwPort2021 from "../images/jwportfolioSS-alpha.png";
 import pointmentTN from "../images/pointmentTN.png";
@@ -33,9 +33,24 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
+               <PortfolioItem
+          title="Sonata CRM"
+          body="A full-stack CRM and Scheduler for my own (and others) Piano Tuning/ Repair business. Built with Next.JS, Typescript, Tailwind CSS, Prisma, PostgreSQL, and Express. Features a custom referal code generator and a scheduler."
+          codeUrl="https://github.com/justinWaves/sonata-crm"
+          linkUrl="https://sonata-crm-git-main-justinwaves-projects.vercel.app/"
+          imageSrc={sonataCRM}
+          tools={[
+            "Next.JS 15",
+            "Typescript",
+            "Tailwind CSS",
+            "Prisma",
+            "PostgreSQL",
+            "Express",
+          ]}
+        />
         <PortfolioItem
           title="Pointment"
-          body="As a Frontend Software Engineer at Stacks Du Beurre in San Francisco, I have been a contributer for Pointment. A suite of high performaning react apps that help nail salons reach new clients and organize their booking flow."
+          body="As a Full Stack Software Engineer at Stacks Du Beurre in San Francisco, I have been a contributer for Pointment. A suite of high performaning react apps that help nail salons reach new clients and organize their booking flow."
           codeUrl=""
           linkUrl="https://www.pointmentapp.com/"
           imageSrc={pointmentTN}
@@ -199,14 +214,14 @@ function Projects() {
           imageSrc={tac}
           tools={["Bootstrap", "JQuery", "HTML", "CSS"]}
         /> */}
-        <PortfolioItem
+        {/* <PortfolioItem
           title="JW Portfolio 2018"
           body="My First Portfolio site, you may see some similarities to this one. I used CSS to size and animate different PNG of gears as a background."
           codeUrl="https://github.com/justinWaves/JW-Portfolio"
           linkUrl="https://justinwaves.github.io/JW-Portfolio/"
           imageSrc={jwPort2018}
           tools={["Bootstrap", "HTML", "CSS", "Javascript"]}
-        />
+        /> */}
       </div>
     </ProjectsContain>
   );

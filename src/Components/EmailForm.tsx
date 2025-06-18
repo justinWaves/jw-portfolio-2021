@@ -2,7 +2,7 @@ import "./EmailForm.css";
 import { EmailFormTypes } from "../types";
 import styled from "styled-components";
 import * as themeConf from "../Theme";
-import { useState } from "react";
+import { useState, useEffect } from "react"; // <-- add useEffect
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import SubjectIcon from "@mui/icons-material/Subject";
@@ -23,12 +23,17 @@ const LoadingAlert = styled.div`
 function EmailForm({
   formValues,
   formErrors,
-  showAlert,
-  showLoadingAlert,
+  showToast,
+  showLoadingToast,
   handleChange,
   handleSubmit,
 }: EmailFormTypes) {
-  const [showSuccessAlert, setShowSuccessAlert] = useState(showAlert);
+  const [showSuccessToast, setShowSuccessToast] = useState(showToast);
+
+  // Add this useEffect to sync showSuccessToast with showToast prop
+  useEffect(() => {
+    setShowSuccessToast(showToast);
+  }, [showToast]);
 
   return (
     <div className="emailForm">
@@ -80,14 +85,14 @@ function EmailForm({
           value={formValues.message}
           onChange={handleChange}
         />
-        {showLoadingAlert || showAlert ? (
+        {showLoadingToast || showToast ? (
           <div>
             {/* ~~~~~~~~~~ALERT FLAGS~~~~~~~~~~~~ */}
             <div
               className={`alert__success ${
-                showSuccessAlert ? "alert-shown" : "alert__hidden"
+                showSuccessToast ? "alert-shown" : "alert__hidden"
               }`}
-              onTransitionEnd={() => setShowSuccessAlert(false)}
+              onTransitionEnd={() => setShowSuccessToast(false)}
             >
               <h1>Success! 🎉 </h1>
               <p>Thank you for reaching out. I will get back to you ASAP</p>
@@ -95,9 +100,9 @@ function EmailForm({
 
             <LoadingAlert
               className={`alert__loading ${
-                showLoadingAlert ? "alert-shown" : "alert__hidden--noanimate"
+                showLoadingToast ? "alert-shown" : "alert__hidden--noanimate"
               }`}
-              onTransitionEnd={() => setShowSuccessAlert(false)}
+              onTransitionEnd={() => setShowSuccessToast(false)}
             >
               <div className="lds-roller">
                 <div></div>
