@@ -26,6 +26,18 @@
   font-weight: 200;
 }
 
+.footer__contactInfo {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.footer__contactInfo p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
 .footer__textBottom {
   font-weight: 200;
   margin-top: 10px;

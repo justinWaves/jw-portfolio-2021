@@ -1,17 +1,22 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 import styled from "styled-components";
 import * as themeConf from "../Theme";
 
 const SocialIconsContain = styled.div`
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  gap: 20px;
   & > a {
-    padding: 2px;
+    padding: 8px;
     cursor: pointer;
     color: ${themeConf.textColor};
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: ${themeConf.linkColor};
+    }
   }
 `;
 
@@ -20,35 +25,28 @@ function SocialIcons() {
     <>
       <SocialIconsContain>
         <a
-          href="https://www.instagram.com/justinwaves/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="mailto:justin@justinweisberg.com"
+          title="Email"
         >
-          <InstagramIcon sx={{ fontSize: 40 }} />
-        </a>
-
-        <a
-          href="https://www.facebook.com/jweisberg/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FacebookIcon sx={{ fontSize: 40 }} />
+          <EmailIcon sx={{ fontSize: 32 }} />
         </a>
 
         <a
           href="https://github.com/justinWaves"
           target="_blank"
           rel="noopener noreferrer"
+          title="GitHub"
         >
-          <GitHubIcon sx={{ fontSize: 40 }} />
+          <GitHubIcon sx={{ fontSize: 32 }} />
         </a>
 
         <a
           href="https://www.linkedin.com/in/justinbweisberg/"
           target="_blank"
           rel="noopener noreferrer"
+          title="LinkedIn"
         >
-          <LinkedInIcon sx={{ fontSize: 40 }} />
+          <LinkedInIcon sx={{ fontSize: 32 }} />
         </a>
       </SocialIconsContain>
     </>

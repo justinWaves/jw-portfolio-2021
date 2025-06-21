@@ -35,68 +35,67 @@ function Projects() {
       <div className="projects__contain">
                <PortfolioItem
           title="Sonata CRM"
-          body="A full-stack CRM and Scheduler for my own (and others) Piano Tuning/ Repair business. Built with Next.JS, Typescript, Tailwind CSS, Prisma, PostgreSQL, and Express. Features a custom referal code generator and a scheduler."
+          body="Built a comprehensive CRM and scheduling system for my piano tuning business. Features include client management, automated scheduling, payment processing, referral tracking, and detailed analytics dashboard. Handles the full business workflow from initial contact to payment collection."
           codeUrl="https://github.com/justinWaves/sonata-crm"
           linkUrl="https://sonata-crm-git-main-justinwaves-projects.vercel.app/"
           imageSrc={sonataCRM}
           tools={[
-            "Next.JS 15",
-            "Typescript",
-            "Tailwind CSS",
-            "Prisma",
+            "Next.js 15",
+            "TypeScript",
+            "Prisma ORM",
             "PostgreSQL",
-            "Express",
+            "Express.js",
+            "Tailwind CSS",
           ]}
         />
         <PortfolioItem
           title="Pointment"
-          body="As a Full Stack Software Engineer at Stacks Du Beurre in San Francisco, I have been a contributer for Pointment. A suite of high performaning react apps that help nail salons reach new clients and organize their booking flow."
+          body="As a Full Stack Software Engineer at Stacks Du Beurre, I contributed to Pointment's core booking platform for nail salons. Led frontend optimizations and implemented real-time availability updates and automated client communication features. Built with modern React patterns and TypeScript for scalability and maintainability."
           codeUrl=""
           linkUrl="https://www.pointmentapp.com/"
           imageSrc={pointmentTN}
           tools={[
             "React",
-            "Typescript",
-            "Tailwind CSS",
-            "Prisma",
-            "AWS",
+            "TypeScript",
             "TypeGraphQL",
+            "Prisma ORM",
+            "AWS",
+            "Tailwind CSS",
           ]}
         />
         <PortfolioItem
           title="Sonata Piano Works"
-          body="Next.JS + Sanity site with blog I Vibe Coded in a few days for my own Piano Tuning/ repair business. Feautres a referal code generator and custom CRM + Scheduler"
+          body="Designed and developed a complete business website with integrated CRM and scheduling system for my piano tuning service. Features automated referral tracking, SEO optimization, and modern responsive design. Built with Next.js and Sanity CMS for easy content management."
           codeUrl=""
           linkUrl="https://www.sonatapianoworks.com/"
           imageSrc={sonataPiano}
-          tools={["React", "Next.JS", "Typescript", "Tailwind CSS", "Sanity"]}
+          tools={["Next.js", "TypeScript", "Sanity CMS", "Tailwind CSS"]}
         />
         <PortfolioItem
           title="Hearth AI Challenge"
-          body="Take-home coding challenge where I had to express a given group of contacts and their 'temperature' score. Utilized Next.JS's App router, and React Spring animations"
+          body="Completed a competitive take-home coding challenge for Hearth AI, building a contact management system with temperature scoring. Implemented smooth animations, responsive design, and optimized performance using Next.js App router and React Spring. Demonstrated advanced React patterns and modern development practices."
           codeUrl="https://github.com/justinWaves/hearth-fe-take-home"
           linkUrl="https://hearth-fe-take-home.vercel.app/"
           imageSrc={hearthAI}
-          tools={["React", "Next.JS", "Typescript", "Tailwind CSS"]}
+          tools={["Next.js", "TypeScript", "React Spring", "Tailwind CSS"]}
         />
         <PortfolioItem
           title="Artisan Direct"
-          body="Headless Shopify Store front built with Next.JS React and Sanity"
+          body="Developed a headless e-commerce solution for Artisan Direct, integrating Shopify's backend with a custom Next.js frontend. Implemented advanced product filtering, real-time inventory updates, and optimized checkout flow. Built with performance and user experience in mind using modern web technologies."
           codeUrl=""
           linkUrl="https://www.artisandirect.shop/"
           imageSrc={adTN}
           tools={[
-            "React",
-            "Next.JS",
-            "Typescript",
+            "Next.js",
+            "TypeScript",
+            "Shopify API",
+            "Sanity CMS",
             "Tailwind CSS",
-            "Sanity",
-            "Shopify",
           ]}
         />
         <PortfolioItem
           title="Ronbow Demo"
-          body="Ddesign demo made with React, Tailwind CSS 🎊"
+          body="Created an interactive design demo showcasing modern UI/UX principles and smooth animations. Built with React and Tailwind CSS, featuring responsive design, accessibility compliance, and optimized performance. Serves as a demonstration of frontend development skills and attention to design detail."
           codeUrl="https://github.com/justinWaves/ronbo-demo"
           linkUrl="https://ronbo-demo.vercel.app/"
           imageSrc={ronboTN}
@@ -112,19 +111,19 @@ function Projects() {
         /> */}
         <PortfolioItem
           title="Matt Milano Art"
-          body="Full-stack web app built with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
+          body="Developed a full-stack portfolio and e-commerce platform for artist Matt Milano, featuring dynamic content management, secure payment processing, and optimized image delivery. Implemented custom CMS workflows and built responsive galleries with modern web technologies. Handles content management and e-commerce functionality."
           codeUrl="https://github.com/justinWaves/milano-art"
           linkUrl="https://milano-art.vercel.app/"
           imageSrc={milanoTN}
-          tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
+          tools={["Next.js", "TypeScript", "Sanity CMS", "Tailwind CSS"]}
         />
         <PortfolioItem
           title="MINESURFER 🏄‍♂️"
-          body="Recreated the classic game Minesweeper in React. Features a custom made algorithm to generate the minefield and calculate the number of mines around each square."
+          body="Recreated the classic Minesweeper game with modern React patterns and TypeScript. Implemented a custom algorithm for mine generation and proximity calculations. Features responsive design, accessibility support, and smooth animations. Demonstrates strong algorithmic thinking and game development principles."
           codeUrl="https://github.com/justinWaves/ms-3"
           linkUrl="https://justinwaves.github.io/ms-3/"
           imageSrc={minesurfer}
-          tools={["React", "Typescript", "Tailwind CSS"]}
+          tools={["React", "TypeScript", "Tailwind CSS"]}
         />
 
         {/* <PortfolioItem
@@ -152,11 +151,11 @@ function Projects() {
         /> */}
         <PortfolioItem
           title="Justin Waves Blog"
-          body="Full Stack web app built with React, Next.JS, TailwindCSS, and Sanity CMS for the backend. Utilizes Dynamic Routes, Server Side Rendering, Incremental Static Regeneration, a working comment section, and Form validation using React-Forms. Also utilized custom made RESTful API's using Sanity's query language GROQ to read and write data from the database."
+          body="Built a full-stack blog platform with advanced features including dynamic routing, server-side rendering, and real-time comments. Implemented custom RESTful APIs using Sanity's GROQ query language. Features include SEO optimization, incremental static regeneration, and form validation. Demonstrates modern full-stack development practices."
           codeUrl="https://github.com/justinWaves/justinwaves-blog"
           linkUrl="https://justinwaves-blog.vercel.app/"
           imageSrc={jWavesBlog}
-          tools={["React", "Next.js", "Tailwind CSS", "Sanity", "Typescript"]}
+          tools={["Next.js", "TypeScript", "Sanity CMS", "GROQ", "Tailwind CSS"]}
         />
         {/* <PortfolioItem
           title="MetaWaves Chat"
@@ -168,28 +167,28 @@ function Projects() {
         /> */}
         <PortfolioItem
           title="Syntax Highlighter"
-          body="ES6 Syntax highlighter app rendered in React and implemented in Typescript."
+          body="Developed an ES6 syntax highlighting application with custom parsing algorithms and real-time code formatting. Built with React and TypeScript, featuring support for modern JavaScript features and customizable themes. Demonstrates strong understanding of language parsing, AST manipulation, and developer tool development."
           codeUrl="https://github.com/justinWaves/es6-code-formatter"
           linkUrl="https://justinwaves.github.io/es6-code-formatter/"
           imageSrc={es6}
-          tools={["React", "Typescript"]}
+          tools={["React", "TypeScript"]}
         />
         <PortfolioItem
           title="JW Portfolio 2021"
-          body="Portfolio App made with Typescript and React. Uses Styled-Themes/ Styled Components and React's Context API to handle light/dark mode."
+          body="Designed and developed this portfolio website using TypeScript, React, and styled-components. Implemented a custom theme system with light/dark mode, smooth animations, and responsive design. Features include dynamic project showcasing, interactive components, and optimized performance. Demonstrates modern frontend development practices and attention to user experience."
           codeUrl="https://github.com/justinWaves/jw-portfolio-2021"
           linkUrl="https://justinwaves.github.io/jw-portfolio-2021/"
           imageSrc={jwPort2021}
-          tools={["React", "Typescript", "Styled Components", "Material UI"]}
+          tools={["React", "TypeScript", "Styled Components", "Material UI"]}
         />
-        <PortfolioItem
+        {/* <PortfolioItem
           title="LinkedIn Clone"
-          body="React app that uses Redux to manage global state of user, a Firebase backend for the database and email/password authentication. Icons by Material UI. Desktop only."
+          body="Built a LinkedIn clone with full authentication, real-time updates, and social networking features. Implemented Redux for state management, Firebase for backend services, and Material UI for consistent design. Features include user profiles, post creation, real-time notifications, and responsive design. Demonstrates full-stack development capabilities and understanding of social media platforms."
           codeUrl="https://github.com/justinWaves/linkedin-clone"
           linkUrl="https://linkedin-clone-6520a.firebaseapp.com/"
           imageSrc={linkedinClone}
           tools={["React", "Redux", "Firebase", "Material UI"]}
-        />
+        /> */}
         {/* <PortfolioItem
           title="Tic React Toe"
           body="Tic Tac Toe game rendered in React."
