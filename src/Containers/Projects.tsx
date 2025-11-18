@@ -17,6 +17,7 @@ import jWavesBlog from "../images/jwavesblog-alpha.png";
 import netflixTN from "../images/netflix-tn.png";
 import es6 from "../images/es6-thumbnail.png";
 import adTN from "../images/adTN.png";
+import heraTN from "../images/hera_TN.png";
 import * as themeConf from "../Theme";
 import styled from "styled-components";
 import jwPort2018 from "../images/2018port-alpha.png";
@@ -33,7 +34,22 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
-               <PortfolioItem
+        <PortfolioItem
+          title="HERA"
+          body="Architected and built the complete frontend for a humanitarian data platform deployed in South Sudan at Weavery.ai. Built 160+ TypeScript/React components using Next.js 14 with multi-provider authentication, role-based access control, and offline-first patterns optimized for unreliable network conditions. Designed all UI/UX from wireframes to production."
+          codeUrl=""
+          linkUrl=""
+          imageSrc={heraTN}
+          tools={[
+            "Next.js 14",
+            "TypeScript",
+            "React",
+            "Tailwind CSS",
+            "ShadCN",
+            "AWS Lambda",
+          ]}
+        />
+        <PortfolioItem
           title="Sonata CRM"
           body="Built a comprehensive CRM and scheduling system for my piano tuning business. Features include client management, automated scheduling, payment processing, referral tracking, and detailed analytics dashboard. Handles the full business workflow from initial contact to payment collection."
           codeUrl="https://github.com/justinWaves/sonata-crm"

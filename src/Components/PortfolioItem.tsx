@@ -88,7 +88,10 @@ function PortfolioItem({
       >
         <div className="portfolio__content--left">
           <h1 className="portfolioItem__title">{title}</h1>
-          <div className="portfolioItem__image-container">
+          <div 
+            className="portfolioItem__image-container"
+            style={{ '--bg-color': themeConf.backgroundColor } as React.CSSProperties}
+          >
             <div
               className={
                 isCursorHovering

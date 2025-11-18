@@ -175,6 +175,21 @@
 .portfolioItem__image-container {
   border-radius: 0px 0px 0px 20px;
   z-index: 2;
+  position: relative;
+}
+
+/* Consistent fade effect on right side of all images */
+.portfolioItem__image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, var(--bg-color, #ffffff) 100%);
+  pointer-events: none;
+  z-index: 3;
+  border-radius: 0px 0px 0px 20px;
 }
 
 @media only screen and (max-width: 979px) {
