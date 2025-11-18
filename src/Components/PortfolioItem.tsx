@@ -9,6 +9,7 @@ import GithubLinks from "./GithubLinks";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import useBoop from "../Hooks/use-boop";
 import { config, useSpring } from "react-spring";
+import RequestAccessDialog from "./RequestAccessDialog";
 
 const ButtonWindowContainer = styled(animated.div)`
   background-color: ${themeConf.linkWindowBackgroundColor};
@@ -33,16 +34,24 @@ function PortfolioItem({
   linkUrl,
   imageSrc,
   tools,
+  requiresAccessRequest = false,
 }: PortfolioProps) {
   const listItems = tools.map((tool: string) => <li key={tool}>{tool}</li>);
 
   const [style, trigger] = useBoop({ rotation: 40 });
   const [isButtonMenuVisible, setIsButtonMenuVisible] = useState(false);
   const [isCursorHovering, setIsCursorHovering] = useState(false);
+  const [showAccessDialog, setShowAccessDialog] = useState(false);
 
   const handleClickEventForViewSiteButton = () => {
     setIsButtonMenuVisible(!isButtonMenuVisible);
     trigger();
+  };
+
+  const handleViewSiteClick = () => {
+    if (requiresAccessRequest) {
+      setShowAccessDialog(true);
+    }
   };
 
   const onPortfolioItemHover = () => {
@@ -146,12 +155,22 @@ function PortfolioItem({
             style={buttonAnimation}
             className="gh__button--container"
           >
-            <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-              <button className="gh__button--link">
+            {requiresAccessRequest ? (
+              <button 
+                className="gh__button--link" 
+                onClick={handleViewSiteClick}
+              >
                 <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
-                <p>View Site</p>
+                <p>Request Access</p>
               </button>
-            </a>
+            ) : (
+              <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+                <button className="gh__button--link">
+                  <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                  <p>View Site</p>
+                </button>
+              </a>
+            )}
             {codeUrl ? (
               <a href={codeUrl} target="_blank" rel="noopener noreferrer">
                 <button className="gh__button--link">
@@ -169,6 +188,12 @@ function PortfolioItem({
             )}
           </animated.div>
         </ButtonWindowContainer>
+        {showAccessDialog && (
+          <RequestAccessDialog
+            projectName={title}
+            onClose={() => setShowAccessDialog(false)}
+          />
+        )}
       </PortfolioItemContain>
     </div>
   );

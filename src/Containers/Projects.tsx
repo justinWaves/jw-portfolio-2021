@@ -48,6 +48,7 @@ function Projects() {
             "ShadCN",
             "AWS Lambda",
           ]}
+          requiresAccessRequest={true}
         />
         <PortfolioItem
           title="Sonata CRM"
@@ -63,6 +64,7 @@ function Projects() {
             "Express.js",
             "Tailwind CSS",
           ]}
+          requiresAccessRequest={true}
         />
         <PortfolioItem
           title="Pointment"
