@@ -22,6 +22,10 @@ const PortfolioItemContain = styled(animated.div)`
   will-change: transform;
 `;
 
+const ThumbnailContainer = styled.div`
+  --thumbnail-background: ${themeConf.backgroundColor};
+`;
+
 const ListItemTitle = styled.h4`
   color: ${themeConf.secondaryTextColor};
   margin-bottom: 5px;
@@ -53,10 +57,6 @@ function PortfolioItem({
     if (requiresAccessRequest) {
       setShowAccessDialog(true);
     }
-  };
-
-  const onPortfolioItemHover = () => {
-    setIsCursorHovering(!isCursorHovering);
   };
 
   const linkWindowAnimation = useSpring({
@@ -93,15 +93,12 @@ function PortfolioItem({
     <div className="portfolioItem__main">
       <PortfolioItemContain
         className="portfolioItem__container"
-        onMouseEnter={onPortfolioItemHover}
-        onMouseLeave={onPortfolioItemHover}
+        onMouseEnter={() => setIsCursorHovering(true)}
+        onMouseLeave={() => setIsCursorHovering(false)}
       >
         <div className="portfolio__content--left">
           <h1 className="portfolioItem__title">{title}</h1>
-          <div
-            className="portfolioItem__image-container"
-            style={{ '--bg-color': themeConf.backgroundColor } as React.CSSProperties}
-          >
+          <ThumbnailContainer className="portfolioItem__image-container">
             <div
               className={
                 isCursorHovering
@@ -114,13 +111,13 @@ function PortfolioItem({
             <img
               className={
                 isCursorHovering
-                  ? "portfolioItem__image-blurry"
+                  ? "portfolioItem__image-hovered"
                   : "portfolioItem__image"
               }
               src={imageSrc}
               alt=""
             />
-          </div>
+          </ThumbnailContainer>
         </div>
 
         <div className="portfolioItem__content--center">
