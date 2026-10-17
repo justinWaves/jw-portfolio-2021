@@ -1,3 +1,4 @@
+import artistriTN from "../images/artistri-placeholder.svg";
 import PortfolioItem from "../Components/PortfolioItem";
 import "./Projects.css";
 import ProjectsHeader from "../Components/ProjectsHeader";
@@ -34,6 +35,15 @@ function Projects() {
     <ProjectsContain className="projects">
       <ProjectsHeader />
       <div className="projects__contain">
+        <PortfolioItem
+          title="Artistrí"
+          body="Co-founded Artistrí, a cultural-discovery app, in 2026. Led brand and UX design and built the product frontend and backend, administrative tools, and investor materials. Combined design and engineering across the product, using Vercel, Supabase, and Cloudflare."
+          codeUrl=""
+          linkUrl=""
+          imageSrc={artistriTN}
+          tools={["Vercel", "Supabase", "Cloudflare"]}
+          overviewOnly={true}
+        />
         <PortfolioItem
           title="HERA"
           body="Architected and built the complete frontend for a humanitarian data platform deployed in South Sudan at Weavery.ai. Built 160+ TypeScript/React components using Next.js 14 with multi-provider authentication, role-based access control, and offline-first patterns optimized for unreliable network conditions. Designed all UI/UX from wireframes to production."

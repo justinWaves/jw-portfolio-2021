@@ -18,6 +18,7 @@ export interface PortfolioProps {
   imageSrc: string;
   tools: string[];
   requiresAccessRequest?: boolean;
+  overviewOnly?: boolean;
 }
 
 export interface ErrorTypes {
