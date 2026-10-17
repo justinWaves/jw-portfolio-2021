@@ -39,10 +39,9 @@ function Projects() {
           title="Artistrí"
           body="Co-founded Artistrí, a cultural-discovery app, in 2026. Led brand and UX design and built the product frontend and backend, administrative tools, and investor materials. Combined design and engineering across the product, using Vercel, Supabase, and Cloudflare."
           codeUrl=""
-          linkUrl=""
+          linkUrl="https://artistri-web.vercel.app/"
           imageSrc={artistriTN}
           tools={["Vercel", "Supabase", "Cloudflare"]}
-          overviewOnly={true}
         />
         <PortfolioItem
           title="HERA"
