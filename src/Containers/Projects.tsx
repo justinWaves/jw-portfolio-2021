@@ -1,4 +1,4 @@
-import artistriTN from "../images/artistri-placeholder.svg";
+import artistriTN from "../images/artistri-thumbnail.png";
 import PortfolioItem from "../Components/PortfolioItem";
 import "./Projects.css";
 import ProjectsHeader from "../Components/ProjectsHeader";
