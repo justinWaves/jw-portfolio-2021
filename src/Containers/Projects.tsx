@@ -98,6 +98,7 @@ function Projects() {
           imageSrc={sonataPiano}
           tools={["Next.js", "TypeScript", "Sanity CMS", "Tailwind CSS"]}
         />
+        {/* Archived: uncomment this card to show it again.
         <PortfolioItem
           title="Hearth AI Challenge"
           body="Completed a competitive take-home coding challenge for Hearth AI, building a contact management system with temperature scoring. Implemented smooth animations, responsive design, and optimized performance using Next.js App router and React Spring. Demonstrated advanced React patterns and modern development practices."
@@ -106,6 +107,7 @@ function Projects() {
           imageSrc={hearthAI}
           tools={["Next.js", "TypeScript", "React Spring", "Tailwind CSS"]}
         />
+        */}
         <PortfolioItem
           title="Artisan Direct"
           body="Developed a headless e-commerce solution for Artisan Direct, integrating Shopify's backend with a custom Next.js frontend. Implemented advanced product filtering, real-time inventory updates, and optimized checkout flow. Built with performance and user experience in mind using modern web technologies."
@@ -120,6 +122,7 @@ function Projects() {
             "Tailwind CSS",
           ]}
         />
+        {/* Archived: uncomment this card to show it again.
         <PortfolioItem
           title="Ronbow Demo"
           body="Created an interactive design demo showcasing modern UI/UX principles and smooth animations. Built with React and Tailwind CSS, featuring responsive design, accessibility compliance, and optimized performance. Serves as a demonstration of frontend development skills and attention to design detail."
@@ -128,6 +131,7 @@ function Projects() {
           imageSrc={ronboTN}
           tools={["React", "Tailwind CSS", "Material UI"]}
         />
+        */}
         {/* <PortfolioItem
           title="Rambo Party"
           body="Full-stack web app built for client with Next.JS, Sanity, TailwindCSS Typescript and React 🎊"
@@ -176,6 +180,7 @@ function Projects() {
           imageSrc={ticTactToe}
           tools={["React", "Sass"]}
         /> */}
+        {/* Archived: uncomment this card to show it again.
         <PortfolioItem
           title="Justin Waves Blog"
           body="Built a full-stack blog platform with advanced features including dynamic routing, server-side rendering, and real-time comments. Implemented custom RESTful APIs using Sanity's GROQ query language. Features include SEO optimization, incremental static regeneration, and form validation. Demonstrates modern full-stack development practices."
@@ -184,6 +189,7 @@ function Projects() {
           imageSrc={jWavesBlog}
           tools={["Next.js", "TypeScript", "Sanity CMS", "GROQ", "Tailwind CSS"]}
         />
+        */}
         {/* <PortfolioItem
           title="MetaWaves Chat"
           body="Realtime Web3.0 Chat dApp that uses Metamask Wallet for user Auth, powered by a Moralis Backend."
@@ -192,6 +198,7 @@ function Projects() {
           imageSrc={metaWaves}
           tools={["React", "Next.js", "Tailwind.css", "Moralis", "MetaMask"]}
         /> */}
+        {/* Archived: uncomment this card to show it again.
         <PortfolioItem
           title="Syntax Highlighter"
           body="Developed an ES6 syntax highlighting application with custom parsing algorithms and real-time code formatting. Built with React and TypeScript, featuring support for modern JavaScript features and customizable themes. Demonstrates strong understanding of language parsing, AST manipulation, and developer tool development."
@@ -200,6 +207,7 @@ function Projects() {
           imageSrc={es6}
           tools={["React", "TypeScript"]}
         />
+        */}
         <PortfolioItem
           title="JW Portfolio 2021"
           body="Designed and developed this portfolio website using TypeScript, React, and styled-components. Implemented a custom theme system with light/dark mode, smooth animations, and responsive design. Features include dynamic project showcasing, interactive components, and optimized performance. Demonstrates modern frontend development practices and attention to user experience."
