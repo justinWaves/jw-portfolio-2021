@@ -22,6 +22,10 @@ const PortfolioItemContain = styled(animated.div)`
   will-change: transform;
 `;
 
+const ThumbnailContainer = styled.div`
+  --thumbnail-background: ${themeConf.backgroundColor};
+`;
+
 const ListItemTitle = styled.h4`
   color: ${themeConf.secondaryTextColor};
   margin-bottom: 5px;
@@ -35,6 +39,7 @@ function PortfolioItem({
   imageSrc,
   tools,
   requiresAccessRequest = false,
+  overviewOnly = false,
 }: PortfolioProps) {
   const listItems = tools.map((tool: string) => <li key={tool}>{tool}</li>);
 
@@ -52,10 +57,6 @@ function PortfolioItem({
     if (requiresAccessRequest) {
       setShowAccessDialog(true);
     }
-  };
-
-  const onPortfolioItemHover = () => {
-    setIsCursorHovering(!isCursorHovering);
   };
 
   const linkWindowAnimation = useSpring({
@@ -92,15 +93,12 @@ function PortfolioItem({
     <div className="portfolioItem__main">
       <PortfolioItemContain
         className="portfolioItem__container"
-        onMouseEnter={onPortfolioItemHover}
-        onMouseLeave={onPortfolioItemHover}
+        onMouseEnter={() => setIsCursorHovering(true)}
+        onMouseLeave={() => setIsCursorHovering(false)}
       >
         <div className="portfolio__content--left">
           <h1 className="portfolioItem__title">{title}</h1>
-          <div 
-            className="portfolioItem__image-container"
-            style={{ '--bg-color': themeConf.backgroundColor } as React.CSSProperties}
-          >
+          <ThumbnailContainer className="portfolioItem__image-container">
             <div
               className={
                 isCursorHovering
@@ -113,13 +111,13 @@ function PortfolioItem({
             <img
               className={
                 isCursorHovering
-                  ? "portfolioItem__image-blurry"
+                  ? "portfolioItem__image-hovered"
                   : "portfolioItem__image"
               }
               src={imageSrc}
               alt=""
             />
-          </div>
+          </ThumbnailContainer>
         </div>
 
         <div className="portfolioItem__content--center">
@@ -138,56 +136,60 @@ function PortfolioItem({
             <ul className="portfolio__listItems">{listItems}</ul>
           </div>
         </div>
-        <GithubLinks
-          onChildClick={handleClickEventForViewSiteButton}
-          style={style}
-          buttonText={isButtonMenuVisible ? "Return" : "View Site"}
-        />
-        <ButtonWindowContainer
-          style={linkWindowAnimation}
-          className={
-            isButtonMenuVisible
-              ? "gh__linkWindow--show"
-              : "gh__linkWindow--hidden"
-          }
-        >
-          <animated.div
-            style={buttonAnimation}
-            className="gh__button--container"
-          >
-            {requiresAccessRequest ? (
-              <button 
-                className="gh__button--link" 
-                onClick={handleViewSiteClick}
+        {!overviewOnly && (
+          <>
+            <GithubLinks
+              onChildClick={handleClickEventForViewSiteButton}
+              style={style}
+              buttonText={isButtonMenuVisible ? "Return" : "View Site"}
+            />
+            <ButtonWindowContainer
+              style={linkWindowAnimation}
+              className={
+                isButtonMenuVisible
+                  ? "gh__linkWindow--show"
+                  : "gh__linkWindow--hidden"
+              }
+            >
+              <animated.div
+                style={buttonAnimation}
+                className="gh__button--container"
               >
-                <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
-                <p>Request Access</p>
-              </button>
-            ) : (
-              <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-                <button className="gh__button--link">
-                  <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
-                  <p>View Site</p>
-                </button>
-              </a>
-            )}
-            {codeUrl ? (
-              <a href={codeUrl} target="_blank" rel="noopener noreferrer">
-                <button className="gh__button--link">
-                  <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
-                  <p>View Code</p>
-                </button>
-              </a>
-            ) : (
-              <button className="gh__button--link-canceled">
-                <p>
-                  Codebase is not <br />
-                  Publicly Available
-                </p>
-              </button>
-            )}
-          </animated.div>
-        </ButtonWindowContainer>
+                {requiresAccessRequest ? (
+                  <button
+                    className="gh__button--link"
+                    onClick={handleViewSiteClick}
+                  >
+                    <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                    <p>Request Access</p>
+                  </button>
+                ) : (
+                  <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+                    <button className="gh__button--link">
+                      <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                      <p>View Site</p>
+                    </button>
+                  </a>
+                )}
+                {codeUrl ? (
+                  <a href={codeUrl} target="_blank" rel="noopener noreferrer">
+                    <button className="gh__button--link">
+                      <GitHubIcon className="gh__icon" sx={{ fontSize: 40 }} />
+                      <p>View Code</p>
+                    </button>
+                  </a>
+                ) : (
+                  <button className="gh__button--link-canceled">
+                    <p>
+                      Codebase is not <br />
+                      Publicly Available
+                    </p>
+                  </button>
+                )}
+              </animated.div>
+            </ButtonWindowContainer>
+          </>
+        )}
         {showAccessDialog && (
           <RequestAccessDialog
             projectName={title}

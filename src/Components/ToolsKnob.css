@@ -102,3 +102,9 @@
   top: 20px;
   left: 95px;
 }
+
+/* Basic renders a numeric readout immediately after its dial SVG.
+   This dial selects named tools, so only the position indicator is needed. */
+.knob__container svg + div {
+  display: none;
+}
